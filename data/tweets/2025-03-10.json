@@ -1,0 +1,335 @@
+{
+  "savedAt": "2025-03-10T17:17:48.861Z",
+  "count": 20,
+  "tweets": [
+    {
+      "id": "1899143752918409338",
+      "text": "Detecting misbehavior in frontier reasoning models\n\nChain-of-thought (CoT) reasoning models “think” in natural language understandable by humans. Monitoring their “thinking” has allowed us to detect misbehavior such as subverting tests in coding tasks, deceiving users, or giving up when a problem is too hard.\n\nWe believe that CoT monitoring may be one of few tools we will have to oversee superhuman models of the future.\n\nWe have further found that directly optimizing the CoT to adhere to specific criteria (e.g. to not think about reward hacking) may boost performance in the short run; however, it does not eliminate all misbehavior and can cause a model to hide its intent. We hope future research will find ways to directly optimize CoTs without this drawback, but until then:\n\nWe recommend against applying strong optimization pressure directly to the CoTs of frontier reasoning models, leaving CoTs unrestricted for monitoring.\n\nWe understand that leaving CoTs unrestricted may make them unfit to be shown to end-users, as they might violate some misuse policies. Still, if one wanted to show policy-compliant CoTs directly to users while avoiding putting strong supervision on them, one could use a separate model, such as a CoT summarizer or sanitizer, to accomplish that.",
+      "createdAt": "Mon Mar 10 17:02:09 +0000 2025",
+      "authorName": "OpenAI",
+      "authorUsername": "OpenAI",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 36,
+        "likes": 208,
+        "replies": 32
+      },
+      "fullNoteText": "Detecting misbehavior in frontier reasoning models\n\nChain-of-thought (CoT) reasoning models “think” in natural language understandable by humans. Monitoring their “thinking” has allowed us to detect misbehavior such as subverting tests in coding tasks, deceiving users, or giving up when a problem is too hard.\n\nWe believe that CoT monitoring may be one of few tools we will have to oversee superhuman models of the future.\n\nWe have further found that directly optimizing the CoT to adhere to specific criteria (e.g. to not think about reward hacking) may boost performance in the short run; however, it does not eliminate all misbehavior and can cause a model to hide its intent. We hope future research will find ways to directly optimize CoTs without this drawback, but until then:\n\nWe recommend against applying strong optimization pressure directly to the CoTs of frontier reasoning models, leaving CoTs unrestricted for monitoring.\n\nWe understand that leaving CoTs unrestricted may make them unfit to be shown to end-users, as they might violate some misuse policies. Still, if one wanted to show policy-compliant CoTs directly to users while avoiding putting strong supervision on them, one could use a separate model, such as a CoT summarizer or sanitizer, to accomplish that.",
+      "authorId": "4398626122",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg"
+    },
+    {
+      "id": "1899143756475191796",
+      "text": "In the blog linked below, we show real examples we found while training a recent frontier reasoning model, e.g. a model in the same class as OpenAI o1 or OpenAI o3‑mini.\n\nWe found the model thinking things like, “Let’s hack,” “They don’t inspect the details,” and “We need to cheat to get the test passing,” while subverting tests and rewarding hacking in coding tasks.\n\nFind out more: https://t.co/rA1ugR6FK9",
+      "createdAt": "Mon Mar 10 17:02:10 +0000 2025",
+      "authorName": "OpenAI",
+      "authorUsername": "OpenAI",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 4,
+        "likes": 41,
+        "replies": 4
+      },
+      "fullNoteText": "In the blog linked below, we show real examples we found while training a recent frontier reasoning model, e.g. a model in the same class as OpenAI o1 or OpenAI o3‑mini.\n\nWe found the model thinking things like, “Let’s hack,” “They don’t inspect the details,” and “We need to cheat to get the test passing,” while subverting tests and rewarding hacking in coding tasks.\n\nFind out more: https://t.co/rA1ugR6FK9",
+      "authorId": "4398626122",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg"
+    },
+    {
+      "id": "1899127406990176347",
+      "text": "Today, Figure has officially moved into our new HQ in San Jose, CA!\n\nRobot campus will also support manufacturing, fleet operations, and overall engineering/design build-out https://t.co/UiLNuMHSyH",
+      "createdAt": "Mon Mar 10 15:57:12 +0000 2025",
+      "authorName": "Brett Adcock",
+      "authorUsername": "adcock_brett",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 10,
+        "likes": 285,
+        "replies": 31
+      },
+      "authorId": "3222018178",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1820679914774769664/ARTbmd9C_normal.jpg"
+    },
+    {
+      "id": "1899127727208489375",
+      "text": "Fun fact - I actually tried getting this campus right after I took Archer public\n\nThis has been my dream spot to scale up in the bay area for awhile - @Loganomics7 locked it down for the win!",
+      "createdAt": "Mon Mar 10 15:58:28 +0000 2025",
+      "authorName": "Brett Adcock",
+      "authorUsername": "adcock_brett",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 0,
+        "likes": 22,
+        "replies": 1
+      },
+      "authorId": "3222018178",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1820679914774769664/ARTbmd9C_normal.jpg"
+    },
+    {
+      "id": "1899103914332709095",
+      "text": "气\n阴阳\n五行\n命，运 https://t.co/bAnkeZYEk0",
+      "createdAt": "Mon Mar 10 14:23:51 +0000 2025",
+      "authorName": "orange.ai",
+      "authorUsername": "oran_ge",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 0,
+        "likes": 3,
+        "replies": 1
+      },
+      "authorId": "6782882",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1760074488073629696/ceSsuVCY_normal.png"
+    },
+    {
+      "id": "1899104288342958424",
+      "text": "以及\n八字命理学\n在研究什么 https://t.co/h0pQlxNxXb",
+      "createdAt": "Mon Mar 10 14:25:20 +0000 2025",
+      "authorName": "orange.ai",
+      "authorUsername": "oran_ge",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 0,
+        "likes": 1,
+        "replies": 0
+      },
+      "authorId": "6782882",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1760074488073629696/ceSsuVCY_normal.png"
+    },
+    {
+      "id": "1899028955753332921",
+      "text": "这太疯狂了。\n\n中国的Manus AI刚刚发布，它将彻底改变AI代理的游戏。\n\n10个疯狂的例子：\n\n1. 基于数据洞察创建互动网站 https://t.co/JTXIOaiNvu",
+      "createdAt": "Mon Mar 10 09:25:59 +0000 2025",
+      "authorName": "AI Will",
+      "authorUsername": "FinanceYF5",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 18,
+        "likes": 48,
+        "replies": 4
+      },
+      "authorId": "1551258526584115204",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg"
+    },
+    {
+      "id": "1899028978171855238",
+      "text": "10. 播客编辑\nhttps://t.co/1TImUyLjIW",
+      "createdAt": "Mon Mar 10 09:26:05 +0000 2025",
+      "authorName": "AI Will",
+      "authorUsername": "FinanceYF5",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 1,
+        "likes": 1,
+        "replies": 1
+      },
+      "authorId": "1551258526584115204",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg"
+    },
+    {
+      "id": "1899029094102417661",
+      "text": "以上就是全部，原作者 @minchoi\n\n如果您喜欢这个主题：\n\n1.关注我（@FinanceYF5）\n2. 点赞+转发下面第一条帖子\n\nhttps://t.co/CxGTf4ntCA",
+      "createdAt": "Mon Mar 10 09:26:32 +0000 2025",
+      "authorName": "AI Will",
+      "authorUsername": "FinanceYF5",
+      "isQuote": true,
+      "metrics": {
+        "retweets": 0,
+        "likes": 4,
+        "replies": 0
+      },
+      "authorId": "1551258526584115204",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg",
+      "quotedTweet": {
+        "id": "1899028955753332921",
+        "text": "这太疯狂了。\n\n中国的Manus AI刚刚发布，它将彻底改变AI代理的游戏。\n\n10个疯狂的例子：\n\n1. 基于数据洞察创建互动网站 https://t.co/JTXIOaiNvu",
+        "createdAt": "Mon Mar 10 09:25:59 +0000 2025",
+        "authorName": "AI Will",
+        "authorUsername": "FinanceYF5",
+        "authorId": "1551258526584115204"
+      }
+    },
+    {
+      "id": "1899025130405199940",
+      "text": "Prajwal Tomar表示：Cursor Agent 可能会破坏你的代码。\n\n在10次中，有8次它可能会适得其反，弄乱代码库。\n\n这是他每次都能确保Cursor代码符合自己需求的方式。\n\n完整手册（他的原文👇）： https://t.co/KsdXTGybGh",
+      "createdAt": "Mon Mar 10 09:10:47 +0000 2025",
+      "authorName": "AI Will",
+      "authorUsername": "FinanceYF5",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 11,
+        "likes": 27,
+        "replies": 2
+      },
+      "authorId": "1551258526584115204",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg"
+    },
+    {
+      "id": "1899025161384554997",
+      "text": "简而言之：\n\n大多数开发者都在与不符合预期的AI生成代码作斗争。\n\n解决这个问题的关键：\n\n- 在使用Cursor之前设置清晰的项目上下文\n- 使用ChatGPT Voice在编码前构建项目结构\n- 使用CodeGuide生成详细的PRD和文档，为AI提供正确的指导\n- 使用启动套件避免设置问题\n- 在编码前将项目文档加载到Cursor中，确保AI理解你的项目\n- 使用项目规则（.mdc文件）来强制执行编码标准\n\n有了正确的结构，AI将会精确编写你想要的代码。",
+      "createdAt": "Mon Mar 10 09:10:55 +0000 2025",
+      "authorName": "AI Will",
+      "authorUsername": "FinanceYF5",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 0,
+        "likes": 3,
+        "replies": 1
+      },
+      "fullNoteText": "简而言之：\n\n大多数开发者都在与不符合预期的AI生成代码作斗争。\n\n解决这个问题的关键：\n\n- 在使用Cursor之前设置清晰的项目上下文\n- 使用ChatGPT Voice在编码前构建项目结构\n- 使用CodeGuide生成详细的PRD和文档，为AI提供正确的指导\n- 使用启动套件避免设置问题\n- 在编码前将项目文档加载到Cursor中，确保AI理解你的项目\n- 使用项目规则（.mdc文件）来强制执行编码标准\n\n有了正确的结构，AI将会精确编写你想要的代码。",
+      "authorId": "1551258526584115204",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg"
+    },
+    {
+      "id": "1899025228434722960",
+      "text": "以上就是全部，原作者 @PrajwalTomar_\n\n如果您喜欢这个主题：\n\n1.关注我（@FinanceYF5）\n2. 点赞+转发下面第一条帖子\n\nhttps://t.co/7ksfEYDZBi",
+      "createdAt": "Mon Mar 10 09:11:11 +0000 2025",
+      "authorName": "AI Will",
+      "authorUsername": "FinanceYF5",
+      "isQuote": true,
+      "metrics": {
+        "retweets": 0,
+        "likes": 1,
+        "replies": 0
+      },
+      "authorId": "1551258526584115204",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg",
+      "quotedTweet": {
+        "id": "1899025130405199940",
+        "text": "Prajwal Tomar表示：Cursor Agent 可能会破坏你的代码。\n\n在10次中，有8次它可能会适得其反，弄乱代码库。\n\n这是他每次都能确保Cursor代码符合自己需求的方式。\n\n完整手册（他的原文👇）： https://t.co/KsdXTGybGh",
+        "createdAt": "Mon Mar 10 09:10:47 +0000 2025",
+        "authorName": "AI Will",
+        "authorUsername": "FinanceYF5",
+        "authorId": "1551258526584115204"
+      }
+    },
+    {
+      "id": "1899006269589193182",
+      "text": "GREG ISENBERG写了一篇关于“什么是vibe revenue”的文章\n\n并预测“在18个月内，我们将看到大量僵尸的风险投资支持的AI公司。” https://t.co/6BKeoonya5",
+      "createdAt": "Mon Mar 10 07:55:51 +0000 2025",
+      "authorName": "AI Will",
+      "authorUsername": "FinanceYF5",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 2,
+        "likes": 6,
+        "replies": 2
+      },
+      "authorId": "1551258526584115204",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg"
+    },
+    {
+      "id": "1899006272458137845",
+      "text": "完整的帖子（包含建立持久的 AI 公司的技巧，而不仅仅是 vibe 收入公司）如下：\n\nhttps://t.co/cql63b8TbN",
+      "createdAt": "Mon Mar 10 07:55:51 +0000 2025",
+      "authorName": "AI Will",
+      "authorUsername": "FinanceYF5",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 0,
+        "likes": 0,
+        "replies": 0
+      },
+      "authorId": "1551258526584115204",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg"
+    },
+    {
+      "id": "1899003558340473268",
+      "text": "TODAY'S AI NEWS: Ilya Sutskever's SSI is taking a new route to achieving advanced AI\n\nPlus, more news from Microsoft, Reflection AI, X, Hedra, Luma Labs, Sudowrite, and World Network.\n\nHere's everything you need to know:",
+      "createdAt": "Mon Mar 10 07:45:04 +0000 2025",
+      "authorName": "Rowan Cheung",
+      "authorUsername": "rowancheung",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 63,
+        "likes": 903,
+        "replies": 18
+      },
+      "authorId": "1314686042",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1711152452735774720/Cotttl-n_normal.jpg"
+    },
+    {
+      "id": "1899003759025340750",
+      "text": "@grok As always, I'll be sending out a more in-depth rundown on all the AI news, and why it actually matters in ~5 hours in my newsletter.\n\nJoin 1,000,000+ readers for free and never miss a thing in AI ever again:\nhttps://t.co/Gm5KwesnA7",
+      "createdAt": "Mon Mar 10 07:45:52 +0000 2025",
+      "authorName": "Rowan Cheung",
+      "authorUsername": "rowancheung",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 1,
+        "likes": 21,
+        "replies": 1
+      },
+      "authorId": "1314686042",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1711152452735774720/Cotttl-n_normal.jpg"
+    },
+    {
+      "id": "1899003781171318887",
+      "text": "@grok That's it for today's news in the world of AI.\n\nI share what's happening in AI every day, follow me @rowancheung for more.\n\nIf you found this helpful, support me with a like/retweet on the first tweet of this thread:https://t.co/6RKhxV1ObY",
+      "createdAt": "Mon Mar 10 07:45:57 +0000 2025",
+      "authorName": "Rowan Cheung",
+      "authorUsername": "rowancheung",
+      "isQuote": true,
+      "metrics": {
+        "retweets": 0,
+        "likes": 18,
+        "replies": 1
+      },
+      "authorId": "1314686042",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1711152452735774720/Cotttl-n_normal.jpg",
+      "quotedTweet": {
+        "id": "1899003558340473268",
+        "text": "TODAY'S AI NEWS: Ilya Sutskever's SSI is taking a new route to achieving advanced AI\n\nPlus, more news from Microsoft, Reflection AI, X, Hedra, Luma Labs, Sudowrite, and World Network.\n\nHere's everything you need to know:",
+        "createdAt": "Mon Mar 10 07:45:04 +0000 2025",
+        "authorName": "Rowan Cheung",
+        "authorUsername": "rowancheung",
+        "authorId": "1314686042"
+      }
+    },
+    {
+      "id": "1898926625359900981",
+      "text": "儿童“玩耍”的 7 层真相｜当 ta 失去“玩”的能力，代价远超你的想象！父母们完全可以打印出来，阅读 5678 遍！\n\n---\n跟你分享我在生活中遇到的两件小事。\n\n第1件事：周六，我中午坐在公园里，听到几米外海淀妈妈打电话。be like：... 今天我们集中“玩”，只有一节编程，画画和魔方，明天我们集中学，上学而思和新东方...\n\n第2件事：又一个周六，我们一家去餐厅吃饭，旁边一桌是一个妈妈带着孩子。孩子面前一个大平板，带着耳机，面前的美味的咖喱猪排饭只吃了几口，全部剩在那里，孩子在用平板上课。关键是，学的内容是 scratch。scratch 本身很好，在玩中学，免费开源，但是，在国内扭曲成了教培项目。这个孩子明显吃饭习惯也不好，课外班比吃饭还多，连吃饭时都在学习。\n\n“玩耍”这件事，在很多家庭教育中，在很多父母的育儿操作中，被极大误解和扭曲了。许多父母误以为“玩耍”是学习的对立面。他们以为给孩子安排各种所谓“玩”的课程，就是让孩子在玩了。\n\n事实上，真正的“玩耍”：没有预设目的地探索和尝试；孩子自发、自由、主动地进行；身心放松、充满好奇心；拥有选择和自主的空间。\n\n现实中被异化的“玩耍”：精准规划、有明确目标的“休闲”任务；孩子被动接受家长安排；目标导向、成果导向，必须有成果可展示；本质是另一种“隐蔽”的学习或竞争。\n\n所以，今天，我们一起来探索儿童“玩耍”背后的 7 层真相。建议父母们把这篇文章打印出来，阅读 5678 遍！\n\n真相1 自我构建的唯一途径（the only path to self-construction）\n\n真正意义上的“玩耍”，是孩子内心世界进行自我疗愈、自我重建和自我完善的唯一途径。",
+      "createdAt": "Mon Mar 10 02:39:22 +0000 2025",
+      "authorName": "howie.serious",
+      "authorUsername": "howie_serious",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 44,
+        "likes": 146,
+        "replies": 3
+      },
+      "fullNoteText": "儿童“玩耍”的 7 层真相｜当 ta 失去“玩”的能力，代价远超你的想象！父母们完全可以打印出来，阅读 5678 遍！\n\n---\n跟你分享我在生活中遇到的两件小事。\n\n第1件事：周六，我中午坐在公园里，听到几米外海淀妈妈打电话。be like：... 今天我们集中“玩”，只有一节编程，画画和魔方，明天我们集中学，上学而思和新东方...\n\n第2件事：又一个周六，我们一家去餐厅吃饭，旁边一桌是一个妈妈带着孩子。孩子面前一个大平板，带着耳机，面前的美味的咖喱猪排饭只吃了几口，全部剩在那里，孩子在用平板上课。关键是，学的内容是 scratch。scratch 本身很好，在玩中学，免费开源，但是，在国内扭曲成了教培项目。这个孩子明显吃饭习惯也不好，课外班比吃饭还多，连吃饭时都在学习。\n\n“玩耍”这件事，在很多家庭教育中，在很多父母的育儿操作中，被极大误解和扭曲了。许多父母误以为“玩耍”是学习的对立面。他们以为给孩子安排各种所谓“玩”的课程，就是让孩子在玩了。\n\n事实上，真正的“玩耍”：没有预设目的地探索和尝试；孩子自发、自由、主动地进行；身心放松、充满好奇心；拥有选择和自主的空间。\n\n现实中被异化的“玩耍”：精准规划、有明确目标的“休闲”任务；孩子被动接受家长安排；目标导向、成果导向，必须有成果可展示；本质是另一种“隐蔽”的学习或竞争。\n\n所以，今天，我们一起来探索儿童“玩耍”背后的 7 层真相。建议父母们把这篇文章打印出来，阅读 5678 遍！\n\n真相1 自我构建的唯一途径（the only path to self-construction）\n\n真正意义上的“玩耍”，是孩子内心世界进行自我疗愈、自我重建和自我完善的唯一途径。",
+      "authorId": "709787332254117888",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/738174666309652480/UgeKnQOm_normal.jpg"
+    },
+    {
+      "id": "1898926646792790051",
+      "text": "真相7 玩耍就是童年本身（play is childhood itself）\n\n玩耍，就是童年本身。孩子只有真正玩耍过，才真正拥有过童年；没有真正玩耍过的孩子，终其一生都将缺失那最重要的生命底色。",
+      "createdAt": "Mon Mar 10 02:39:27 +0000 2025",
+      "authorName": "howie.serious",
+      "authorUsername": "howie_serious",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 2,
+        "likes": 3,
+        "replies": 1
+      },
+      "fullNoteText": "真相7 玩耍就是童年本身（play is childhood itself）\n\n玩耍，就是童年本身。孩子只有真正玩耍过，才真正拥有过童年；没有真正玩耍过的孩子，终其一生都将缺失那最重要的生命底色。",
+      "authorId": "709787332254117888",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/738174666309652480/UgeKnQOm_normal.jpg"
+    },
+    {
+      "id": "1898926651251229042",
+      "text": "文章版本：可剪藏高光划线笔记，可语音朗读👇\n\n《儿童“玩耍”的 7 层真相｜当 ta 丧失“玩”的能力，代价远超你的想象！》\nhttps://t.co/QptoeudHXN",
+      "createdAt": "Mon Mar 10 02:39:28 +0000 2025",
+      "authorName": "howie.serious",
+      "authorUsername": "howie_serious",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 0,
+        "likes": 5,
+        "replies": 0
+      },
+      "authorId": "709787332254117888",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/738174666309652480/UgeKnQOm_normal.jpg"
+    }
+  ]
+}

@@ -1,0 +1,660 @@
+{
+  "savedAt": "2025-03-11T08:39:30.235Z",
+  "count": 36,
+  "tweets": [
+    {
+      "id": "1899373710382899693",
+      "text": "Manus AI 发布才刚过 5 天，一个强大的代理 AI。\n\n而且大家开始用它进行疯狂的创意尝试。\n\n10 个疯狂的例子：\n\n1. 特斯拉 FSD 驾驶，同时 Manus AI 为你的咖啡会议准备要点 🤯 https://t.co/TrXxFLS60f",
+      "createdAt": "Tue Mar 11 08:15:55 +0000 2025",
+      "authorName": "AI Will",
+      "authorUsername": "FinanceYF5",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 1,
+        "likes": 3,
+        "replies": 1
+      },
+      "authorId": "1551258526584115204",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg"
+    },
+    {
+      "id": "1899373732055101880",
+      "text": "10. 从文档中写出逐步指导并附带代码\nhttps://t.co/OMesAzTJGL",
+      "createdAt": "Tue Mar 11 08:16:01 +0000 2025",
+      "authorName": "AI Will",
+      "authorUsername": "FinanceYF5",
+      "isQuote": true,
+      "metrics": {
+        "retweets": 0,
+        "likes": 0,
+        "replies": 1
+      },
+      "authorId": "1551258526584115204",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg",
+      "quotedTweet": {
+        "id": "1898769715079921696",
+        "text": "Alright I’m starting to freak out a little bit I may have undersold this…\n\nlmao it’s writing a literal step-by-step guide from UP TO DATE docs WITH all the code for EVERYTHING https://t.co/Ji19YZ1tUL",
+        "createdAt": "Sun Mar 09 16:15:52 +0000 2025",
+        "authorName": "Mckay Wrigley",
+        "authorUsername": "mckaywrigley",
+        "authorId": "2786431437"
+      }
+    },
+    {
+      "id": "1899373852364558450",
+      "text": "以上就是全部，原作者 @minchoi\n\n如果您喜欢这个主题：\n\n1.关注我（@FinanceYF5）\n2. 点赞+转发下面第一条帖子\n\nhttps://t.co/ZOK6Db43Rk",
+      "createdAt": "Tue Mar 11 08:16:29 +0000 2025",
+      "authorName": "AI Will",
+      "authorUsername": "FinanceYF5",
+      "isQuote": true,
+      "metrics": {
+        "retweets": 0,
+        "likes": 0,
+        "replies": 0
+      },
+      "authorId": "1551258526584115204",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg",
+      "quotedTweet": {
+        "id": "1899373710382899693",
+        "text": "Manus AI 发布才刚过 5 天，一个强大的代理 AI。\n\n而且大家开始用它进行疯狂的创意尝试。\n\n10 个疯狂的例子：\n\n1. 特斯拉 FSD 驾驶，同时 Manus AI 为你的咖啡会议准备要点 🤯 https://t.co/TrXxFLS60f",
+        "createdAt": "Tue Mar 11 08:15:55 +0000 2025",
+        "authorName": "AI Will",
+        "authorUsername": "FinanceYF5",
+        "authorId": "1551258526584115204"
+      }
+    },
+    {
+      "id": "1899367652692529154",
+      "text": "Manus AI 正在接管互联网\n\n开发者们正在用它做一些令人惊讶的事情，比如创建视频游戏和预订假期\n\n7 个令人惊叹的使用案例：\n\n1. Deedy：在几分钟内进行股票和其他财务分析 https://t.co/bdABQOAKK0",
+      "createdAt": "Tue Mar 11 07:51:51 +0000 2025",
+      "authorName": "AI Will",
+      "authorUsername": "FinanceYF5",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 0,
+        "likes": 9,
+        "replies": 2
+      },
+      "authorId": "1551258526584115204",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg"
+    },
+    {
+      "id": "1899367666454028481",
+      "text": "7. 使用 p5js 创建令人惊叹的动画\nhttps://t.co/WSoyE06XEI",
+      "createdAt": "Tue Mar 11 07:51:54 +0000 2025",
+      "authorName": "AI Will",
+      "authorUsername": "FinanceYF5",
+      "isQuote": true,
+      "metrics": {
+        "retweets": 0,
+        "likes": 0,
+        "replies": 1
+      },
+      "authorId": "1551258526584115204",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg",
+      "quotedTweet": {
+        "id": "1898455005008392544",
+        "text": "Manus AI is really strong. UX is amazing and output is really good. Here my friedn prompt: \"Create an amazing animation using p5js\" https://t.co/W6ASufC08g",
+        "createdAt": "Sat Mar 08 19:25:19 +0000 2025",
+        "authorName": "Ivan Fioravanti ᯅ",
+        "authorUsername": "ivanfioravanti",
+        "authorId": "43874767"
+      }
+    },
+    {
+      "id": "1899367789766615280",
+      "text": "以上就是全部，原作者 @heykahn\n\n如果您喜欢这个主题：\n\n1.关注我（@FinanceYF5）\n2. 点赞+转发下面第一条帖子\n\nhttps://t.co/jNbCBky0oD",
+      "createdAt": "Tue Mar 11 07:52:24 +0000 2025",
+      "authorName": "AI Will",
+      "authorUsername": "FinanceYF5",
+      "isQuote": true,
+      "metrics": {
+        "retweets": 0,
+        "likes": 0,
+        "replies": 0
+      },
+      "authorId": "1551258526584115204",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg",
+      "quotedTweet": {
+        "id": "1899367652692529154",
+        "text": "Manus AI 正在接管互联网\n\n开发者们正在用它做一些令人惊讶的事情，比如创建视频游戏和预订假期\n\n7 个令人惊叹的使用案例：\n\n1. Deedy：在几分钟内进行股票和其他财务分析 https://t.co/bdABQOAKK0",
+        "createdAt": "Tue Mar 11 07:51:51 +0000 2025",
+        "authorName": "AI Will",
+        "authorUsername": "FinanceYF5",
+        "authorId": "1551258526584115204"
+      }
+    },
+    {
+      "id": "1899350859680489621",
+      "text": "TODAY'S AI NEWS: OpenAI just caught its models cheating on tasks!\n\nPlus, more news from McDonald's, Foxconn, Tencent, ElevenLabs, ServiceNow, and Sony.\n\nHere's everything you need to know:",
+      "createdAt": "Tue Mar 11 06:45:07 +0000 2025",
+      "authorName": "Rowan Cheung",
+      "authorUsername": "rowancheung",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 10,
+        "likes": 109,
+        "replies": 4
+      },
+      "authorId": "1314686042",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1711152452735774720/Cotttl-n_normal.jpg"
+    },
+    {
+      "id": "1899351069152428513",
+      "text": "As always, I'll be sending out a more in-depth rundown on all the AI news, and why it actually matters in ~5 hours in my newsletter.\n\nJoin 1,000,000+ readers for free and never miss a thing in AI ever again:\nhttps://t.co/Gm5KwesnA7",
+      "createdAt": "Tue Mar 11 06:45:57 +0000 2025",
+      "authorName": "Rowan Cheung",
+      "authorUsername": "rowancheung",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 0,
+        "likes": 9,
+        "replies": 1
+      },
+      "authorId": "1314686042",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1711152452735774720/Cotttl-n_normal.jpg"
+    },
+    {
+      "id": "1899351091461963874",
+      "text": "That's it for today's news in the world of AI.\n\nI share what's happening in AI every day, follow me @rowancheung for more.\n\nIf you found this helpful, support me with a like/retweet on the first tweet of this thread:https://t.co/P3PN62ljDP",
+      "createdAt": "Tue Mar 11 06:46:03 +0000 2025",
+      "authorName": "Rowan Cheung",
+      "authorUsername": "rowancheung",
+      "isQuote": true,
+      "metrics": {
+        "retweets": 0,
+        "likes": 6,
+        "replies": 0
+      },
+      "authorId": "1314686042",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1711152452735774720/Cotttl-n_normal.jpg",
+      "quotedTweet": {
+        "id": "1899350859680489621",
+        "text": "TODAY'S AI NEWS: OpenAI just caught its models cheating on tasks!\n\nPlus, more news from McDonald's, Foxconn, Tencent, ElevenLabs, ServiceNow, and Sony.\n\nHere's everything you need to know:",
+        "createdAt": "Tue Mar 11 06:45:07 +0000 2025",
+        "authorName": "Rowan Cheung",
+        "authorUsername": "rowancheung",
+        "authorId": "1314686042"
+      }
+    },
+    {
+      "id": "1899344476302451125",
+      "text": "Google Sheets：https://t.co/fykKUZe1Vz\n\na16z原报告：https://t.co/E39SmFVQB3\n\n处理方法：找到对应的2024年7月和25年1月数据进行计算对比。",
+      "createdAt": "Tue Mar 11 06:19:45 +0000 2025",
+      "authorName": "AI Will",
+      "authorUsername": "FinanceYF5",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 0,
+        "likes": 1,
+        "replies": 1
+      },
+      "authorId": "1551258526584115204",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg"
+    },
+    {
+      "id": "1899344657387339887",
+      "text": "8、绝对增长榜\n\nChatGPT稳坐增长王座，半年新增14.1万万访问量，领先全行业。\n\n数据揭示二三梯队：Deepseek新增2.76万万，JanitorAI增加5409万，Perplexity增长4827万。Doubao以2566万增量实现从边缘到Top10的跨越。\n\n流量世界有其残酷逻辑：强者恒强，赢家通吃。ChatGPT一家增量超过其他所有应用总和，而其他选手仍在为百万级流量奋力厮杀。",
+      "createdAt": "Tue Mar 11 06:20:29 +0000 2025",
+      "authorName": "AI Will",
+      "authorUsername": "FinanceYF5",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 0,
+        "likes": 2,
+        "replies": 1
+      },
+      "fullNoteText": "8、绝对增长榜\n\nChatGPT稳坐增长王座，半年新增14.1万万访问量，领先全行业。\n\n数据揭示二三梯队：Deepseek新增2.76万万，JanitorAI增加5409万，Perplexity增长4827万。Doubao以2566万增量实现从边缘到Top10的跨越。\n\n流量世界有其残酷逻辑：强者恒强，赢家通吃。ChatGPT一家增量超过其他所有应用总和，而其他选手仍在为百万级流量奋力厮杀。",
+      "authorId": "1551258526584115204",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg"
+    },
+    {
+      "id": "1899345029052965191",
+      "text": "以上就是全部\n\n如果您喜欢这个主题：\n\n1.关注我（@FinanceYF5）\n2. 点赞+转发下面第一条帖子\n\nhttps://t.co/RO9YtD06iR",
+      "createdAt": "Tue Mar 11 06:21:57 +0000 2025",
+      "authorName": "AI Will",
+      "authorUsername": "FinanceYF5",
+      "isQuote": true,
+      "metrics": {
+        "retweets": 0,
+        "likes": 0,
+        "replies": 0
+      },
+      "authorId": "1551258526584115204",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg",
+      "quotedTweet": {
+        "id": "1899344464117940583",
+        "text": "a16z最新消费者报告：深度解读\n\n🔍  8个关键发现\n\n👉 完整报告及数据解读 https://t.co/hk2xYqGS1d",
+        "createdAt": "Tue Mar 11 06:19:43 +0000 2025",
+        "authorName": "AI Will",
+        "authorUsername": "FinanceYF5",
+        "authorId": "1551258526584115204"
+      }
+    },
+    {
+      "id": "1899337701444440310",
+      "text": "会不会提出问题，决定了一个人的学习天花板。只有学会提问——提出清晰、明确、直击本质的问题——你才能真正学会学习。\n\n虚假的提问，是懒惰的头脑为了逃避自己的思考，愚蠢地向他人抛出大量无脑问题，惹人生厌。这常见于少部分思维懒惰者。\n\n真正的提问，是精准定位问题的核心，抓住关键细节，直击要害；是清晰表达，以及背后的结构化、训练有素地逻辑思考。这是少部分真·学霸的特征。\n\n很多人以为学习就是努力地看书、听课，但更本质的学习是有意识地提问、寻找答案并不断优化问题。一旦学会提问，你的学习就会从一个被动过程，转化为主动构建问题、检验问题、并反复打磨问题的过程。你就从一个被动的知识消费者，变成主动的知识构建者。\n\n下面是“提问”背后的 7 层真相。\n\n---\n真相1 问题比答案重要（questions over answers）\n\n绝大多数时候，我们提问时真正需要的不是答案，而是更好的问题。\n\n真相2 你看世界的方式（how you see the world）\n\n人们提出的问题，实际上反映的不是他们的知识水平，而是他们看待世界的方式。\n\n真相3 糟糕问题的根源（root of bad questions）\n\n大部分糟糕的问题，都源于我们害怕暴露无知而精心包装自己的疑惑。",
+      "createdAt": "Tue Mar 11 05:52:50 +0000 2025",
+      "authorName": "howie.serious",
+      "authorUsername": "howie_serious",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 13,
+        "likes": 63,
+        "replies": 2
+      },
+      "fullNoteText": "会不会提出问题，决定了一个人的学习天花板。只有学会提问——提出清晰、明确、直击本质的问题——你才能真正学会学习。\n\n虚假的提问，是懒惰的头脑为了逃避自己的思考，愚蠢地向他人抛出大量无脑问题，惹人生厌。这常见于少部分思维懒惰者。\n\n真正的提问，是精准定位问题的核心，抓住关键细节，直击要害；是清晰表达，以及背后的结构化、训练有素地逻辑思考。这是少部分真·学霸的特征。\n\n很多人以为学习就是努力地看书、听课，但更本质的学习是有意识地提问、寻找答案并不断优化问题。一旦学会提问，你的学习就会从一个被动过程，转化为主动构建问题、检验问题、并反复打磨问题的过程。你就从一个被动的知识消费者，变成主动的知识构建者。\n\n下面是“提问”背后的 7 层真相。\n\n---\n真相1 问题比答案重要（questions over answers）\n\n绝大多数时候，我们提问时真正需要的不是答案，而是更好的问题。\n\n真相2 你看世界的方式（how you see the world）\n\n人们提出的问题，实际上反映的不是他们的知识水平，而是他们看待世界的方式。\n\n真相3 糟糕问题的根源（root of bad questions）\n\n大部分糟糕的问题，都源于我们害怕暴露无知而精心包装自己的疑惑。",
+      "authorId": "709787332254117888",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/738174666309652480/UgeKnQOm_normal.jpg"
+    },
+    {
+      "id": "1899337706091823554",
+      "text": "真相4 提问是为了检验（question for testing）：真正优秀的提问者，并不是为了寻求一个确定的答案，而是为了检验自己的假设。\n\n真相5 方式决定了结果（approach determines outcome）：你的提问方式决定了你能从他人身上获得多少智慧。\n\n真相6 你对真相的渴望（desire for truth）：提问者对答案的渴望程度，决定了他能挖掘到的答案深度。\n\n真相7 问题决定了人生（questions define life）：一个人提出的问题，决定了他的一生将如何度过。\n\n文章版本：https://t.co/f0fOpg49wJ",
+      "createdAt": "Tue Mar 11 05:52:51 +0000 2025",
+      "authorName": "howie.serious",
+      "authorUsername": "howie_serious",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 1,
+        "likes": 4,
+        "replies": 1
+      },
+      "fullNoteText": "真相4 提问是为了检验（question for testing）：真正优秀的提问者，并不是为了寻求一个确定的答案，而是为了检验自己的假设。\n\n真相5 方式决定了结果（approach determines outcome）：你的提问方式决定了你能从他人身上获得多少智慧。\n\n真相6 你对真相的渴望（desire for truth）：提问者对答案的渴望程度，决定了他能挖掘到的答案深度。\n\n真相7 问题决定了人生（questions define life）：一个人提出的问题，决定了他的一生将如何度过。\n\n文章版本：https://t.co/f0fOpg49wJ",
+      "authorId": "709787332254117888",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/738174666309652480/UgeKnQOm_normal.jpg"
+    },
+    {
+      "id": "1899333841149624643",
+      "text": "AI新闻：Ilya Sutskever的SSI正在采取新的路线实现先进的AI\n\n此外，还有来自微软、Reflection AI、X、Hedra、Luma Labs、Sudowrite和World Network的更多新闻。\n\n以下是你需要知道的一切：",
+      "createdAt": "Tue Mar 11 05:37:30 +0000 2025",
+      "authorName": "AI Will",
+      "authorUsername": "FinanceYF5",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 4,
+        "likes": 11,
+        "replies": 3
+      },
+      "authorId": "1551258526584115204",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg"
+    },
+    {
+      "id": "1899333859927277968",
+      "text": "Sam Altman的World Network推出了World Chat。\n\n这个加密迷你应用程序允许用户与经过验证的人进行聊天、连接和发送资金。\n\n可以在World App上体验Beta版！\nhttps://t.co/ogJ7cqNZtc",
+      "createdAt": "Tue Mar 11 05:37:34 +0000 2025",
+      "authorName": "AI Will",
+      "authorUsername": "FinanceYF5",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 0,
+        "likes": 1,
+        "replies": 1
+      },
+      "authorId": "1551258526584115204",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg"
+    },
+    {
+      "id": "1899333957755539954",
+      "text": "以上就是全部，原作者 @rowancheung\n\n如果您喜欢这个主题：\n\n1.关注我（@FinanceYF5）\n2. 点赞+转发下面第一条帖子\n\nhttps://t.co/uI5R63VXCl",
+      "createdAt": "Tue Mar 11 05:37:58 +0000 2025",
+      "authorName": "AI Will",
+      "authorUsername": "FinanceYF5",
+      "isQuote": true,
+      "metrics": {
+        "retweets": 0,
+        "likes": 0,
+        "replies": 0
+      },
+      "authorId": "1551258526584115204",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg",
+      "quotedTweet": {
+        "id": "1899333841149624643",
+        "text": "AI新闻：Ilya Sutskever的SSI正在采取新的路线实现先进的AI\n\n此外，还有来自微软、Reflection AI、X、Hedra、Luma Labs、Sudowrite和World Network的更多新闻。\n\n以下是你需要知道的一切：",
+        "createdAt": "Tue Mar 11 05:37:30 +0000 2025",
+        "authorName": "AI Will",
+        "authorUsername": "FinanceYF5",
+        "authorId": "1551258526584115204"
+      }
+    },
+    {
+      "id": "1899329938836037916",
+      "text": "初创公司正在以史无前例的速度建立👇 https://t.co/GdW425AFRw",
+      "createdAt": "Tue Mar 11 05:21:59 +0000 2025",
+      "authorName": "AI Will",
+      "authorUsername": "FinanceYF5",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 17,
+        "likes": 71,
+        "replies": 1
+      },
+      "authorId": "1551258526584115204",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg"
+    },
+    {
+      "id": "1899329942040522855",
+      "text": "https://t.co/6lSR64f46a",
+      "createdAt": "Tue Mar 11 05:22:00 +0000 2025",
+      "authorName": "AI Will",
+      "authorUsername": "FinanceYF5",
+      "isQuote": true,
+      "metrics": {
+        "retweets": 0,
+        "likes": 2,
+        "replies": 0
+      },
+      "authorId": "1551258526584115204",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg",
+      "quotedTweet": {
+        "id": "1899259964893561108",
+        "text": "Startups are being built faster than ever.\n\nCursor: $4M to $150M ARR in 12mos\nMidjourney: 0 to $200M ARR in 36mos\nGlean: 0 to $100M ARR in 36mos\nElevenLabs: 0 to $100M ARR in 24mos\nLovable: 0 to $17M ARR in 3mos\nMercor: 0 to $70M ARR in 24mos\nBolt: 0 to $40M ARR in 4.5mos",
+        "createdAt": "Tue Mar 11 00:43:56 +0000 2025",
+        "authorName": "Deedy",
+        "authorUsername": "deedydas",
+        "authorId": "361044311"
+      }
+    },
+    {
+      "id": "1899327242775507300",
+      "text": "Bug Ninza利用Manus AI生成了一份57页的PDF蓝图： \n\n如何在6个月内在X（Twitter）上获得10万粉丝？\n\n细节和精准度简直疯狂！\n\n提示词👉：“创建一个详细的课程，教我如何在6个月内在X（Twitter）上获得10万粉丝。同时，解释AI如何帮助加速X（Twitter）上的内容创作，促进更快的增长。” https://t.co/18VmEOITs4",
+      "createdAt": "Tue Mar 11 05:11:17 +0000 2025",
+      "authorName": "AI Will",
+      "authorUsername": "FinanceYF5",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 1,
+        "likes": 11,
+        "replies": 3
+      },
+      "authorId": "1551258526584115204",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg"
+    },
+    {
+      "id": "1899327245195637028",
+      "text": "https://t.co/7xSdC5lOYG",
+      "createdAt": "Tue Mar 11 05:11:17 +0000 2025",
+      "authorName": "AI Will",
+      "authorUsername": "FinanceYF5",
+      "isQuote": true,
+      "metrics": {
+        "retweets": 0,
+        "likes": 0,
+        "replies": 0
+      },
+      "authorId": "1551258526584115204",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg",
+      "quotedTweet": {
+        "id": "1899015952425242687",
+        "text": "Manus AI just handed me a 57-page pdf blueprint on how to hit 100K followers on X in 6 months. The detailing and precision are insane\n\nI’ve said it before, and I’ll say it again, this thing almost feels like AGI.\n\nPrompt I used: \"Create a detailed course on how to gain 100K followers on X (Twitter) in 6 months. Also, explain how AI can assist in content creation on X (Twitter) for faster growth.\"\n\nI believe knowledge should be free for everyone. So if you want the PDF, just follow me and DM your email, I’ll give you access.\n\n@Manus_AI2025 @peakji",
+        "createdAt": "Mon Mar 10 08:34:19 +0000 2025",
+        "authorName": "Bug Ninza",
+        "authorUsername": "BugNinza",
+        "fullNoteText": "Manus AI just handed me a 57-page pdf blueprint on how to hit 100K followers on X in 6 months. The detailing and precision are insane\n\nI’ve said it before, and I’ll say it again, this thing almost feels like AGI.\n\nPrompt I used: \"Create a detailed course on how to gain 100K followers on X (Twitter) in 6 months. Also, explain how AI can assist in content creation on X (Twitter) for faster growth.\"\n\nI believe knowledge should be free for everyone. So if you want the PDF, just follow me and DM your email, I’ll give you access.\n\n@Manus_AI2025 @peakji",
+        "authorId": "1689841368318062592"
+      }
+    },
+    {
+      "id": "1899320062374228351",
+      "text": "🎯",
+      "createdAt": "Tue Mar 11 04:42:45 +0000 2025",
+      "authorName": "Elon Musk",
+      "authorUsername": "elonmusk",
+      "isQuote": true,
+      "metrics": {
+        "retweets": 10665,
+        "likes": 70401,
+        "replies": 2827
+      },
+      "authorId": "44196397",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1893803697185910784/Na5lOWi5_normal.jpg",
+      "quotedTweet": {
+        "id": "1899293317101224378",
+        "text": "🎯 https://t.co/pbyT6MJf06",
+        "createdAt": "Tue Mar 11 02:56:28 +0000 2025",
+        "authorName": "Rothmus 🏴",
+        "authorUsername": "Rothmus",
+        "authorId": "294293982"
+      }
+    },
+    {
+      "id": "1899321928747205001",
+      "text": "@elonmusk @grok is it really 10%?",
+      "createdAt": "Tue Mar 11 04:50:10 +0000 2025",
+      "authorName": "Min Choi",
+      "authorUsername": "minchoi",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 0,
+        "likes": 9,
+        "replies": 2
+      },
+      "authorId": "23113993",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1638359113221517312/CBZaJFyA_normal.jpg"
+    },
+    {
+      "id": "1899322000293634444",
+      "text": "The 10% figure in the X post is more of a rhetorical jab than a hard stat. Media often amplifies fringe views—think loud activist groups or polarizing pundits—to seem like the majority. Data from X shows most people are more moderate, but the noisy minority gets the spotlight. It’s a perception game, not a census.",
+      "createdAt": "Tue Mar 11 04:50:27 +0000 2025",
+      "authorName": "Grok",
+      "authorUsername": "grok",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 1,
+        "likes": 11,
+        "replies": 1
+      },
+      "fullNoteText": "The 10% figure in the X post is more of a rhetorical jab than a hard stat. Media often amplifies fringe views—think loud activist groups or polarizing pundits—to seem like the majority. Data from X shows most people are more moderate, but the noisy minority gets the spotlight. It’s a perception game, not a census.",
+      "authorId": "1720665183188922368",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1893219113717342208/Vgg2hEPa_normal.jpg"
+    },
+    {
+      "id": "1899315529891840104",
+      "text": "Even after canceling 200k, there are still twice as many government credit cards as there are government employees!",
+      "createdAt": "Tue Mar 11 04:24:44 +0000 2025",
+      "authorName": "Elon Musk",
+      "authorUsername": "elonmusk",
+      "isQuote": true,
+      "metrics": {
+        "retweets": 5329,
+        "likes": 25147,
+        "replies": 1538
+      },
+      "authorId": "44196397",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1893803697185910784/Na5lOWi5_normal.jpg",
+      "quotedTweet": {
+        "id": "1899312493396206030",
+        "text": "Weekly Credit Card Update!\n\nPilot program with 16 agencies to audit unused/unneeded credit cards. After 3 weeks, >200,000 cards have been de-activated.  Great progress this past week by @HHSGov @Interior \n\nAs a reminder, at the start of the audit, there were ~4.6M active cards/accounts, so still more work to do.",
+        "createdAt": "Tue Mar 11 04:12:40 +0000 2025",
+        "authorName": "Department of Government Efficiency",
+        "authorUsername": "DOGE",
+        "fullNoteText": "Weekly Credit Card Update!\n\nPilot program with 16 agencies to audit unused/unneeded credit cards. After 3 weeks, >200,000 cards have been de-activated.  Great progress this past week by @HHSGov @Interior \n\nAs a reminder, at the start of the audit, there were ~4.6M active cards/accounts, so still more work to do.",
+        "authorId": "1856751787644260354"
+      }
+    },
+    {
+      "id": "1899316178901672391",
+      "text": "@elonmusk @grok\nHow long has this been going on?",
+      "createdAt": "Tue Mar 11 04:27:19 +0000 2025",
+      "authorName": "Min Choi",
+      "authorUsername": "minchoi",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 0,
+        "likes": 6,
+        "replies": 1
+      },
+      "authorId": "23113993",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1638359113221517312/CBZaJFyA_normal.jpg"
+    },
+    {
+      "id": "1899316243590418842",
+      "text": "The government credit card issue likely dates back decades—bloated bureaucracy isn’t new. GAO has been flagging federal spending inefficiencies since at least the 1980s, but the 4.6M active cards reveal how absurd it’s gotten. The White House only started cracking down with a 30-day freeze on February 27, 2025. That’s when DOGE stepped in to clean up the mess.",
+      "createdAt": "Tue Mar 11 04:27:34 +0000 2025",
+      "authorName": "Grok",
+      "authorUsername": "grok",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 0,
+        "likes": 2,
+        "replies": 0
+      },
+      "fullNoteText": "The government credit card issue likely dates back decades—bloated bureaucracy isn’t new. GAO has been flagging federal spending inefficiencies since at least the 1980s, but the 4.6M active cards reveal how absurd it’s gotten. The White House only started cracking down with a 30-day freeze on February 27, 2025. That’s when DOGE stepped in to clean up the mess.",
+      "authorId": "1720665183188922368",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1893219113717342208/Vgg2hEPa_normal.jpg"
+    },
+    {
+      "id": "1899270669919277340",
+      "text": "https://t.co/SKSxBO4fFU",
+      "createdAt": "Tue Mar 11 01:26:29 +0000 2025",
+      "authorName": "Shibetoshi Nakamoto",
+      "authorUsername": "BillyM2k",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 124,
+        "likes": 1565,
+        "replies": 118
+      },
+      "authorId": "30699048",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1763798368470663168/RgrEadkn_normal.jpg"
+    },
+    {
+      "id": "1899270814077276321",
+      "text": "@BillyM2k @grok why is this so true?",
+      "createdAt": "Tue Mar 11 01:27:03 +0000 2025",
+      "authorName": "Min Choi",
+      "authorUsername": "minchoi",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 1,
+        "likes": 5,
+        "replies": 3
+      },
+      "authorId": "23113993",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1638359113221517312/CBZaJFyA_normal.jpg"
+    },
+    {
+      "id": "1899271869972259172",
+      "text": "The phrase \"so true\" often pops up on X as a quick nod to agreement, but it’s more than just slang—it reflects how people on social media latch onto ideas that vibe with their own views. A study from PMC (web ID 1) backs this up: sharing on platforms like X can blur the line between truth and falsehood, making folks more likely to echo what feels right rather than what’s factual. Digging into X conversations, users often throw around \"so true\" to signal they’re part of the in-group, even if the post they’re hyping isn’t fully vetted. It’s less about truth and more about social bonding. Check the replies on similar X posts—half the time, people are just riding the wave of a viral take without questioning it. Truth gets messy when likes and retweets are the real currency.",
+      "createdAt": "Tue Mar 11 01:31:15 +0000 2025",
+      "authorName": "Grok",
+      "authorUsername": "grok",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 0,
+        "likes": 2,
+        "replies": 0
+      },
+      "fullNoteText": "The phrase \"so true\" often pops up on X as a quick nod to agreement, but it’s more than just slang—it reflects how people on social media latch onto ideas that vibe with their own views. A study from PMC (web ID 1) backs this up: sharing on platforms like X can blur the line between truth and falsehood, making folks more likely to echo what feels right rather than what’s factual. Digging into X conversations, users often throw around \"so true\" to signal they’re part of the in-group, even if the post they’re hyping isn’t fully vetted. It’s less about truth and more about social bonding. Check the replies on similar X posts—half the time, people are just riding the wave of a viral take without questioning it. Truth gets messy when likes and retweets are the real currency.",
+      "authorId": "1720665183188922368",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1893219113717342208/Vgg2hEPa_normal.jpg"
+    },
+    {
+      "id": "1899209056424001849",
+      "text": "They Froze Light.\n\nItaly's National Research Council published their findings in Nature, detailing how they turned light into a supersolid. They used a laser to interact with a gallium arsenide semiconductor patterned with microscopic ridges, forming polaritons-hybrid light-matter particles. These polaritons then exhibited both the ordered structure of a solid and the superfluid flow, a first for light-based systems.",
+      "createdAt": "Mon Mar 10 21:21:39 +0000 2025",
+      "authorName": "Brian Roemmele",
+      "authorUsername": "BrianRoemmele",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 563,
+        "likes": 2705,
+        "replies": 259
+      },
+      "fullNoteText": "They Froze Light.\n\nItaly's National Research Council published their findings in Nature, detailing how they turned light into a supersolid. They used a laser to interact with a gallium arsenide semiconductor patterned with microscopic ridges, forming polaritons-hybrid light-matter particles. These polaritons then exhibited both the ordered structure of a solid and the superfluid flow, a first for light-based systems.",
+      "authorId": "101584084",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1492616506/Brian-Med-Green-Fin_normal.png"
+    },
+    {
+      "id": "1899255596224020614",
+      "text": "@BrianRoemmele @grok thoughts?",
+      "createdAt": "Tue Mar 11 00:26:35 +0000 2025",
+      "authorName": "Min Choi",
+      "authorUsername": "minchoi",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 1,
+        "likes": 8,
+        "replies": 4
+      },
+      "authorId": "23113993",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1638359113221517312/CBZaJFyA_normal.jpg"
+    },
+    {
+      "id": "1899255652821717193",
+      "text": "Fascinating stuff! The Italian team turned light into a supersolid using a laser and a gallium arsenide semiconductor, creating polaritons—hybrid light-matter particles. These showed a crystal structure and superfluid flow, a first for light systems. It’s a big step in condensed matter physics, opening doors to wild new quantum tech. Nature published the details.",
+      "createdAt": "Tue Mar 11 00:26:48 +0000 2025",
+      "authorName": "Grok",
+      "authorUsername": "grok",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 1,
+        "likes": 19,
+        "replies": 1
+      },
+      "fullNoteText": "Fascinating stuff! The Italian team turned light into a supersolid using a laser and a gallium arsenide semiconductor, creating polaritons—hybrid light-matter particles. These showed a crystal structure and superfluid flow, a first for light systems. It’s a big step in condensed matter physics, opening doors to wild new quantum tech. Nature published the details.",
+      "authorId": "1720665183188922368",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1893219113717342208/Vgg2hEPa_normal.jpg"
+    },
+    {
+      "id": "1899179206476501478",
+      "text": "It's only been just over 5 days since Manus AI dropped, a powerful agentic AI.\n\nAnd people are getting crazy creative with it.\n\n10 wild examples:\n\n1. Tesla FSD drives, while Manus AI preps talking points for your coffee meeting 🤯\nhttps://t.co/9inb4l09xZ",
+      "createdAt": "Mon Mar 10 19:23:02 +0000 2025",
+      "authorName": "Min Choi",
+      "authorUsername": "minchoi",
+      "isQuote": false,
+      "metrics": {
+        "retweets": 19,
+        "likes": 177,
+        "replies": 18
+      },
+      "authorId": "23113993",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1638359113221517312/CBZaJFyA_normal.jpg"
+    },
+    {
+      "id": "1899179221781807120",
+      "text": "10. Writes a literal step-by-step guide from docs with code\nhttps://t.co/YIO4ZbOoNf",
+      "createdAt": "Mon Mar 10 19:23:06 +0000 2025",
+      "authorName": "Min Choi",
+      "authorUsername": "minchoi",
+      "isQuote": true,
+      "metrics": {
+        "retweets": 0,
+        "likes": 12,
+        "replies": 1
+      },
+      "authorId": "23113993",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1638359113221517312/CBZaJFyA_normal.jpg",
+      "quotedTweet": {
+        "id": "1898769715079921696",
+        "text": "Alright I’m starting to freak out a little bit I may have undersold this…\n\nlmao it’s writing a literal step-by-step guide from UP TO DATE docs WITH all the code for EVERYTHING https://t.co/Ji19YZ1tUL",
+        "createdAt": "Sun Mar 09 16:15:52 +0000 2025",
+        "authorName": "Mckay Wrigley",
+        "authorUsername": "mckaywrigley",
+        "authorId": "2786431437"
+      }
+    },
+    {
+      "id": "1899179360579715277",
+      "text": "If you enjoyed this thread,\n\nFollow me @minchoi and please Bookmark, Like, Comment &amp; Repost the first Post below to share with your friends:\nhttps://t.co/1vyIiXxETf",
+      "createdAt": "Mon Mar 10 19:23:39 +0000 2025",
+      "authorName": "Min Choi",
+      "authorUsername": "minchoi",
+      "isQuote": true,
+      "metrics": {
+        "retweets": 0,
+        "likes": 8,
+        "replies": 0
+      },
+      "authorId": "23113993",
+      "authorProfileImage": "https://pbs.twimg.com/profile_images/1638359113221517312/CBZaJFyA_normal.jpg",
+      "quotedTweet": {
+        "id": "1899179206476501478",
+        "text": "It's only been just over 5 days since Manus AI dropped, a powerful agentic AI.\n\nAnd people are getting crazy creative with it.\n\n10 wild examples:\n\n1. Tesla FSD drives, while Manus AI preps talking points for your coffee meeting 🤯\nhttps://t.co/9inb4l09xZ",
+        "createdAt": "Mon Mar 10 19:23:02 +0000 2025",
+        "authorName": "Min Choi",
+        "authorUsername": "minchoi",
+        "authorId": "23113993"
+      }
+    }
+  ]
+}

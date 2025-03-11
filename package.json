@@ -1,0 +1,23 @@
+{
+  "name": "xlistautosummarizer",
+  "version": "1.0.0",
+  "description": "Summarize your X List into a daily report automatically",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@notionhq/client": "^2.2.16",
+    "axios": "^1.8.2",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "fs-extra": "^11.3.0",
+    "node-cron": "^3.0.3",
+    "openai": "^4.86.2",
+    "twitter-api-v2": "^1.20.2",
+    "winston": "^3.17.0"
+  }
+}

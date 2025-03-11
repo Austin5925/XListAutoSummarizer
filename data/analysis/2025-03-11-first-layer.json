@@ -1,0 +1,240 @@
+{
+  "savedAt": "2025-03-11T08:39:47.365Z",
+  "results": [
+    {
+      "relevant_tweets": [
+        {
+          "index": 1,
+          "summary": "Manus AI 发布仅 5 天，用户开始进行创意尝试，包括特斯拉 FSD 驾驶辅助和会议准备。",
+          "topic": "AI 新产品及应用",
+          "importance": 8,
+          "original_tweet": {
+            "id": "1899373710382899693",
+            "text": "Manus AI 发布才刚过 5 天，一个强大的代理 AI。\n\n而且大家开始用它进行疯狂的创意尝试。\n\n10 个疯狂的例子：\n\n1. 特斯拉 FSD 驾驶，同时 Manus AI 为你的咖啡会议准备要点 🤯 https://t.co/TrXxFLS60f",
+            "createdAt": "Tue Mar 11 08:15:55 +0000 2025",
+            "authorName": "AI Will",
+            "authorUsername": "FinanceYF5",
+            "isQuote": false,
+            "metrics": {
+              "retweets": 1,
+              "likes": 3,
+              "replies": 1
+            },
+            "authorId": "1551258526584115204",
+            "authorProfileImage": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg"
+          }
+        },
+        {
+          "index": 4,
+          "summary": "Manus AI 被用于创建视频游戏和预订假期等创新用例，展示其多样化潜力。",
+          "topic": "AI 新产品及应用",
+          "importance": 7,
+          "original_tweet": {
+            "id": "1899367652692529154",
+            "text": "Manus AI 正在接管互联网\n\n开发者们正在用它做一些令人惊讶的事情，比如创建视频游戏和预订假期\n\n7 个令人惊叹的使用案例：\n\n1. Deedy：在几分钟内进行股票和其他财务分析 https://t.co/bdABQOAKK0",
+            "createdAt": "Tue Mar 11 07:51:51 +0000 2025",
+            "authorName": "AI Will",
+            "authorUsername": "FinanceYF5",
+            "isQuote": false,
+            "metrics": {
+              "retweets": 0,
+              "likes": 9,
+              "replies": 2
+            },
+            "authorId": "1551258526584115204",
+            "authorProfileImage": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg"
+          }
+        },
+        {
+          "index": 11,
+          "summary": "ChatGPT 半年新增 14.1 亿访问量，领先全行业，展示 AI 应用的强者恒强趋势。",
+          "topic": "AI 行业趋势",
+          "importance": 9,
+          "original_tweet": {
+            "id": "1899344657387339887",
+            "text": "8、绝对增长榜\n\nChatGPT稳坐增长王座，半年新增14.1万万访问量，领先全行业。\n\n数据揭示二三梯队：Deepseek新增2.76万万，JanitorAI增加5409万，Perplexity增长4827万。Doubao以2566万增量实现从边缘到Top10的跨越。\n\n流量世界有其残酷逻辑：强者恒强，赢家通吃。ChatGPT一家增量超过其他所有应用总和，而其他选手仍在为百万级流量奋力厮杀。",
+            "createdAt": "Tue Mar 11 06:20:29 +0000 2025",
+            "authorName": "AI Will",
+            "authorUsername": "FinanceYF5",
+            "isQuote": false,
+            "metrics": {
+              "retweets": 0,
+              "likes": 2,
+              "replies": 1
+            },
+            "fullNoteText": "8、绝对增长榜\n\nChatGPT稳坐增长王座，半年新增14.1万万访问量，领先全行业。\n\n数据揭示二三梯队：Deepseek新增2.76万万，JanitorAI增加5409万，Perplexity增长4827万。Doubao以2566万增量实现从边缘到Top10的跨越。\n\n流量世界有其残酷逻辑：强者恒强，赢家通吃。ChatGPT一家增量超过其他所有应用总和，而其他选手仍在为百万级流量奋力厮杀。",
+            "authorId": "1551258526584115204",
+            "authorProfileImage": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg"
+          }
+        },
+        {
+          "index": 15,
+          "summary": "Ilya Sutskever 的 SSI 正在探索新路线以实现先进 AI，同时微软等公司也有相关动态。",
+          "topic": "AI 行业动态",
+          "importance": 8,
+          "original_tweet": {
+            "id": "1899333841149624643",
+            "text": "AI新闻：Ilya Sutskever的SSI正在采取新的路线实现先进的AI\n\n此外，还有来自微软、Reflection AI、X、Hedra、Luma Labs、Sudowrite和World Network的更多新闻。\n\n以下是你需要知道的一切：",
+            "createdAt": "Tue Mar 11 05:37:30 +0000 2025",
+            "authorName": "AI Will",
+            "authorUsername": "FinanceYF5",
+            "isQuote": false,
+            "metrics": {
+              "retweets": 4,
+              "likes": 11,
+              "replies": 3
+            },
+            "authorId": "1551258526584115204",
+            "authorProfileImage": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg"
+          }
+        },
+        {
+          "index": 16,
+          "summary": "Sam Altman 的 World Network 推出了加密聊天应用 World Chat，支持用户连接和交易。",
+          "topic": "AI 新产品",
+          "importance": 7,
+          "original_tweet": {
+            "id": "1899333859927277968",
+            "text": "Sam Altman的World Network推出了World Chat。\n\n这个加密迷你应用程序允许用户与经过验证的人进行聊天、连接和发送资金。\n\n可以在World App上体验Beta版！\nhttps://t.co/ogJ7cqNZtc",
+            "createdAt": "Tue Mar 11 05:37:34 +0000 2025",
+            "authorName": "AI Will",
+            "authorUsername": "FinanceYF5",
+            "isQuote": false,
+            "metrics": {
+              "retweets": 0,
+              "likes": 1,
+              "replies": 1
+            },
+            "authorId": "1551258526584115204",
+            "authorProfileImage": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg"
+          }
+        },
+        {
+          "index": 20,
+          "summary": "Bug Ninza 使用 Manus AI 生成了一份详细的蓝图，展示如何在 6 个月内通过 AI 加速内容创作，获得 10 万粉丝。",
+          "topic": "AI 应用案例",
+          "importance": 8,
+          "original_tweet": {
+            "id": "1899327242775507300",
+            "text": "Bug Ninza利用Manus AI生成了一份57页的PDF蓝图： \n\n如何在6个月内在X（Twitter）上获得10万粉丝？\n\n细节和精准度简直疯狂！\n\n提示词👉：“创建一个详细的课程，教我如何在6个月内在X（Twitter）上获得10万粉丝。同时，解释AI如何帮助加速X（Twitter）上的内容创作，促进更快的增长。” https://t.co/18VmEOITs4",
+            "createdAt": "Tue Mar 11 05:11:17 +0000 2025",
+            "authorName": "AI Will",
+            "authorUsername": "FinanceYF5",
+            "isQuote": false,
+            "metrics": {
+              "retweets": 1,
+              "likes": 11,
+              "replies": 3
+            },
+            "authorId": "1551258526584115204",
+            "authorProfileImage": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg"
+          }
+        }
+      ],
+      "topics": [
+        "AI 新产品及应用",
+        "AI 行业趋势",
+        "AI 行业动态",
+        "AI 应用案例"
+      ],
+      "overall_assessment": "这批推文中，Manus AI 和 ChatGPT 的相关内容展示了 AI 应用的多样性和行业趋势，Ilya Sutskever 和 Sam Altman 的动态则反映了行业领军人物的最新动作，具有较高的新闻价值。"
+    },
+    {
+      "relevant_tweets": [
+        {
+          "index": 7,
+          "summary": "Grok提到政府信用卡问题可能追溯到几十年前，白宫在2025年2月27日开始冻结信用卡使用，并由DOGE介入整顿。",
+          "topic": "AI与政府效率",
+          "importance": 7,
+          "original_tweet": {
+            "id": "1899316243590418842",
+            "text": "The government credit card issue likely dates back decades—bloated bureaucracy isn’t new. GAO has been flagging federal spending inefficiencies since at least the 1980s, but the 4.6M active cards reveal how absurd it’s gotten. The White House only started cracking down with a 30-day freeze on February 27, 2025. That’s when DOGE stepped in to clean up the mess.",
+            "createdAt": "Tue Mar 11 04:27:34 +0000 2025",
+            "authorName": "Grok",
+            "authorUsername": "grok",
+            "isQuote": false,
+            "metrics": {
+              "retweets": 0,
+              "likes": 2,
+              "replies": 0
+            },
+            "fullNoteText": "The government credit card issue likely dates back decades—bloated bureaucracy isn’t new. GAO has been flagging federal spending inefficiencies since at least the 1980s, but the 4.6M active cards reveal how absurd it’s gotten. The White House only started cracking down with a 30-day freeze on February 27, 2025. That’s when DOGE stepped in to clean up the mess.",
+            "authorId": "1720665183188922368",
+            "authorProfileImage": "https://pbs.twimg.com/profile_images/1893219113717342208/Vgg2hEPa_normal.jpg"
+          }
+        },
+        {
+          "index": 11,
+          "summary": "Brian Roemmele分享意大利国家研究委员会在《Nature》上发表的研究，展示如何将光转化为超固体，这可能推动量子技术的发展。",
+          "topic": "AI与量子物理",
+          "importance": 8,
+          "original_tweet": {
+            "id": "1899209056424001849",
+            "text": "They Froze Light.\n\nItaly's National Research Council published their findings in Nature, detailing how they turned light into a supersolid. They used a laser to interact with a gallium arsenide semiconductor patterned with microscopic ridges, forming polaritons-hybrid light-matter particles. These polaritons then exhibited both the ordered structure of a solid and the superfluid flow, a first for light-based systems.",
+            "createdAt": "Mon Mar 10 21:21:39 +0000 2025",
+            "authorName": "Brian Roemmele",
+            "authorUsername": "BrianRoemmele",
+            "isQuote": false,
+            "metrics": {
+              "retweets": 563,
+              "likes": 2705,
+              "replies": 259
+            },
+            "fullNoteText": "They Froze Light.\n\nItaly's National Research Council published their findings in Nature, detailing how they turned light into a supersolid. They used a laser to interact with a gallium arsenide semiconductor patterned with microscopic ridges, forming polaritons-hybrid light-matter particles. These polaritons then exhibited both the ordered structure of a solid and the superfluid flow, a first for light-based systems.",
+            "authorId": "101584084",
+            "authorProfileImage": "https://pbs.twimg.com/profile_images/1492616506/Brian-Med-Green-Fin_normal.png"
+          }
+        },
+        {
+          "index": 13,
+          "summary": "Grok进一步解释了意大利团队如何通过激光和半导体创造极性子，首次实现光系统中的晶体结构和超流动性。",
+          "topic": "AI与量子物理",
+          "importance": 8,
+          "original_tweet": {
+            "id": "1899255652821717193",
+            "text": "Fascinating stuff! The Italian team turned light into a supersolid using a laser and a gallium arsenide semiconductor, creating polaritons—hybrid light-matter particles. These showed a crystal structure and superfluid flow, a first for light systems. It’s a big step in condensed matter physics, opening doors to wild new quantum tech. Nature published the details.",
+            "createdAt": "Tue Mar 11 00:26:48 +0000 2025",
+            "authorName": "Grok",
+            "authorUsername": "grok",
+            "isQuote": false,
+            "metrics": {
+              "retweets": 1,
+              "likes": 19,
+              "replies": 1
+            },
+            "fullNoteText": "Fascinating stuff! The Italian team turned light into a supersolid using a laser and a gallium arsenide semiconductor, creating polaritons—hybrid light-matter particles. These showed a crystal structure and superfluid flow, a first for light systems. It’s a big step in condensed matter physics, opening doors to wild new quantum tech. Nature published the details.",
+            "authorId": "1720665183188922368",
+            "authorProfileImage": "https://pbs.twimg.com/profile_images/1893219113717342208/Vgg2hEPa_normal.jpg"
+          }
+        },
+        {
+          "index": 14,
+          "summary": "Min Choi提到新发布的Manus AI是一款强大的代理型AI，用户已经开始创造性地使用它，例如与Tesla FSD结合使用。",
+          "topic": "新AI产品",
+          "importance": 9,
+          "original_tweet": {
+            "id": "1899179206476501478",
+            "text": "It's only been just over 5 days since Manus AI dropped, a powerful agentic AI.\n\nAnd people are getting crazy creative with it.\n\n10 wild examples:\n\n1. Tesla FSD drives, while Manus AI preps talking points for your coffee meeting 🤯\nhttps://t.co/9inb4l09xZ",
+            "createdAt": "Mon Mar 10 19:23:02 +0000 2025",
+            "authorName": "Min Choi",
+            "authorUsername": "minchoi",
+            "isQuote": false,
+            "metrics": {
+              "retweets": 19,
+              "likes": 177,
+              "replies": 18
+            },
+            "authorId": "23113993",
+            "authorProfileImage": "https://pbs.twimg.com/profile_images/1638359113221517312/CBZaJFyA_normal.jpg"
+          }
+        }
+      ],
+      "topics": [
+        "AI与政府效率",
+        "AI与量子物理",
+        "新AI产品"
+      ],
+      "overall_assessment": "这批推文中包含多个与AI相关的热点信息，包括新产品Manus AI的应用场景、量子物理领域的突破性研究，以及AI在政府效率提升中的潜在作用。这些内容具有较高的新闻价值，适合纳入日报。"
+    }
+  ]
+}

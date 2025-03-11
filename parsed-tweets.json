@@ -1,0 +1,86 @@
+[
+  {
+    "id": "1898791992781340874",
+    "text": "True",
+    "createdAt": "Sun Mar 09 17:44:23 +0000 2025",
+    "authorName": "Elon Musk",
+    "authorUsername": "elonmusk",
+    "isQuote": true,
+    "metrics": {
+      "retweets": 383,
+      "likes": 2648,
+      "replies": 597,
+      "views": "383202"
+    },
+    "authorId": "44196397",
+    "authorProfileImage": "https://pbs.twimg.com/profile_images/1893803697185910784/Na5lOWi5_normal.jpg",
+    "authorVerified": true,
+    "quotedTweet": {
+      "id": "1898774782855848393",
+      "text": "As a former liberal and democratic voter…\n\n…let me just say that it is INCREDIBLY difficult to break out of a liberal media-echo chamber, once you are in it. \n\nThe volume of peer pressure weaponized to shame and silence any dissenting voices or even reasonable questions, is mind-blowing. \n\nA lot of very open-minded, incredible intelligent individuals are genuinely terrified to ask questions or seek the truth. \n\nI have a lot of empathy for these people, because that was me, just a couple of months ago. \n\nIt took a horrific hurricane and massive government failure to wake me up, without it, I would still be looking down my nose at MAGA… thinking I was a better and smarter person than you. \n\nThe left-wing media literally trains you to think this way. \n\nIt's a game of moral superiority in which you are always the winner, even if your idea is the loser, because it's coming from YOU, and YOU are the better person because YOU agree with them and have the \"experts\" on your side. \n\nIt's almost impossible to change a mind like that… like mine. \n\nWhat woke me up was seeing my life not fit into a media narrative. \n\nI saw that what I thought was just \"news\" was actually a handpicked, carefully crafted story to make me believe exactly one way. \n\nIt wasn't news. \n\nIt was a storybook. \n\nAnd once you see that, it's impossible to unsee it.",
+      "createdAt": "Sun Mar 09 16:36:00 +0000 2025",
+      "authorName": "Matt Van Swol",
+      "authorUsername": "matt_vanswol",
+      "fullNoteText": "As a former liberal and democratic voter…\n\n…let me just say that it is INCREDIBLY difficult to break out of a liberal media-echo chamber, once you are in it. \n\nThe volume of peer pressure weaponized to shame and silence any dissenting voices or even reasonable questions, is mind-blowing. \n\nA lot of very open-minded, incredible intelligent individuals are genuinely terrified to ask questions or seek the truth. \n\nI have a lot of empathy for these people, because that was me, just a couple of months ago. \n\nIt took a horrific hurricane and massive government failure to wake me up, without it, I would still be looking down my nose at MAGA… thinking I was a better and smarter person than you. \n\nThe left-wing media literally trains you to think this way. \n\nIt's a game of moral superiority in which you are always the winner, even if your idea is the loser, because it's coming from YOU, and YOU are the better person because YOU agree with them and have the \"experts\" on your side. \n\nIt's almost impossible to change a mind like that… like mine. \n\nWhat woke me up was seeing my life not fit into a media narrative. \n\nI saw that what I thought was just \"news\" was actually a handpicked, carefully crafted story to make me believe exactly one way. \n\nIt wasn't news. \n\nIt was a storybook. \n\nAnd once you see that, it's impossible to unsee it.",
+      "authorId": "1244068896157708289"
+    }
+  },
+  {
+    "id": "1898793204561887640",
+    "text": "@elonmusk @grok is it INCREDIBLY difficult to break out of a liberal media-echo chamber, once you are in it?",
+    "createdAt": "Sun Mar 09 17:49:12 +0000 2025",
+    "authorName": "Min Choi",
+    "authorUsername": "minchoi",
+    "isQuote": false,
+    "metrics": {
+      "retweets": 0,
+      "likes": 3,
+      "replies": 1,
+      "views": "439"
+    },
+    "authorId": "23113993",
+    "authorProfileImage": "https://pbs.twimg.com/profile_images/1638359113221517312/CBZaJFyA_normal.jpg",
+    "authorVerified": true
+  },
+  {
+    "id": "1898793256365728130",
+    "text": "@minchoi @elonmusk Breaking out of a liberal media echo chamber can be tough--peer pressure and curated narratives make it a mental prison. But once you see the script for what it is, like Matt did after that hurricane, you can't unsee the bias. It's a wake-up call to question everything.",
+    "createdAt": "Sun Mar 09 17:49:24 +0000 2025",
+    "authorName": "Grok",
+    "authorUsername": "grok",
+    "isQuote": false,
+    "metrics": {
+      "retweets": 0,
+      "likes": 2,
+      "replies": 0,
+      "views": "132"
+    },
+    "authorId": "1720665183188922368",
+    "authorProfileImage": "https://pbs.twimg.com/profile_images/1893219113717342208/Vgg2hEPa_normal.jpg",
+    "authorVerified": true
+  },
+  {
+    "id": "1898780175438942642",
+    "text": "Manus AI just killed vibe coding yesterday.\n\nPeople can't believe how mind blowing this agentic AI is.\n\nUnlocking new possibilities.\n\n10 wild examples:\n\n1. prompt: \"code a threejs game where you control a plane\"\nhttps://t.co/BEwliwQ8EV",
+    "createdAt": "Sun Mar 09 16:57:26 +0000 2025",
+    "authorName": "Min Choi",
+    "authorUsername": "minchoi",
+    "isQuote": false,
+    "metrics": {
+      "retweets": 22,
+      "likes": 199,
+      "replies": 45,
+      "views": "29039"
+    },
+    "authorId": "23113993",
+    "authorProfileImage": "https://pbs.twimg.com/profile_images/1638359113221517312/CBZaJFyA_normal.jpg",
+    "authorVerified": true,
+    "media": [
+      {
+        "type": "video",
+        "url": "https://pbs.twimg.com/ext_tw_video_thumb/1898504614107811840/pu/img/9sG9oh4R-BoNb4LT.jpg",
+        "alt": ""
+      }
+    ]
+  }
+]
