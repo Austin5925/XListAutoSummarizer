@@ -73,14 +73,17 @@ class TwitterService {
     try {
       logger.debug(`获取推文详情 (ID: ${tweetId})`);
 
-      // 实现速率限制：确保请求间隔至少为1秒
+      // 实现速率限制：确保请求间隔至少为2.5秒
       const now = Date.now();
       const timeSinceLastRequest = now - this.constructor.lastRequestTime;
+      const minRequestInterval = 2505; // 增加到2.5秒以避免429错误
 
-      if (timeSinceLastRequest < 1700) {
+      if (timeSinceLastRequest < minRequestInterval) {
         // 需要等待的时间
-        const delayNeeded = 1700 - timeSinceLastRequest;
-        logger.debug(`速率限制: 等待 ${delayNeeded}ms 后再次请求`);
+        const delayNeeded = minRequestInterval - timeSinceLastRequest;
+        logger.info(
+          `速率限制: 等待 ${delayNeeded}ms 后再次请求推文 ${tweetId}`
+        );
 
         // 等待所需时间
         await new Promise((resolve) => setTimeout(resolve, delayNeeded));
@@ -97,7 +100,38 @@ class TwitterService {
         headers: {
           apikey: this.apiKey,
         },
+        validateStatus: function (status) {
+          // 允许处理所有状态码
+          return true;
+        },
       });
+
+      // 处理429错误 - 如果遇到速率限制，等待并重试
+      if (response.status === 429) {
+        const retryAfter = response.headers["retry-after"]
+          ? parseInt(response.headers["retry-after"]) * 1000
+          : 60000; // 默认等待60秒
+
+        logger.warn(`遇到速率限制 (429)，将等待 ${retryAfter}ms 后重试`);
+
+        // 更新上次请求时间以反映更长的等待时间
+        this.constructor.lastRequestTime =
+          Date.now() + retryAfter - minRequestInterval;
+
+        // 等待指定时间
+        await new Promise((resolve) => setTimeout(resolve, retryAfter));
+
+        // 递归调用自身重试
+        return this.getTweetDetailWithThread(tweetId);
+      }
+
+      // 处理其他错误状态码
+      if (response.status !== 200) {
+        logger.error(
+          `获取推文详情失败 (ID: ${tweetId}): 状态码 ${response.status}`
+        );
+        return null;
+      }
 
       if (
         !response.data ||
