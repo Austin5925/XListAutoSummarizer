@@ -1,0 +1,538 @@
+{
+  "savedAt": "2025-03-13T10:01:21.283Z",
+  "results": [
+    {
+      "relevant_tweets": [
+        {
+          "index": 2,
+          "summary": "总结了OpenAI、LangChain、AutoGen、Hugging Face、LlamaIndex、Reworkd、Composio、MetaGPT等一周内的重要发布及进展，提供对AI代理领域动态的深入解读。",
+          "topic": "行业动态",
+          "importance": 8,
+          "original_tweet": {
+            "id": "1900108260679524585",
+            "conversationId": "1900108260679524585",
+            "fullText": "每个人都在谈论MCP，但这是AI代理领域的一个重要一周\n\nAdam Silverman总结了OpenAI、LangChain、AutoGen、Hugging Face、LlamaIndex、Reworkd、Composio、MetaGPT等发布的所有内容\n\n以下原文是你需要了解的一切，如何理解这些进展👇： https://t.co/NbVgYjRbwx",
+            "createdAt": "Thu Mar 13 08:54:46 +0000 2025",
+            "favoriteCount": 8,
+            "replyCount": 1,
+            "retweetCount": 1,
+            "quoteCount": 1,
+            "isReply": false,
+            "media": [
+              {
+                "type": "photo",
+                "url": "https://pbs.twimg.com/media/Gl6HvjBakAA0RO4.jpg"
+              }
+            ],
+            "user": {
+              "id": "1551258526584115204",
+              "name": "AI Will",
+              "screenName": "FinanceYF5",
+              "profileImageUrl": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg",
+              "verified": false
+            },
+            "viewCount": "3322",
+            "externalUrls": [],
+            "threadTexts": [
+              {
+                "id": "1900108264995516850",
+                "text": "1/\nOpenAI即将发布的代理定价已泄露，价格范围从每月2000美元到20000美元不等。  \n\n你愿意为一个24/7/365为你工作的代理支付2万美元吗？\nhttps://t.co/UcA80Uufgh"
+              },
+              {
+                "id": "1900108267822719089",
+                "text": "2/\n前DeepMind顶尖研究员成立了新创业公司，旨在构建超智能，从自主编码代理开始。🚨\n\n从Lightspeed、CRV、Sequoia、Alex Wang、Reid Hoffman筹集了1.3亿美元，估值5.55亿美元。\nhttps://t.co/iRT5648tDG"
+              },
+              {
+                "id": "1900108270448370079",
+                "text": "3/\n“Manus”在中国推出，自动化处理约50个任务，场景有些反乌托邦。\n\n比DeepSeek更精准。它可以同时执行SNS分析、金融交易、研究、采购等。🙌  \nhttps://t.co/yv6VtgQ7zM"
+              },
+              {
+                "id": "1900108273564738044",
+                "text": "4/\nAutoGen 0.4.8现在支持原生Ollama！\n\n不再需要解决方案—本地LLM变得更加容易。  \nhttps://t.co/DfJoJ00K7h"
+              },
+              {
+                "id": "1900108276362346906",
+                "text": "5/\nhuggingface 编写了一门关于构建代理的教育课程\n\n涵盖内容：\n➡️ LlamaIndex的组件  \n➡️ 执行RAG  \n➡️ 使用工具  \n➡️ 创建代理  \n➡️ 构建工作流\nhttps://t.co/JkmnYJiSCe"
+              },
+              {
+                "id": "1900108278925058375",
+                "text": "6/\n全栈代理开发教程\n\n使用这本全面的指南构建强大的端到端代理应用，展示了LangGraph和CopilotKit的集成。\n\n主要特点：\n\n- CoAgent函数调用  \n- 全栈实现  \n- UI开发\nhttps://t.co/ACUX5lW5KX"
+              },
+              {
+                "id": "1900108281659744543",
+                "text": "7/\n3月11日，ReworkdAI 正式推出自助服务，并在Product Hunt上线！👏  \nhttps://t.co/MwhfFDuEQJ"
+              },
+              {
+                "id": "1900108284134306086",
+                "text": "8/\n本周，大家在v0、Lovable、bolt和Replit上构建了令人惊叹的项目。\nhttps://t.co/iFVOF51xMC"
+              },
+              {
+                "id": "1900108286843904163",
+                "text": "9/\nOpera刚刚发布了浏览器操作AI代理🌐\n\n这是一个自主浏览器AI代理，可以执行你可能觉得太复杂或太无聊的任务。  \nhttps://t.co/bcCPWg6zIM"
+              },
+              {
+                "id": "1900108289570152919",
+                "text": "10/\nArcher：在你的Slack工作区中由LangChainAI、TryArcade 和 modal_labs 构建的AI助手\n\n• 阅读并审查PR  \n• 草拟并发送电子邮件  \n• 查找时间并安排事件  \n• 爬取网站进行研究\nhttps://t.co/245BygIjyt"
+              },
+              {
+                "id": "1900108292300693723",
+                "text": "11/\nCamelAIOrg 提供了一套很棒的工具来封装你的LLM创建代理，但具备观察和研究代理反应的功能👏  \nhttps://t.co/mkMEEWA5Ll"
+              },
+              {
+                "id": "1900108295219929367",
+                "text": "12/\npotpiedotai 制作了一个代理COSS公司市场地图，并按类别对它们进行了分类。  \nhttps://t.co/zUDRCHDwdM"
+              },
+              {
+                "id": "1900108300995236040",
+                "text": "13/\nKaranVaidya6 和 composiohq 构建了最大的完全托管MCP服务器源，并带有身份验证\n\n现在你可以将应用程序集成到cursor_ai、windsurf_ai 或 AnthropicAI 的Claude桌面，而无需处理基础设施、可靠性或身份验证问题。\nhttps://t.co/b1BXAvw3oA"
+              },
+              {
+                "id": "1900108305843773545",
+                "text": "14/\n20个月：0→7篇论文（其中2篇ICLR口头报告）和40+机构合作。\n\nMetaGPT_ 正在为明天的代理构建开源基础。\nhttps://t.co/TtozhvK7M0"
+              },
+              {
+                "id": "1900108309589614773",
+                "text": "15/\n“构建AI代理并连接到100,000+个API，使用Postman的AI代理构建器。\n\n它有一个拖放式的视觉界面，无需代码即可构建代理工作流。”  \nhttps://t.co/JplQUFb8Im"
+              },
+              {
+                "id": "1900108313414553612",
+                "text": "16/\nrajammanabrolu 分享了他的开源讲义、作业和课程项目，去年在UCSD CSE教授AI代理研究生课程时使用。\nhttps://t.co/DgEJUBLR1c"
+              },
+              {
+                "id": "1900108316837032036",
+                "text": "17/\nMaxBrodeurUrbas 展示了一个gumloop_ai 代理，监控每周90k条消息  \n\nGPT监控我所有的聊天  \n- 阅读每个对话 + 分析用户投诉  \n- 每天向我们的团队发送关于显著模式的报告\nhttps://t.co/DJwEY43Bzb"
+              },
+              {
+                "id": "1900108320377283042",
+                "text": "18/\nturungkadircan 使用Langgraph的预构建群体代理、人的干预（中断）和LangGraph的React钩子构建了一个演示——它使复杂的工作流变得轻松。\n\nhttps://t.co/BxphjFrLgT"
+              },
+              {
+                "id": "1900108324013826334",
+                "text": "19/\nCloudflare刚刚发布了一个AI代理框架，用于构建能够保持状态、执行任务、浏览网页并实时调用AI模型的AI代理。🙌  \nhttps://t.co/hEvEe5LSJ1"
+              },
+              {
+                "id": "1900108327306354985",
+                "text": "20/\n个人AI代理思维导图，PratikKadam_ 的多代理半端项目。\n  \n技术栈：\n\n- Python（Langchain和PydanticAI）  \n- Supabase作为RAG和记忆的数据库\nhttps://t.co/nKX4aIwCGH"
+              },
+              {
+                "id": "1900108330649215238",
+                "text": "21/\nvixclotet 推出了Influsfera：用一个点击追踪你的竞争对手。\n\n粘贴你的登录页面URL，立即研究你的竞争对手的社交、定价、合作伙伴关系、产品等，并提供详细的报告，告诉你哪些有效。\nhttps://t.co/Tj7dTk8fhO"
+              },
+              {
+                "id": "1900108334243733682",
+                "text": "22/\nleerob 分享了三个你应该查看的开源模板：\n\n1. 让AI创建一个部署并让用户“领取”  \n2. 带有代码生成/执行的AI聊天机器人  \n3. Slackbot与工具调用\nhttps://t.co/oDKO94l9d8"
+              },
+              {
+                "id": "1900108337603371353",
+                "text": "23/\n构建一个逐步的代理性纠正RAG，akshay_pachaar：\n\n- 它可以搜索你的文档  \n- 如果需要，回退到网页搜索\nhttps://t.co/vofdLvu2j7"
+              },
+              {
+                "id": "1900108341004951962",
+                "text": "25/\nrincidium 构建了“写作光标”，名为Lucid✨\n\n• 以思维的速度写作  \n• 从任何地方提取上下文  \n• 聊天+深入研究\nhttps://t.co/aDKlYeX1GJ"
+              },
+              {
+                "id": "1900109556015128958",
+                "text": "26/\n\nKrishRShah 和团队制作了一个代理，生成3blue1brown 风格的视频，涵盖任何主题。\nhttps://t.co/s69FYrqpmF"
+              },
+              {
+                "id": "1900109559827751190",
+                "text": "27/\nPratikKadam_ AI代理技术栈\n\n• 无代码：n8n  \n• 爬虫：Firecrawl  \n• 云服务提供商：GCP  \n• 数据库：Supabase  \n• 部署：Docker  \n• 向量存储：Pinecone  \n• 模型路由：Openrouter  \n• 代理可观察性：AgentOpsAI\n• 代理协调：Langgraph  \n• 基础模型：主要是GPT-4o-mini…"
+              },
+              {
+                "id": "1900109562268496251",
+                "text": "28/\nReplit AI代理v2使用Claude 3.7 Sonnet实时构建和动态渲染应用程序。👏  \n\nhttps://t.co/lI9RhZziYp"
+              },
+              {
+                "id": "1900109565095797250",
+                "text": "29/\nsafwaankay 制作了一个AI代理，帮助你创建转换率高的静态图像广告\n\n它的工作原理是：  \n• 输入产品URL  \n• 选择一个验证过的模板  \n• 我们的AI代理根据你的品牌量身定制（不做作）\nhttps://t.co/QnVcRgMXBQ"
+              },
+              {
+                "id": "1900109567696252995",
+                "text": "30/\n使用文件系统MCP组织philippe__page 的桌面的AI代理快速演示💻\nhttps://t.co/p3PJ8dvzPK"
+              },
+              {
+                "id": "1900109570426757263",
+                "text": "31/ \n代理框架控制与智能（Arklex图表）🙌\n\nhttps://t.co/IiGrDbrbxc"
+              }
+            ],
+            "fullThreadText": "每个人都在谈论MCP，但这是AI代理领域的一个重要一周\n\nAdam Silverman总结了OpenAI、LangChain、AutoGen、Hugging Face、LlamaIndex、Reworkd、Composio、MetaGPT等发布的所有内容\n\n以下原文是你需要了解的一切，如何理解这些进展👇： https://t.co/NbVgYjRbwx\n\n1/\nOpenAI即将发布的代理定价已泄露，价格范围从每月2000美元到20000美元不等。  \n\n你愿意为一个24/7/365为你工作的代理支付2万美元吗？\nhttps://t.co/UcA80Uufgh\n\n2/\n前DeepMind顶尖研究员成立了新创业公司，旨在构建超智能，从自主编码代理开始。🚨\n\n从Lightspeed、CRV、Sequoia、Alex Wang、Reid Hoffman筹集了1.3亿美元，估值5.55亿美元。\nhttps://t.co/iRT5648tDG\n\n3/\n“Manus”在中国推出，自动化处理约50个任务，场景有些反乌托邦。\n\n比DeepSeek更精准。它可以同时执行SNS分析、金融交易、研究、采购等。🙌  \nhttps://t.co/yv6VtgQ7zM\n\n4/\nAutoGen 0.4.8现在支持原生Ollama！\n\n不再需要解决方案—本地LLM变得更加容易。  \nhttps://t.co/DfJoJ00K7h\n\n5/\nhuggingface 编写了一门关于构建代理的教育课程\n\n涵盖内容：\n➡️ LlamaIndex的组件  \n➡️ 执行RAG  \n➡️ 使用工具  \n➡️ 创建代理  \n➡️ 构建工作流\nhttps://t.co/JkmnYJiSCe\n\n6/\n全栈代理开发教程\n\n使用这本全面的指南构建强大的端到端代理应用，展示了LangGraph和CopilotKit的集成。\n\n主要特点：\n\n- CoAgent函数调用  \n- 全栈实现  \n- UI开发\nhttps://t.co/ACUX5lW5KX\n\n7/\n3月11日，ReworkdAI 正式推出自助服务，并在Product Hunt上线！👏  \nhttps://t.co/MwhfFDuEQJ\n\n8/\n本周，大家在v0、Lovable、bolt和Replit上构建了令人惊叹的项目。\nhttps://t.co/iFVOF51xMC\n\n9/\nOpera刚刚发布了浏览器操作AI代理🌐\n\n这是一个自主浏览器AI代理，可以执行你可能觉得太复杂或太无聊的任务。  \nhttps://t.co/bcCPWg6zIM\n\n10/\nArcher：在你的Slack工作区中由LangChainAI、TryArcade 和 modal_labs 构建的AI助手\n\n• 阅读并审查PR  \n• 草拟并发送电子邮件  \n• 查找时间并安排事件  \n• 爬取网站进行研究\nhttps://t.co/245BygIjyt\n\n11/\nCamelAIOrg 提供了一套很棒的工具来封装你的LLM创建代理，但具备观察和研究代理反应的功能👏  \nhttps://t.co/mkMEEWA5Ll\n\n12/\npotpiedotai 制作了一个代理COSS公司市场地图，并按类别对它们进行了分类。  \nhttps://t.co/zUDRCHDwdM\n\n13/\nKaranVaidya6 和 composiohq 构建了最大的完全托管MCP服务器源，并带有身份验证\n\n现在你可以将应用程序集成到cursor_ai、windsurf_ai 或 AnthropicAI 的Claude桌面，而无需处理基础设施、可靠性或身份验证问题。\nhttps://t.co/b1BXAvw3oA\n\n14/\n20个月：0→7篇论文（其中2篇ICLR口头报告）和40+机构合作。\n\nMetaGPT_ 正在为明天的代理构建开源基础。\nhttps://t.co/TtozhvK7M0\n\n15/\n“构建AI代理并连接到100,000+个API，使用Postman的AI代理构建器。\n\n它有一个拖放式的视觉界面，无需代码即可构建代理工作流。”  \nhttps://t.co/JplQUFb8Im\n\n16/\nrajammanabrolu 分享了他的开源讲义、作业和课程项目，去年在UCSD CSE教授AI代理研究生课程时使用。\nhttps://t.co/DgEJUBLR1c\n\n17/\nMaxBrodeurUrbas 展示了一个gumloop_ai 代理，监控每周90k条消息  \n\nGPT监控我所有的聊天  \n- 阅读每个对话 + 分析用户投诉  \n- 每天向我们的团队发送关于显著模式的报告\nhttps://t.co/DJwEY43Bzb\n\n18/\nturungkadircan 使用Langgraph的预构建群体代理、人的干预（中断）和LangGraph的React钩子构建了一个演示——它使复杂的工作流变得轻松。\n\nhttps://t.co/BxphjFrLgT\n\n19/\nCloudflare刚刚发布了一个AI代理框架，用于构建能够保持状态、执行任务、浏览网页并实时调用AI模型的AI代理。🙌  \nhttps://t.co/hEvEe5LSJ1\n\n20/\n个人AI代理思维导图，PratikKadam_ 的多代理半端项目。\n  \n技术栈：\n\n- Python（Langchain和PydanticAI）  \n- Supabase作为RAG和记忆的数据库\nhttps://t.co/nKX4aIwCGH\n\n21/\nvixclotet 推出了Influsfera：用一个点击追踪你的竞争对手。\n\n粘贴你的登录页面URL，立即研究你的竞争对手的社交、定价、合作伙伴关系、产品等，并提供详细的报告，告诉你哪些有效。\nhttps://t.co/Tj7dTk8fhO\n\n22/\nleerob 分享了三个你应该查看的开源模板：\n\n1. 让AI创建一个部署并让用户“领取”  \n2. 带有代码生成/执行的AI聊天机器人  \n3. Slackbot与工具调用\nhttps://t.co/oDKO94l9d8\n\n23/\n构建一个逐步的代理性纠正RAG，akshay_pachaar：\n\n- 它可以搜索你的文档  \n- 如果需要，回退到网页搜索\nhttps://t.co/vofdLvu2j7\n\n25/\nrincidium 构建了“写作光标”，名为Lucid✨\n\n• 以思维的速度写作  \n• 从任何地方提取上下文  \n• 聊天+深入研究\nhttps://t.co/aDKlYeX1GJ\n\n26/\n\nKrishRShah 和团队制作了一个代理，生成3blue1brown 风格的视频，涵盖任何主题。\nhttps://t.co/s69FYrqpmF\n\n27/\nPratikKadam_ AI代理技术栈\n\n• 无代码：n8n  \n• 爬虫：Firecrawl  \n• 云服务提供商：GCP  \n• 数据库：Supabase  \n• 部署：Docker  \n• 向量存储：Pinecone  \n• 模型路由：Openrouter  \n• 代理可观察性：AgentOpsAI\n• 代理协调：Langgraph  \n• 基础模型：主要是GPT-4o-mini…\n\n28/\nReplit AI代理v2使用Claude 3.7 Sonnet实时构建和动态渲染应用程序。👏  \n\nhttps://t.co/lI9RhZziYp\n\n29/\nsafwaankay 制作了一个AI代理，帮助你创建转换率高的静态图像广告\n\n它的工作原理是：  \n• 输入产品URL  \n• 选择一个验证过的模板  \n• 我们的AI代理根据你的品牌量身定制（不做作）\nhttps://t.co/QnVcRgMXBQ\n\n30/\n使用文件系统MCP组织philippe__page 的桌面的AI代理快速演示💻\nhttps://t.co/p3PJ8dvzPK\n\n31/ \n代理框架控制与智能（Arklex图表）🙌\n\nhttps://t.co/IiGrDbrbxc",
+            "allMediaUrls": [
+              "https://pbs.twimg.com/media/Gl6HvjBakAA0RO4.jpg"
+            ]
+          }
+        },
+        {
+          "index": 3,
+          "summary": "报道关于mikefutia开发的一个利用AI自动化工具在X平台上抓取lmsqueezy用户投诉的实践案例，展示了AI在自动化数据抓取和监控方面的应用。",
+          "topic": "产品应用",
+          "importance": 5,
+          "original_tweet": {
+            "id": "1900109572901396588",
+            "conversationId": "1900108260679524585",
+            "fullText": "32/ \n\nmikefutia 创建了一个AI自动化工具，用于抓取X平台上所有关于lmsqueezy的用户投诉，使用了gumloop_ai 和 apify。\nhttps://t.co/eTmUFXdL8F",
+            "createdAt": "Thu Mar 13 08:59:59 +0000 2025",
+            "favoriteCount": 0,
+            "replyCount": 1,
+            "retweetCount": 0,
+            "quoteCount": 0,
+            "isReply": true,
+            "inReplyToStatusId": "1900109570426757263",
+            "inReplyToUserId": "1551258526584115204",
+            "media": [],
+            "user": {
+              "id": "1551258526584115204",
+              "name": "AI Will",
+              "screenName": "FinanceYF5",
+              "profileImageUrl": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg",
+              "verified": false
+            },
+            "viewCount": "1470",
+            "externalUrls": [
+              "https://x.com/mikefutia/status/1896584962364653579"
+            ]
+          }
+        },
+        {
+          "index": 7,
+          "summary": "宣布Google DeepMind发布Gemma 3，一款可以在单个GPU或TPU上运行的强大AI，这标志着在高效AI实现上的一大突破。",
+          "topic": "重大产品更新",
+          "importance": 9,
+          "original_tweet": {
+            "id": "1900103295399858366",
+            "conversationId": "1900103295399858366",
+            "fullText": "Google DeepMind刚刚发布了Gemma 3，这是一个重大突破。\n\n这是你可以在单个GPU或TPU上运行的最强大的AI。\n\n这意味着快速、高效的AI，适用于从笔记本电脑到高端工作站，无需昂贵的云端设置。\n\n以下是为什么每个人都在谈论Gemma 3 ⬇️ https://t.co/vRLNC326ix",
+            "createdAt": "Thu Mar 13 08:35:02 +0000 2025",
+            "favoriteCount": 25,
+            "replyCount": 1,
+            "retweetCount": 7,
+            "quoteCount": 1,
+            "isReply": false,
+            "media": [
+              {
+                "type": "photo",
+                "url": "https://pbs.twimg.com/media/Gl6E7t6bMAADifT.jpg"
+              }
+            ],
+            "user": {
+              "id": "1551258526584115204",
+              "name": "AI Will",
+              "screenName": "FinanceYF5",
+              "profileImageUrl": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg",
+              "verified": false
+            },
+            "viewCount": "6268",
+            "externalUrls": [],
+            "threadTexts": [
+              {
+                "id": "1900103298817933764",
+                "text": "为什么Gemma 3是一个游戏改变者 https://t.co/4MECI4eNan"
+              },
+              {
+                "id": "1900103302022681035",
+                "text": "如何比较？  \n\n大多数如此强大的AI模型需要巨大的云服务器和数十个GPU。\n\n但Gemma 3 27B仅需一个GPU即可运行。\n\n做个对比：  \n\n💥 Mistral Large 和 Llama 3 405B需要最多32个GPU才能达到类似性能。  \n\n这意味着更低的成本、更高的灵活性以及更好的开发者和企业访问性。"
+              },
+              {
+                "id": "1900103304589217848",
+                "text": "安全为先：打造负责任的AI\n\nAI在快速发展，安全至关重要。\n🔒 严格的安全测试 – 防止误用。\n✅ 精细调整的安全响应 – 符合伦理AI准则。\n🛡️ ShieldGemma 2 – 一款内置的AI工具，实时过滤有害或不安全的图像内容。"
+              },
+              {
+                "id": "1900103307043234167",
+                "text": "如何开始：  \n💻 即时试用 – 在Google AI Studio运行（无需设置）。  \n📥 下载 – 可在Hugging Face、Kaggle和Ollama上获取。  \n🛠️ 自定义和微调 – 支持PyTorch、JAX、UnSloth等。  \n☁️ 在任何地方部署 – 使用Vertex AI、Cloud Run或NVIDIA GPU。"
+              },
+              {
+                "id": "1900103309681451262",
+                "text": "🎓 对于研究人员 – Google为学术项目提供10,000美元的云端积分。\n\n凭借超过1亿次下载和超过60,000个社区创建的模型，Gemma 3是一个庞大的开源AI运动的一部分。"
+              },
+              {
+                "id": "1900103311958958411",
+                "text": "阅读公告：\nhttps://t.co/YsrnrtqhlA"
+              },
+              {
+                "id": "1900103536220004807",
+                "text": "以上就是全部，原作者 @minchoi\n\n如果您喜欢这个主题：\n\n1.关注我（@FinanceYF5）\n2. 点赞+转发下面第一条帖子\n\nhttps://t.co/HFUaopvXyQ"
+              }
+            ],
+            "fullThreadText": "Google DeepMind刚刚发布了Gemma 3，这是一个重大突破。\n\n这是你可以在单个GPU或TPU上运行的最强大的AI。\n\n这意味着快速、高效的AI，适用于从笔记本电脑到高端工作站，无需昂贵的云端设置。\n\n以下是为什么每个人都在谈论Gemma 3 ⬇️ https://t.co/vRLNC326ix\n\n为什么Gemma 3是一个游戏改变者 https://t.co/4MECI4eNan\n\n如何比较？  \n\n大多数如此强大的AI模型需要巨大的云服务器和数十个GPU。\n\n但Gemma 3 27B仅需一个GPU即可运行。\n\n做个对比：  \n\n💥 Mistral Large 和 Llama 3 405B需要最多32个GPU才能达到类似性能。  \n\n这意味着更低的成本、更高的灵活性以及更好的开发者和企业访问性。\n\n安全为先：打造负责任的AI\n\nAI在快速发展，安全至关重要。\n🔒 严格的安全测试 – 防止误用。\n✅ 精细调整的安全响应 – 符合伦理AI准则。\n🛡️ ShieldGemma 2 – 一款内置的AI工具，实时过滤有害或不安全的图像内容。\n\n如何开始：  \n💻 即时试用 – 在Google AI Studio运行（无需设置）。  \n📥 下载 – 可在Hugging Face、Kaggle和Ollama上获取。  \n🛠️ 自定义和微调 – 支持PyTorch、JAX、UnSloth等。  \n☁️ 在任何地方部署 – 使用Vertex AI、Cloud Run或NVIDIA GPU。\n\n🎓 对于研究人员 – Google为学术项目提供10,000美元的云端积分。\n\n凭借超过1亿次下载和超过60,000个社区创建的模型，Gemma 3是一个庞大的开源AI运动的一部分。\n\n阅读公告：\nhttps://t.co/YsrnrtqhlA\n\n以上就是全部，原作者 @minchoi\n\n如果您喜欢这个主题：\n\n1.关注我（@FinanceYF5）\n2. 点赞+转发下面第一条帖子\n\nhttps://t.co/HFUaopvXyQ",
+            "allMediaUrls": [
+              "https://pbs.twimg.com/media/Gl6E7t6bMAADifT.jpg"
+            ]
+          }
+        },
+        {
+          "index": 10,
+          "summary": "讨论AI编程的发展及其对无代码时代的推动，指出非技术人员构建软件的可能性及未来开发者的转型趋势，同时列举了19个AI编程代理工具。",
+          "topic": "技术趋势",
+          "importance": 7,
+          "original_tweet": {
+            "id": "1900092501014278173",
+            "conversationId": "1900092501014278173",
+            "fullText": "AI 编程是新的无代码！这已经是事实。\n\n非技术创始人、设计师、营销人员和任何人现在都可以构建软件。\n\n零门槛！没有限制！超级便宜！\n\n但复杂的应用程序仍然需要真正的开发人员，AI 在2030年之前不会取代他们。\n\n19个AI编程代理（适用于非编码者）：\n\nJohn Rush原文👇",
+            "createdAt": "Thu Mar 13 07:52:08 +0000 2025",
+            "favoriteCount": 52,
+            "replyCount": 1,
+            "retweetCount": 19,
+            "quoteCount": 1,
+            "isReply": false,
+            "media": [],
+            "user": {
+              "id": "1551258526584115204",
+              "name": "AI Will",
+              "screenName": "FinanceYF5",
+              "profileImageUrl": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg",
+              "verified": false
+            },
+            "viewCount": "8596",
+            "externalUrls": []
+          }
+        },
+        {
+          "index": 14,
+          "summary": "介绍siddharth ahuja开发的MCP工具，允许Claude与Blender对话，展示了通过简单提示生成3D场景的能力，预示着视频创作自动化新进展。",
+          "topic": "产品创新",
+          "importance": 8,
+          "original_tweet": {
+            "id": "1900082404645130695",
+            "conversationId": "1900082404645130695",
+            "fullText": "🧩 siddharth ahuja 建立了一个MCP，让Claude可以直接与Blender对话。它可以帮助你仅通过提示创建美丽的3D场景！\n\n这是他通过几句话创建“低多边形龙守护宝藏”场景的演示👇 https://t.co/Z9LQtBx6dW",
+            "createdAt": "Thu Mar 13 07:12:01 +0000 2025",
+            "favoriteCount": 2,
+            "replyCount": 1,
+            "retweetCount": 1,
+            "quoteCount": 0,
+            "isReply": false,
+            "media": [
+              {
+                "type": "video",
+                "url": "https://pbs.twimg.com/ext_tw_video_thumb/1900082121890287616/pu/img/mKwJwrOjeYxq1dLK.jpg",
+                "videoUrl": "https://video.twimg.com/ext_tw_video/1900082121890287616/pu/vid/avc1/1280x720/l8cbjayzHpMqUdhK.mp4?tag=12"
+              }
+            ],
+            "user": {
+              "id": "1551258526584115204",
+              "name": "AI Will",
+              "screenName": "FinanceYF5",
+              "profileImageUrl": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg",
+              "verified": false
+            },
+            "viewCount": "2183",
+            "externalUrls": []
+          }
+        },
+        {
+          "index": 16,
+          "summary": "OpenAI发布Operator Update公告，宣布该服务现已在欧盟、瑞士、挪威、列支敦士登和冰岛对所有Pro用户开放，反映了产品区域扩展的重要信息。",
+          "topic": "产品更新",
+          "importance": 8,
+          "original_tweet": {
+            "id": "1900064750878548418",
+            "conversationId": "1900064750878548418",
+            "fullText": "📢 Operator Update\n\nIt's now available to all Pro users in the EU, Switzerland, Norway, Liechtenstein &amp; Iceland.",
+            "createdAt": "Thu Mar 13 06:01:52 +0000 2025",
+            "favoriteCount": 1096,
+            "replyCount": 245,
+            "retweetCount": 90,
+            "quoteCount": 25,
+            "isReply": false,
+            "media": [],
+            "user": {
+              "id": "4398626122",
+              "name": "OpenAI",
+              "screenName": "OpenAI",
+              "profileImageUrl": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+              "verified": false
+            },
+            "viewCount": "165978",
+            "externalUrls": []
+          }
+        }
+      ],
+      "topics": [
+        "行业动态",
+        "产品应用",
+        "重大产品更新",
+        "技术趋势",
+        "产品创新",
+        "产品更新"
+      ],
+      "overall_assessment": "这批推文涵盖了AI领域的多个方面，包括重大产品更新、技术应用创新以及行业动态，均具有一定的新闻价值和信息深度，适合纳入每日新闻摘要。"
+    },
+    {
+      "relevant_tweets": [
+        {
+          "index": 1,
+          "summary": "Demis Hassabis 分享 Sundar Pichai 宣布 Gemma 3——一个高效能开源模型系列的消息，强调最大的27B模型可在单个H100 GPU上运行。",
+          "topic": "AI 新产品/技术更新",
+          "importance": 8,
+          "original_tweet": {
+            "id": "1900050419277025739",
+            "conversationId": "1900050419277025739",
+            "fullText": "RT @sundarpichai: Gemma 3 is here! Our new open models are incredibly efficient - the largest 27B model runs on just one H100 GPU. You'd ne…",
+            "createdAt": "Thu Mar 13 05:04:55 +0000 2025",
+            "favoriteCount": 0,
+            "replyCount": 0,
+            "retweetCount": 758,
+            "quoteCount": 0,
+            "isReply": false,
+            "media": [],
+            "user": {
+              "id": "1482581556",
+              "name": "Demis Hassabis",
+              "screenName": "demishassabis",
+              "profileImageUrl": "https://pbs.twimg.com/profile_images/691700243809718272/z7XZUARB_normal.jpg",
+              "verified": false
+            },
+            "externalUrls": []
+          }
+        },
+        {
+          "index": 5,
+          "summary": "op7418 介绍谷歌 AI Studio 的新功能：现在可以直接输入 YouTube 视频链接，并通过新视频测试展示了 Gemini 应用的优秀总结和视觉理解能力。",
+          "topic": "AI 新产品/技术更新",
+          "importance": 7,
+          "original_tweet": {
+            "id": "1900029065266123162",
+            "conversationId": "1900029065266123162",
+            "fullText": "谷歌 AI Studio 现在可以直接输入 youtube 视频链接\n\n我实在想不到还有啥使用 Gemini 应用付费的理由\n\n拿 links 的新视频试了一下总结的很好，不只是基于字幕，还能理解画面内容 https://t.co/QkYEl7hGoV",
+            "createdAt": "Thu Mar 13 03:40:04 +0000 2025",
+            "favoriteCount": 78,
+            "replyCount": 11,
+            "retweetCount": 18,
+            "quoteCount": 0,
+            "isReply": false,
+            "media": [
+              {
+                "type": "video",
+                "url": "https://pbs.twimg.com/ext_tw_video_thumb/1900028638961295361/pu/img/fUo-3te8l1HN6or1.jpg",
+                "videoUrl": "https://video.twimg.com/ext_tw_video/1900028638961295361/pu/vid/avc1/1916x1080/c8dIjDBcgQfOfIX2.mp4?tag=14"
+              }
+            ],
+            "user": {
+              "id": "1669276256",
+              "name": "歸藏(guizang.ai)",
+              "screenName": "op7418",
+              "profileImageUrl": "https://pbs.twimg.com/profile_images/1636981205504786434/xDl77JIw_normal.jpg",
+              "verified": false
+            },
+            "viewCount": "13062",
+            "externalUrls": [],
+            "threadTexts": [
+              {
+                "id": "1900031636559061361",
+                "text": "@lipeng0820 哈哈"
+              }
+            ],
+            "fullThreadText": "谷歌 AI Studio 现在可以直接输入 youtube 视频链接\n\n我实在想不到还有啥使用 Gemini 应用付费的理由\n\n拿 links 的新视频试了一下总结的很好，不只是基于字幕，还能理解画面内容 https://t.co/QkYEl7hGoV\n\n@lipeng0820 哈哈",
+            "allMediaUrls": [
+              "https://pbs.twimg.com/ext_tw_video_thumb/1900028638961295361/pu/img/fUo-3te8l1HN6or1.jpg"
+            ]
+          }
+        },
+        {
+          "index": 7,
+          "summary": "op7418 报道谷歌正式上线 Gemini 2 的原生多模态图片输出功能，用户不仅可以编辑文字生成图片，还能获得高质量图片，提供了具体的使用方式和案例。",
+          "topic": "AI 新产品/技术更新",
+          "importance": 9,
+          "original_tweet": {
+            "id": "1900010600828211348",
+            "conversationId": "1900010600828211348",
+            "fullText": "谷歌终于上线了 Gemini 2 的原生多模态图片输出\n\n文字就能编辑和生成图片，而且图片质量相当高！\n\n依旧可以白嫖，👇下面是使用方式和一些案例 https://t.co/qLydiECtd2",
+            "createdAt": "Thu Mar 13 02:26:42 +0000 2025",
+            "favoriteCount": 611,
+            "replyCount": 63,
+            "retweetCount": 100,
+            "quoteCount": 2,
+            "isReply": false,
+            "media": [
+              {
+                "type": "photo",
+                "url": "https://pbs.twimg.com/media/Gl4xSTrXMAAsaeS.jpg"
+              }
+            ],
+            "user": {
+              "id": "1669276256",
+              "name": "歸藏(guizang.ai)",
+              "screenName": "op7418",
+              "profileImageUrl": "https://pbs.twimg.com/profile_images/1636981205504786434/xDl77JIw_normal.jpg",
+              "verified": false
+            },
+            "viewCount": "149977",
+            "externalUrls": [],
+            "threadTexts": [
+              {
+                "id": "1900010706965324287",
+                "text": "使用方式：\n\n打开 AI Studio\n右侧将模型切换为 Gemini 2.0 Flash Experimental\n直接自然语言跟模型沟通就行 https://t.co/UYhbWJLgHc"
+              },
+              {
+                "id": "1900011082993066050",
+                "text": "问他生命的意义是什么，但是只能用图片解释\n\n他花了一套漫画来介绍\n\nhttps://t.co/hmb78SMiNU"
+              },
+              {
+                "id": "1900011370382520339",
+                "text": "编辑带人脸的图片可以保持人像的 ID，这个很厉害\nhttps://t.co/tM6Swd6SAh"
+              },
+              {
+                "id": "1900012438504030651",
+                "text": "对马斯克图片进行连续编辑：\n\n1. 背景换成美国国旗\n2. 将西服换成宇航服\n3. 带上礼帽 https://t.co/Sj4LkMs8hg"
+              },
+              {
+                "id": "1900017457852829963",
+                "text": "图片生成测试\n\n左边 Midjourney 右边 Gemini https://t.co/2f4sVGNj8x"
+              },
+              {
+                "id": "1900017965577494911",
+                "text": "图片生成测试\n\n左边 Midjourney 右边 Gemini https://t.co/ARSDEhBC3V"
+              },
+              {
+                "id": "1900022319491539277",
+                "text": "图片混合测试，将图 1 的产品放在图 2 的沙地中 https://t.co/5EvXvGUfLd"
+              },
+              {
+                "id": "1900018649903358266",
+                "text": "@GZhan57 哈哈 可以 多图混合"
+              },
+              {
+                "id": "1900103114948292671",
+                "text": "@julian_ai_data 卧槽 梗图大王 哈哈"
+              }
+            ],
+            "fullThreadText": "谷歌终于上线了 Gemini 2 的原生多模态图片输出\n\n文字就能编辑和生成图片，而且图片质量相当高！\n\n依旧可以白嫖，👇下面是使用方式和一些案例 https://t.co/qLydiECtd2\n\n使用方式：\n\n打开 AI Studio\n右侧将模型切换为 Gemini 2.0 Flash Experimental\n直接自然语言跟模型沟通就行 https://t.co/UYhbWJLgHc\n\n问他生命的意义是什么，但是只能用图片解释\n\n他花了一套漫画来介绍\n\nhttps://t.co/hmb78SMiNU\n\n编辑带人脸的图片可以保持人像的 ID，这个很厉害\nhttps://t.co/tM6Swd6SAh\n\n对马斯克图片进行连续编辑：\n\n1. 背景换成美国国旗\n2. 将西服换成宇航服\n3. 带上礼帽 https://t.co/Sj4LkMs8hg\n\n图片生成测试\n\n左边 Midjourney 右边 Gemini https://t.co/2f4sVGNj8x\n\n图片生成测试\n\n左边 Midjourney 右边 Gemini https://t.co/ARSDEhBC3V\n\n图片混合测试，将图 1 的产品放在图 2 的沙地中 https://t.co/5EvXvGUfLd\n\n@GZhan57 哈哈 可以 多图混合\n\n@julian_ai_data 卧槽 梗图大王 哈哈",
+            "allMediaUrls": [
+              "https://pbs.twimg.com/media/Gl4xSTrXMAAsaeS.jpg"
+            ]
+          }
+        },
+        {
+          "index": 19,
+          "summary": "Yann LeCun 转发消息宣布一篇与 AI 相关的研究论文被CVPR接收，涉及到多位知名学者和实验室，显示出学术界的研究进展。",
+          "topic": "AI 学术研究",
+          "importance": 7,
+          "original_tweet": {
+            "id": "1900008766940266842",
+            "conversationId": "1900008766940266842",
+            "fullText": "RT @ziv_ravid: I forgot to say that the paper got accepted to CVPR. \nThanks to Tal Zeevi, @ylecun , H. Stain Lawrence, and John Onofrey.\n\nR…",
+            "createdAt": "Thu Mar 13 02:19:25 +0000 2025",
+            "favoriteCount": 0,
+            "replyCount": 0,
+            "retweetCount": 4,
+            "quoteCount": 0,
+            "isReply": false,
+            "media": [],
+            "user": {
+              "id": "48008938",
+              "name": "Yann LeCun",
+              "screenName": "ylecun",
+              "profileImageUrl": "https://pbs.twimg.com/profile_images/1483577865056702469/rWA-3_T7_normal.jpg",
+              "verified": false
+            },
+            "externalUrls": []
+          }
+        }
+      ],
+      "topics": [
+        "AI 新产品/技术更新",
+        "AI 学术研究"
+      ],
+      "overall_assessment": "推文总体展示了谷歌在 AI 产品和技术更新方面的重要动态，以及学术界在 AI 研究领域的最新成果，这些信息均具备新闻价值，适合纳入日报。"
+    }
+  ]
+}

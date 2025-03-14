@@ -1,5 +1,5 @@
 {
-  "savedAt": "2025-03-11T08:39:30.235Z",
+  "savedAt": "2025-03-11T08:56:37.635Z",
   "count": 36,
   "tweets": [
     {
@@ -10,9 +10,9 @@
       "authorUsername": "FinanceYF5",
       "isQuote": false,
       "metrics": {
-        "retweets": 1,
-        "likes": 3,
-        "replies": 1
+        "retweets": 2,
+        "likes": 5,
+        "replies": 2
       },
       "authorId": "1551258526584115204",
       "authorProfileImage": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg"
@@ -71,8 +71,8 @@
       "authorUsername": "FinanceYF5",
       "isQuote": false,
       "metrics": {
-        "retweets": 0,
-        "likes": 9,
+        "retweets": 1,
+        "likes": 17,
         "replies": 2
       },
       "authorId": "1551258526584115204",
@@ -87,7 +87,7 @@
       "isQuote": true,
       "metrics": {
         "retweets": 0,
-        "likes": 0,
+        "likes": 1,
         "replies": 1
       },
       "authorId": "1551258526584115204",
@@ -110,7 +110,7 @@
       "isQuote": true,
       "metrics": {
         "retweets": 0,
-        "likes": 0,
+        "likes": 1,
         "replies": 0
       },
       "authorId": "1551258526584115204",
@@ -132,8 +132,8 @@
       "authorUsername": "rowancheung",
       "isQuote": false,
       "metrics": {
-        "retweets": 10,
-        "likes": 109,
+        "retweets": 11,
+        "likes": 118,
         "replies": 4
       },
       "authorId": "1314686042",
@@ -148,7 +148,7 @@
       "isQuote": false,
       "metrics": {
         "retweets": 0,
-        "likes": 9,
+        "likes": 10,
         "replies": 1
       },
       "authorId": "1314686042",
@@ -163,7 +163,7 @@
       "isQuote": true,
       "metrics": {
         "retweets": 0,
-        "likes": 6,
+        "likes": 7,
         "replies": 0
       },
       "authorId": "1314686042",
@@ -240,8 +240,8 @@
       "isQuote": false,
       "metrics": {
         "retweets": 13,
-        "likes": 63,
-        "replies": 2
+        "likes": 68,
+        "replies": 3
       },
       "fullNoteText": "会不会提出问题，决定了一个人的学习天花板。只有学会提问——提出清晰、明确、直击本质的问题——你才能真正学会学习。\n\n虚假的提问，是懒惰的头脑为了逃避自己的思考，愚蠢地向他人抛出大量无脑问题，惹人生厌。这常见于少部分思维懒惰者。\n\n真正的提问，是精准定位问题的核心，抓住关键细节，直击要害；是清晰表达，以及背后的结构化、训练有素地逻辑思考。这是少部分真·学霸的特征。\n\n很多人以为学习就是努力地看书、听课，但更本质的学习是有意识地提问、寻找答案并不断优化问题。一旦学会提问，你的学习就会从一个被动过程，转化为主动构建问题、检验问题、并反复打磨问题的过程。你就从一个被动的知识消费者，变成主动的知识构建者。\n\n下面是“提问”背后的 7 层真相。\n\n---\n真相1 问题比答案重要（questions over answers）\n\n绝大多数时候，我们提问时真正需要的不是答案，而是更好的问题。\n\n真相2 你看世界的方式（how you see the world）\n\n人们提出的问题，实际上反映的不是他们的知识水平，而是他们看待世界的方式。\n\n真相3 糟糕问题的根源（root of bad questions）\n\n大部分糟糕的问题，都源于我们害怕暴露无知而精心包装自己的疑惑。",
       "authorId": "709787332254117888",
@@ -324,7 +324,7 @@
       "authorUsername": "FinanceYF5",
       "isQuote": false,
       "metrics": {
-        "retweets": 17,
+        "retweets": 19,
         "likes": 71,
         "replies": 1
       },
@@ -362,8 +362,8 @@
       "authorUsername": "FinanceYF5",
       "isQuote": false,
       "metrics": {
-        "retweets": 1,
-        "likes": 11,
+        "retweets": 2,
+        "likes": 12,
         "replies": 3
       },
       "authorId": "1551258526584115204",
@@ -401,9 +401,9 @@
       "authorUsername": "elonmusk",
       "isQuote": true,
       "metrics": {
-        "retweets": 10665,
-        "likes": 70401,
-        "replies": 2827
+        "retweets": 11315,
+        "likes": 74164,
+        "replies": 2959
       },
       "authorId": "44196397",
       "authorProfileImage": "https://pbs.twimg.com/profile_images/1893803697185910784/Na5lOWi5_normal.jpg",
@@ -455,9 +455,9 @@
       "authorUsername": "elonmusk",
       "isQuote": true,
       "metrics": {
-        "retweets": 5329,
-        "likes": 25147,
-        "replies": 1538
+        "retweets": 5658,
+        "likes": 26390,
+        "replies": 1569
       },
       "authorId": "44196397",
       "authorProfileImage": "https://pbs.twimg.com/profile_images/1893803697185910784/Na5lOWi5_normal.jpg",
@@ -510,9 +510,9 @@
       "authorUsername": "BillyM2k",
       "isQuote": false,
       "metrics": {
-        "retweets": 124,
-        "likes": 1565,
-        "replies": 118
+        "retweets": 129,
+        "likes": 1588,
+        "replies": 119
       },
       "authorId": "30699048",
       "authorProfileImage": "https://pbs.twimg.com/profile_images/1763798368470663168/RgrEadkn_normal.jpg"
@@ -556,8 +556,8 @@
       "authorUsername": "BrianRoemmele",
       "isQuote": false,
       "metrics": {
-        "retweets": 563,
-        "likes": 2705,
+        "retweets": 567,
+        "likes": 2729,
         "replies": 259
       },
       "fullNoteText": "They Froze Light.\n\nItaly's National Research Council published their findings in Nature, detailing how they turned light into a supersolid. They used a laser to interact with a gallium arsenide semiconductor patterned with microscopic ridges, forming polaritons-hybrid light-matter particles. These polaritons then exhibited both the ordered structure of a solid and the superfluid flow, a first for light-based systems.",
@@ -603,9 +603,9 @@
       "authorUsername": "minchoi",
       "isQuote": false,
       "metrics": {
-        "retweets": 19,
-        "likes": 177,
-        "replies": 18
+        "retweets": 21,
+        "likes": 179,
+        "replies": 20
       },
       "authorId": "23113993",
       "authorProfileImage": "https://pbs.twimg.com/profile_images/1638359113221517312/CBZaJFyA_normal.jpg"

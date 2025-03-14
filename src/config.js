@@ -6,12 +6,13 @@ module.exports = {
   twitter: {
     apiKey: process.env.TWITTER_API_KEY,
     listId: process.env.TWITTER_LIST_ID,
-    apiUrl: "https://api.apidance.pro/graphql/ListLatestTweetsTimeline",
+    apiUrlList: "https://api.apidance.pro/graphql/ListLatestTweetsTimeline",
+    apiUrlTweet: "https://api.apidance.pro/sapi/TweetDetail",
   },
   openai: {
     apiKey: process.env.OPENAI_API_KEY,
     apiUrl: "https://ai.pumpkinai.online/v1",
-    model: "gpt-4o-2024-11-20",
+    model: "o3-mini",
     chunkSize: parseInt(process.env.GPT_CHUNK_SIZE || "20"),
   },
   notion: {

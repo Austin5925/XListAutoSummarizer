@@ -1,0 +1,42 @@
+{
+  "pinned_tweet": null,
+  "tweets": [
+    {
+      "tweet_id": "1899328361018654864",
+      "user_id": "1551258526584115204",
+      "media_type": "photo",
+      "text": "美国银行分析师发布的新报告：\n\n“类人机器人时代即将来临。” https://t.co/agvc8XMH3F",
+      "medias": [
+        "https://pbs.twimg.com/media/GlvEoMVXkAAAUip.jpg"
+      ],
+      "is_self_send": true,
+      "is_retweet": false,
+      "is_quote": false,
+      "is_reply": false,
+      "is_like": false,
+      "related_tweet_id": "",
+      "related_user_id": "",
+      "favorite_count": 4,
+      "quote_count": 0,
+      "reply_count": 0,
+      "retweet_count": 0,
+      "created_at": "Tue Mar 11 05:15:43 +0000 2025",
+      "user": {
+        "id_str": "1551258526584115204",
+        "name": "AI Will",
+        "screen_name": "FinanceYF5",
+        "location": "",
+        "description": "10年经验行业分析师，GenAI学习中，Learn in public。\n@GPTDAOGLOBAL 分析师\n@PixVerse_ 增长顾问",
+        "followers_count": 167688,
+        "friends_count": 1320,
+        "created_at": "Sun Jul 24 17:30:38 +0000 2022",
+        "favourites_count": 4896,
+        "verified": true,
+        "statuses_count": 29728,
+        "media_count": 16824,
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg"
+      }
+    }
+  ],
+  "next_cursor_str": ""
+}

@@ -1,0 +1,112 @@
+{
+  "pinned_tweet": null,
+  "tweets": [
+    {
+      "tweet_id": "1899373554766074289",
+      "user_id": "1657474831",
+      "media_type": "photo",
+      "text": "买了一台二手的MacBook Pro 14英寸，M3 Max+36G内存+1T硬盘，1万5千块。原机主保护的很好，全身贴膜+屏幕防偷窥磁吸膜，电池99%。\n我对Mac OS和Windows倒没什么偏好，过去几年用Windows居多，这次买Mac是想搞点东西。… https://t.co/f5OtAZUJfz",
+      "medias": [
+        "https://pbs.twimg.com/media/GlvuJQ_W0AA3jen.jpg"
+      ],
+      "is_self_send": true,
+      "is_retweet": false,
+      "is_quote": false,
+      "is_reply": false,
+      "is_like": false,
+      "related_tweet_id": "",
+      "related_user_id": "",
+      "favorite_count": 4,
+      "quote_count": 0,
+      "reply_count": 2,
+      "retweet_count": 0,
+      "created_at": "Tue Mar 11 08:15:18 +0000 2025",
+      "user": {
+        "id_str": "1657474831",
+        "name": "Gorden Sun",
+        "screen_name": "Gorden_Sun",
+        "location": "",
+        "description": "产品经理，主发AI相关信息，个人维护的AI资讯日报↓",
+        "followers_count": 24116,
+        "friends_count": 1486,
+        "created_at": "Fri Aug 09 10:31:29 +0000 2013",
+        "favourites_count": 124,
+        "verified": true,
+        "statuses_count": 5121,
+        "media_count": 1614,
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1522159828231409664/GPpXyPT1_normal.jpg"
+      }
+    },
+    {
+      "tweet_id": "1899394582364016964",
+      "user_id": "16007061",
+      "media_type": "",
+      "text": "@Gorden_Sun “Windows可以免费用的Win+V剪切板，Mac上必须得开个付费应用才能有类似的效果。”\n通常 Mac 用户会用 Raycast（免费的）或者 Alfred（收费的）来提升交互体验，比如剪贴板、窗口位置大小调整、执行本地脚本。https://t.co/5J9WNchaNP 了解一下哈。",
+      "medias": null,
+      "is_self_send": false,
+      "is_retweet": false,
+      "is_quote": false,
+      "is_reply": true,
+      "is_like": false,
+      "related_tweet_id": "1899373554766074289",
+      "related_user_id": "1657474831",
+      "favorite_count": 1,
+      "quote_count": 0,
+      "reply_count": 0,
+      "retweet_count": 0,
+      "created_at": "Tue Mar 11 09:38:52 +0000 2025",
+      "user": {
+        "id_str": "16007061",
+        "name": "panfu",
+        "screen_name": "panfu",
+        "location": "广州",
+        "description": "飞花摘叶 融会贯通",
+        "followers_count": 75,
+        "friends_count": 373,
+        "created_at": "Wed Aug 27 03:08:13 +0000 2008",
+        "favourites_count": 1143,
+        "verified": false,
+        "statuses_count": 771,
+        "media_count": 35,
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1632634680783822848/Ul-YM6VB_normal.jpg"
+      }
+    },
+    {
+      "tweet_id": "1899435517034561734",
+      "user_id": "1657474831",
+      "media_type": "animated_gif",
+      "text": "nanobrowser：开源版OpenAI Operator\n是个Chrome插件，安装后在本地运行，支持OpenAI、Claude、Gemini三家API。运行过程可视化，是可AI交互版本的RPA。\nGithub：https://t.co/iWPY4GyhAE https://t.co/ylYNW1mXGl",
+      "medias": [
+        "https://pbs.twimg.com/tweet_video_thumb/GlwmgLzaUAAXBcZ.jpg"
+      ],
+      "is_self_send": true,
+      "is_retweet": false,
+      "is_quote": false,
+      "is_reply": false,
+      "is_like": false,
+      "related_tweet_id": "",
+      "related_user_id": "",
+      "favorite_count": 94,
+      "quote_count": 2,
+      "reply_count": 1,
+      "retweet_count": 21,
+      "created_at": "Tue Mar 11 12:21:31 +0000 2025",
+      "user": {
+        "id_str": "1657474831",
+        "name": "Gorden Sun",
+        "screen_name": "Gorden_Sun",
+        "location": "",
+        "description": "产品经理，主发AI相关信息，个人维护的AI资讯日报↓",
+        "followers_count": 24116,
+        "friends_count": 1486,
+        "created_at": "Fri Aug 09 10:31:29 +0000 2013",
+        "favourites_count": 124,
+        "verified": true,
+        "statuses_count": 5121,
+        "media_count": 1614,
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1522159828231409664/GPpXyPT1_normal.jpg"
+      }
+    }
+  ],
+  "next_cursor_str": ""
+}

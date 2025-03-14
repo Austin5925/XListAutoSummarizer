@@ -10,7 +10,7 @@ class DataCollector {
       logger.info("开始收集Twitter数据");
 
       // 获取指定列表的最新推文
-      const tweets = await twitterService.getRecentTweets();
+      const tweets = await twitterService.getListTweets();
 
       if (tweets.length === 0) {
         logger.warn("未找到推文，流程终止");

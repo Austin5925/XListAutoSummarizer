@@ -1,0 +1,40 @@
+{
+  "pinned_tweet": null,
+  "tweets": [
+    {
+      "tweet_id": "1899194453786755176",
+      "user_id": "1551258526584115204",
+      "media_type": "",
+      "text": "AI版本的是什么样的",
+      "medias": null,
+      "is_self_send": false,
+      "is_retweet": false,
+      "is_quote": true,
+      "is_reply": false,
+      "is_like": false,
+      "related_tweet_id": "1899074921549959493",
+      "related_user_id": "1478042617958912005",
+      "favorite_count": 6,
+      "quote_count": 0,
+      "reply_count": 0,
+      "retweet_count": 2,
+      "created_at": "Mon Mar 10 20:23:37 +0000 2025",
+      "user": {
+        "id_str": "1551258526584115204",
+        "name": "AI Will",
+        "screen_name": "FinanceYF5",
+        "location": "",
+        "description": "10年经验行业分析师，GenAI学习中，Learn in public。\n@GPTDAOGLOBAL 分析师\n@PixVerse_ 增长顾问",
+        "followers_count": 167693,
+        "friends_count": 1320,
+        "created_at": "Sun Jul 24 17:30:38 +0000 2022",
+        "favourites_count": 4896,
+        "verified": true,
+        "statuses_count": 29728,
+        "media_count": 16824,
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg"
+      }
+    }
+  ],
+  "next_cursor_str": ""
+}

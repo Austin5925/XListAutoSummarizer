@@ -1,0 +1,1986 @@
+{
+  "savedAt": "2025-03-12T17:21:54.854Z",
+  "count": 71,
+  "tweets": [
+    {
+      "id": "1899872623703548347",
+      "conversationId": "1899872623703548347",
+      "fullText": "RT @sundarpichai: We’ve always thought of robotics as a helpful testing ground for translating AI advances into the physical world. Today w…",
+      "createdAt": "Wed Mar 12 17:18:26 +0000 2025",
+      "favoriteCount": 0,
+      "replyCount": 0,
+      "retweetCount": 77,
+      "quoteCount": 0,
+      "isReply": false,
+      "media": [],
+      "user": {
+        "id": "4783690002",
+        "name": "Google DeepMind",
+        "screenName": "GoogleDeepMind",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1695024885070737408/-M-HSH5P_normal.jpg",
+        "verified": false
+      },
+      "externalUrls": []
+    },
+    {
+      "id": "1899872221364961338",
+      "conversationId": "1899872221364961338",
+      "fullText": "RT @nikunjhanda: Pleasantly surprised by the response to the Responses API — multiple companies have already processed billions of tokens o…",
+      "createdAt": "Wed Mar 12 17:16:50 +0000 2025",
+      "favoriteCount": 0,
+      "replyCount": 0,
+      "retweetCount": 3,
+      "quoteCount": 0,
+      "isReply": false,
+      "media": [],
+      "user": {
+        "id": "1633874951508721686",
+        "name": "OpenAI Developers",
+        "screenName": "OpenAIDevs",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1885417240146685952/kmZVMGbW_normal.png",
+        "verified": false
+      },
+      "externalUrls": []
+    },
+    {
+      "id": "1899870958565155317",
+      "conversationId": "1899870958565155317",
+      "fullText": "RT @AgentOpsAI: We’ve been working with OpenAI for the past few weeks testing the Agents SDK and are launching as a tracing provider.\n\nAt @…",
+      "createdAt": "Wed Mar 12 17:11:49 +0000 2025",
+      "favoriteCount": 0,
+      "replyCount": 0,
+      "retweetCount": 5,
+      "quoteCount": 0,
+      "isReply": false,
+      "media": [],
+      "user": {
+        "id": "1134462942018179073",
+        "name": "Adam Silverman (Hiring!) 🖇️",
+        "screenName": "AtomSilverman",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1693795710146142208/L4DA14IF_normal.jpg",
+        "verified": false
+      },
+      "externalUrls": []
+    },
+    {
+      "id": "1899870760350650390",
+      "conversationId": "1899870760350650390",
+      "fullText": "RT @braintrustdata: Trace all your @OpenAI Agents SDK calls with one line of code! https://t.co/mNxVANtbpY",
+      "createdAt": "Wed Mar 12 17:11:01 +0000 2025",
+      "favoriteCount": 0,
+      "replyCount": 0,
+      "retweetCount": 8,
+      "quoteCount": 0,
+      "isReply": false,
+      "media": [
+        {
+          "type": "video",
+          "url": "https://pbs.twimg.com/ext_tw_video_thumb/1899508101239500800/pu/img/qZkUUvFH7XaUNyBx.jpg",
+          "videoUrl": "https://video.twimg.com/ext_tw_video/1899508101239500800/pu/vid/avc1/1112x720/DXmfVXCO-tbx9uDr.mp4?tag=12"
+        }
+      ],
+      "user": {
+        "id": "1633874951508721686",
+        "name": "OpenAI Developers",
+        "screenName": "OpenAIDevs",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1885417240146685952/kmZVMGbW_normal.png",
+        "verified": false
+      },
+      "externalUrls": []
+    },
+    {
+      "id": "1899870742713413749",
+      "conversationId": "1899870742713413749",
+      "fullText": "RT @pydantic: Pydantic Logfire now supports @OpenAI's `agents` framework as well as the standard Python OpenAI SDK.\n\nThis lets you combine…",
+      "createdAt": "Wed Mar 12 17:10:57 +0000 2025",
+      "favoriteCount": 0,
+      "replyCount": 0,
+      "retweetCount": 6,
+      "quoteCount": 0,
+      "isReply": false,
+      "media": [],
+      "user": {
+        "id": "1633874951508721686",
+        "name": "OpenAI Developers",
+        "screenName": "OpenAIDevs",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1885417240146685952/kmZVMGbW_normal.png",
+        "verified": false
+      },
+      "externalUrls": []
+    },
+    {
+      "id": "1899869900061237367",
+      "conversationId": "1899869900061237367",
+      "fullText": "RT @robertriachi: some cool examples with Gemini 2.0 native image output 🧵 https://t.co/15n0C4jmNj",
+      "createdAt": "Wed Mar 12 17:07:36 +0000 2025",
+      "favoriteCount": 0,
+      "replyCount": 0,
+      "retweetCount": 9,
+      "quoteCount": 0,
+      "isReply": false,
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/Gl2h77haYAAEB0A.jpg"
+        }
+      ],
+      "user": {
+        "id": "1572277146261032966",
+        "name": "Tim Brooks",
+        "screenName": "_tim_brooks",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1704340981611724800/AfUPQ0qI_normal.jpg",
+        "verified": false
+      },
+      "externalUrls": []
+    },
+    {
+      "id": "1899869521676218746",
+      "conversationId": "1899869521676218746",
+      "fullText": "Native image generation with Gemini is live 🚀🔥\n\nYou can generate interleaved text and images and edit uploaded images all in a unified model. Big congrats to @robertriachi @19kaushiks @mentzer_f and many more amazing folks who built this!\n\nTry it out and tell us what you think:… https://t.co/2zABsDrXSf",
+      "createdAt": "Wed Mar 12 17:06:06 +0000 2025",
+      "favoriteCount": 13,
+      "replyCount": 1,
+      "retweetCount": 1,
+      "quoteCount": 0,
+      "isReply": false,
+      "media": [
+        {
+          "type": "video",
+          "url": "https://pbs.twimg.com/ext_tw_video_thumb/1899866427194048512/pu/img/V0-EjPG1zn8VDFT5.jpg",
+          "videoUrl": "https://video.twimg.com/ext_tw_video/1899866427194048512/pu/vid/avc1/960x720/1QSz8yyxFBWl0VK7.mp4?tag=12"
+        }
+      ],
+      "user": {
+        "id": "1572277146261032966",
+        "name": "Tim Brooks",
+        "screenName": "_tim_brooks",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1704340981611724800/AfUPQ0qI_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "515",
+      "externalUrls": []
+    },
+    {
+      "id": "1899869380319527058",
+      "conversationId": "1899869380319527058",
+      "fullText": "RT @sherwinwu: We just launched the official OpenAI Agents SDK! \n\nInspired by our Swarm SDK, @_rohanmehta, @stevenheidel, and @jamesmhills…",
+      "createdAt": "Wed Mar 12 17:05:32 +0000 2025",
+      "favoriteCount": 0,
+      "replyCount": 0,
+      "retweetCount": 171,
+      "quoteCount": 0,
+      "isReply": false,
+      "media": [],
+      "user": {
+        "id": "1633874951508721686",
+        "name": "OpenAI Developers",
+        "screenName": "OpenAIDevs",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1885417240146685952/kmZVMGbW_normal.png",
+        "verified": false
+      },
+      "externalUrls": []
+    },
+    {
+      "id": "1899867345478426724",
+      "conversationId": "1899867345478426724",
+      "fullText": "management consultants ngmi",
+      "createdAt": "Wed Mar 12 16:57:27 +0000 2025",
+      "favoriteCount": 122,
+      "replyCount": 26,
+      "retweetCount": 4,
+      "quoteCount": 4,
+      "isReply": false,
+      "media": [],
+      "user": {
+        "id": "759894532649545732",
+        "name": "Aravind Srinivas",
+        "screenName": "AravSrinivas",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1891961720593317890/n8jrPkAN_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "9055",
+      "externalUrls": []
+    },
+    {
+      "id": "1899866379723190550",
+      "conversationId": "1899866379723190550",
+      "fullText": "RT @GoogleQuantumAI: Google Quantum AI took the stage at SXSW 2025 and dove deep into what's next for quantum computing, how we can apply i…",
+      "createdAt": "Wed Mar 12 16:53:37 +0000 2025",
+      "favoriteCount": 0,
+      "replyCount": 0,
+      "retweetCount": 21,
+      "quoteCount": 0,
+      "isReply": false,
+      "media": [],
+      "user": {
+        "id": "33838201",
+        "name": "Google AI",
+        "screenName": "GoogleAI",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/993649592422907904/yD7LkqU2_normal.jpg",
+        "verified": false
+      },
+      "externalUrls": []
+    },
+    {
+      "id": "1899864660926435509",
+      "conversationId": "1899864660926435509",
+      "fullText": "Stop by the #KHIPU2025 Google booth today at 15:30, where Julian Eisenschlos will demo ChaTS-PI, a generative AI model that takes a chart, generates a summary, and then uses a critic model to verify and revise the summaries for accuracy. https://t.co/rDE5kJlWM3",
+      "createdAt": "Wed Mar 12 16:46:47 +0000 2025",
+      "favoriteCount": 37,
+      "replyCount": 15,
+      "retweetCount": 3,
+      "quoteCount": 6,
+      "isReply": false,
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/Gl2sw05WoAAgf0a.jpg"
+        }
+      ],
+      "user": {
+        "id": "33838201",
+        "name": "Google AI",
+        "screenName": "GoogleAI",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/993649592422907904/yD7LkqU2_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "8223",
+      "externalUrls": []
+    },
+    {
+      "id": "1899864329908084913",
+      "conversationId": "1899864329908084913",
+      "fullText": "You can generate PowerPoints with Perplexity’s Deep Research API, basically the work of a consultant in an API call  https://t.co/gWDpEMoAbD",
+      "createdAt": "Wed Mar 12 16:45:28 +0000 2025",
+      "favoriteCount": 314,
+      "replyCount": 20,
+      "retweetCount": 13,
+      "quoteCount": 7,
+      "isReply": false,
+      "media": [
+        {
+          "type": "video",
+          "url": "https://pbs.twimg.com/ext_tw_video_thumb/1899859953784868865/pu/img/h-bDCcTF37yNwAwI.jpg",
+          "videoUrl": "https://video.twimg.com/ext_tw_video/1899859953784868865/pu/vid/avc1/1280x720/pg7v4giJqmccXp2Y.mp4?tag=12"
+        }
+      ],
+      "user": {
+        "id": "759894532649545732",
+        "name": "Aravind Srinivas",
+        "screenName": "AravSrinivas",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1891961720593317890/n8jrPkAN_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "20787",
+      "externalUrls": []
+    },
+    {
+      "id": "1899862633341477221",
+      "conversationId": "1899862633341477221",
+      "fullText": "https://t.co/Jc9ohKU5B2",
+      "createdAt": "Wed Mar 12 16:38:44 +0000 2025",
+      "favoriteCount": 10,
+      "replyCount": 0,
+      "retweetCount": 2,
+      "quoteCount": 2,
+      "isReply": false,
+      "media": [],
+      "user": {
+        "id": "1134462942018179073",
+        "name": "Adam Silverman (Hiring!) 🖇️",
+        "screenName": "AtomSilverman",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1693795710146142208/L4DA14IF_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "1535",
+      "externalUrls": [
+        "http://x.com/i/article/1899860344732082180"
+      ]
+    },
+    {
+      "id": "1899861446240153897",
+      "conversationId": "1899861446240153897",
+      "fullText": "We just hit 10K ⭐️ on GitHub!\n\n🦉https://t.co/TYzCPte84Q https://t.co/UvSXiZ94Ao",
+      "createdAt": "Wed Mar 12 16:34:01 +0000 2025",
+      "favoriteCount": 26,
+      "replyCount": 5,
+      "retweetCount": 3,
+      "quoteCount": 1,
+      "isReply": false,
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/Gl2o87bbYAMK0Dy.jpg"
+        }
+      ],
+      "user": {
+        "id": "1670140763424931842",
+        "name": "CAMEL-AI.org",
+        "screenName": "CamelAIOrg",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1750937728701632512/VXvNnpL1_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "551",
+      "externalUrls": [
+        "http://github.com/camel-ai/owl"
+      ],
+      "threadTexts": [
+        {
+          "id": "1899862097703690660",
+          "text": "@guohao_li 🫡🚀"
+        },
+        {
+          "id": "1899564956531712201",
+          "text": "CAMEL AI is now #1 on GitHub Trending! 🚀 https://t.co/zvqQ1i6Ffu"
+        }
+      ],
+      "fullThreadText": "We just hit 10K ⭐️ on GitHub!\n\n🦉https://t.co/TYzCPte84Q https://t.co/UvSXiZ94Ao\n\n@guohao_li 🫡🚀\n\nCAMEL AI is now #1 on GitHub Trending! 🚀 https://t.co/zvqQ1i6Ffu",
+      "allMediaUrls": [
+        "https://pbs.twimg.com/media/Gl2o87bbYAMK0Dy.jpg"
+      ]
+    },
+    {
+      "id": "1899857229227896891",
+      "conversationId": "1899857229227896891",
+      "fullText": "RT @googledevs: Gemma 3 is here! The collection of lightweight, state-of-the-art open models are built from the same research and technolog…",
+      "createdAt": "Wed Mar 12 16:17:15 +0000 2025",
+      "favoriteCount": 0,
+      "replyCount": 0,
+      "retweetCount": 124,
+      "quoteCount": 0,
+      "isReply": false,
+      "media": [],
+      "user": {
+        "id": "20536157",
+        "name": "Google",
+        "screenName": "Google",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1754606338460487681/bWupXdxo_normal.jpg",
+        "verified": false
+      },
+      "externalUrls": []
+    },
+    {
+      "id": "1899856732383240436",
+      "conversationId": "1899856732383240436",
+      "fullText": "This is wild.\n\nGoogle just unleashed Gemini Robotics, bringing AI into the physical world.\n\nRobots can now see, think, and ACT in real-time.\n\n10 mind-blowing things Gemini Robotics can do: https://t.co/Bj8nfND0FW",
+      "createdAt": "Wed Mar 12 16:15:17 +0000 2025",
+      "favoriteCount": 182,
+      "replyCount": 56,
+      "retweetCount": 25,
+      "quoteCount": 8,
+      "isReply": false,
+      "media": [
+        {
+          "type": "video",
+          "url": "https://pbs.twimg.com/ext_tw_video_thumb/1899848901668061185/pu/img/MuGh25m08jn0bNM3.jpg",
+          "videoUrl": "https://video.twimg.com/ext_tw_video/1899848901668061185/pu/vid/avc1/1280x720/pImPCZAt8doczfTQ.mp4?tag=12"
+        }
+      ],
+      "user": {
+        "id": "23113993",
+        "name": "Min Choi",
+        "screenName": "minchoi",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1638359113221517312/CBZaJFyA_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "12962",
+      "externalUrls": [],
+      "threadTexts": [
+        {
+          "id": "1899856734501425177",
+          "text": "1. Dexterity\n\nCompletes precise tasks, like origami folding handled entirely by AI-driven robots 🤯 https://t.co/v1Pq19kk0H"
+        },
+        {
+          "id": "1899856736875327843",
+          "text": "2. Interactivity\n\nUnderstands commands in everyday language.\n\nQuickly adapts if objects move or environment changes. https://t.co/uMkhfxugEg"
+        },
+        {
+          "id": "1899856739119571447",
+          "text": "3. Generality\n\nInstantly handles new tasks and objects.\n\nPerforms tasks it's never seen before, doubling other models’ performance. https://t.co/e7tXJvan1q"
+        },
+        {
+          "id": "1899856741661028484",
+          "text": "4. World Understanding (Gemini Robotics-ER)\n\nUnderstands objects’ shape and position instantly.\n\nPlans safe, accurate movements to grasp and manipulate objects. https://t.co/2xQEDB1Sy4"
+        },
+        {
+          "id": "1899856744399958395",
+          "text": "5. Multiple Embodiments\n\nWorks across various robots, including humanoid models like Apollo.\n\nEasily adapts to different robotic hardware. https://t.co/bq6jXweCMR"
+        },
+        {
+          "id": "1899856870497485152",
+          "text": "If you enjoyed this thread,\n\nFollow me @minchoi and please Bookmark, Like, Comment &amp; Repost the first Post below to share with your friends:\nhttps://t.co/F0vLciAIOC"
+        },
+        {
+          "id": "1899870223202717715",
+          "text": "@imPenny2x We need Tesla Optimus powered by Grok!"
+        },
+        {
+          "id": "1899861591446770051",
+          "text": "@StacieATyler Glad you enjoyed it 🙏"
+        }
+      ],
+      "fullThreadText": "This is wild.\n\nGoogle just unleashed Gemini Robotics, bringing AI into the physical world.\n\nRobots can now see, think, and ACT in real-time.\n\n10 mind-blowing things Gemini Robotics can do: https://t.co/Bj8nfND0FW\n\n1. Dexterity\n\nCompletes precise tasks, like origami folding handled entirely by AI-driven robots 🤯 https://t.co/v1Pq19kk0H\n\n2. Interactivity\n\nUnderstands commands in everyday language.\n\nQuickly adapts if objects move or environment changes. https://t.co/uMkhfxugEg\n\n3. Generality\n\nInstantly handles new tasks and objects.\n\nPerforms tasks it's never seen before, doubling other models’ performance. https://t.co/e7tXJvan1q\n\n4. World Understanding (Gemini Robotics-ER)\n\nUnderstands objects’ shape and position instantly.\n\nPlans safe, accurate movements to grasp and manipulate objects. https://t.co/2xQEDB1Sy4\n\n5. Multiple Embodiments\n\nWorks across various robots, including humanoid models like Apollo.\n\nEasily adapts to different robotic hardware. https://t.co/bq6jXweCMR\n\nIf you enjoyed this thread,\n\nFollow me @minchoi and please Bookmark, Like, Comment &amp; Repost the first Post below to share with your friends:\nhttps://t.co/F0vLciAIOC\n\n@imPenny2x We need Tesla Optimus powered by Grok!\n\n@StacieATyler Glad you enjoyed it 🙏",
+      "allMediaUrls": [
+        "https://pbs.twimg.com/ext_tw_video_thumb/1899848901668061185/pu/img/MuGh25m08jn0bNM3.jpg"
+      ]
+    },
+    {
+      "id": "1899856744399958395",
+      "conversationId": "1899856732383240436",
+      "fullText": "5. Multiple Embodiments\n\nWorks across various robots, including humanoid models like Apollo.\n\nEasily adapts to different robotic hardware. https://t.co/bq6jXweCMR",
+      "createdAt": "Wed Mar 12 16:15:20 +0000 2025",
+      "favoriteCount": 10,
+      "replyCount": 1,
+      "retweetCount": 0,
+      "quoteCount": 0,
+      "isReply": true,
+      "inReplyToStatusId": "1899856741661028484",
+      "inReplyToUserId": "23113993",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://pbs.twimg.com/ext_tw_video_thumb/1899851332841869312/pu/img/-WEO42YM3pkoqL0-.jpg",
+          "videoUrl": "https://video.twimg.com/ext_tw_video/1899851332841869312/pu/vid/avc1/1280x720/1X6t7UyD_y5haTIM.mp4?tag=12"
+        }
+      ],
+      "user": {
+        "id": "23113993",
+        "name": "Min Choi",
+        "screenName": "minchoi",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1638359113221517312/CBZaJFyA_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "2286",
+      "externalUrls": []
+    },
+    {
+      "id": "1899856870497485152",
+      "conversationId": "1899856732383240436",
+      "fullText": "If you enjoyed this thread,\n\nFollow me @minchoi and please Bookmark, Like, Comment &amp; Repost the first Post below to share with your friends:\nhttps://t.co/F0vLciAIOC",
+      "createdAt": "Wed Mar 12 16:15:50 +0000 2025",
+      "favoriteCount": 5,
+      "replyCount": 0,
+      "retweetCount": 0,
+      "quoteCount": 0,
+      "isReply": true,
+      "inReplyToStatusId": "1899856744399958395",
+      "inReplyToUserId": "23113993",
+      "media": [],
+      "user": {
+        "id": "23113993",
+        "name": "Min Choi",
+        "screenName": "minchoi",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1638359113221517312/CBZaJFyA_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "3341",
+      "externalUrls": [
+        "https://x.com/minchoi/status/1899856732383240436"
+      ]
+    },
+    {
+      "id": "1899854357354688736",
+      "conversationId": "1899854357354688736",
+      "fullText": "Warp divergence is one of the most subtle performance bugs in GPU programming.",
+      "createdAt": "Wed Mar 12 16:05:51 +0000 2025",
+      "favoriteCount": 52,
+      "replyCount": 4,
+      "retweetCount": 0,
+      "quoteCount": 0,
+      "isReply": false,
+      "media": [],
+      "user": {
+        "id": "2353563199",
+        "name": "Hieu Pham",
+        "screenName": "hyhieu226",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1652532020604698624/IvvmwGPl_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "2268",
+      "externalUrls": [],
+      "threadTexts": [
+        {
+          "id": "1899858280283054396",
+          "text": "@YunTaTsai1 At least you can reason about bank conflicts with mod 32 😒"
+        }
+      ],
+      "fullThreadText": "Warp divergence is one of the most subtle performance bugs in GPU programming.\n\n@YunTaTsai1 At least you can reason about bank conflicts with mod 32 😒",
+      "allMediaUrls": []
+    },
+    {
+      "id": "1899850017546129445",
+      "conversationId": "1899850017546129445",
+      "fullText": "Perplexity API now supports MCP. You can use it give any of your favorite AIs real time information, eg: Claude.  https://t.co/uXgGcRvgfD",
+      "createdAt": "Wed Mar 12 15:48:36 +0000 2025",
+      "favoriteCount": 364,
+      "replyCount": 31,
+      "retweetCount": 24,
+      "quoteCount": 5,
+      "isReply": false,
+      "media": [
+        {
+          "type": "video",
+          "url": "https://pbs.twimg.com/amplify_video_thumb/1899849059420282880/img/2s3YhVVQpCJycq4o.jpg",
+          "videoUrl": "https://video.twimg.com/amplify_video/1899849059420282880/vid/avc1/720x978/gyCExEhRAAUWT02u.mp4?tag=14"
+        }
+      ],
+      "user": {
+        "id": "759894532649545732",
+        "name": "Aravind Srinivas",
+        "screenName": "AravSrinivas",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1891961720593317890/n8jrPkAN_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "20004",
+      "externalUrls": [],
+      "threadTexts": [
+        {
+          "id": "1899850116871401963",
+          "text": "https://t.co/FUDED5pe39"
+        }
+      ],
+      "fullThreadText": "Perplexity API now supports MCP. You can use it give any of your favorite AIs real time information, eg: Claude.  https://t.co/uXgGcRvgfD\n\nhttps://t.co/FUDED5pe39",
+      "allMediaUrls": [
+        "https://pbs.twimg.com/amplify_video_thumb/1899849059420282880/img/2s3YhVVQpCJycq4o.jpg"
+      ]
+    },
+    {
+      "id": "1899850116871401963",
+      "conversationId": "1899850017546129445",
+      "fullText": "https://t.co/FUDED5pe39",
+      "createdAt": "Wed Mar 12 15:49:00 +0000 2025",
+      "favoriteCount": 27,
+      "replyCount": 0,
+      "retweetCount": 0,
+      "quoteCount": 0,
+      "isReply": true,
+      "inReplyToStatusId": "1899850017546129445",
+      "inReplyToUserId": "759894532649545732",
+      "media": [],
+      "user": {
+        "id": "759894532649545732",
+        "name": "Aravind Srinivas",
+        "screenName": "AravSrinivas",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1891961720593317890/n8jrPkAN_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "4653",
+      "externalUrls": [
+        "http://github.com/ppl-ai/modelcontextprotocol"
+      ]
+    },
+    {
+      "id": "1899849745310601229",
+      "conversationId": "1899849745310601229",
+      "fullText": "It's pretty crazy that I pay $100/year for Google One, $15/month for YouTube Premium, $85/month for YouTube TV, but if I want to use any AI features in Google Docs I’s need to pay $20 more a month.",
+      "createdAt": "Wed Mar 12 15:47:31 +0000 2025",
+      "favoriteCount": 7,
+      "replyCount": 0,
+      "retweetCount": 0,
+      "quoteCount": 0,
+      "isReply": false,
+      "media": [],
+      "user": {
+        "id": "7213362",
+        "name": "javi",
+        "screenName": "Javi",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1640136986739740673/1fxp8MlR_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "680",
+      "externalUrls": []
+    },
+    {
+      "id": "1899849114583765356",
+      "conversationId": "1899849114583765356",
+      "fullText": "The Perplexity API Model Context Protocol (MCP) is now available.\n\nWe've built an MCP server for Sonar, giving AI assistants real-time, web search research capabilities.\n\nPowered by Perplexity, Claude can now search the web and deliver real-time and accurate insights on demand. https://t.co/TxxkaD9CLt",
+      "createdAt": "Wed Mar 12 15:45:01 +0000 2025",
+      "favoriteCount": 172,
+      "replyCount": 24,
+      "retweetCount": 33,
+      "quoteCount": 2,
+      "isReply": false,
+      "media": [
+        {
+          "type": "video",
+          "url": "https://pbs.twimg.com/amplify_video_thumb/1899849059420282880/img/2s3YhVVQpCJycq4o.jpg",
+          "videoUrl": "https://video.twimg.com/amplify_video/1899849059420282880/vid/avc1/720x978/gyCExEhRAAUWT02u.mp4?tag=14"
+        }
+      ],
+      "user": {
+        "id": "1599587232175849472",
+        "name": "Perplexity",
+        "screenName": "perplexity_ai",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1886515713537413120/kj5NsIXW_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "7797",
+      "externalUrls": []
+    },
+    {
+      "id": "1899849126667547028",
+      "conversationId": "1899849114583765356",
+      "fullText": "Get started today:\n\nhttps://t.co/8BMJMHRF8a",
+      "createdAt": "Wed Mar 12 15:45:03 +0000 2025",
+      "favoriteCount": 50,
+      "replyCount": 4,
+      "retweetCount": 1,
+      "quoteCount": 1,
+      "isReply": true,
+      "inReplyToStatusId": "1899849114583765356",
+      "inReplyToUserId": "1599587232175849472",
+      "media": [],
+      "user": {
+        "id": "1599587232175849472",
+        "name": "Perplexity",
+        "screenName": "perplexity_ai",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1886515713537413120/kj5NsIXW_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "5185",
+      "externalUrls": [
+        "http://github.com/ppl-ai/modelcontextprotocol"
+      ]
+    },
+    {
+      "id": "1899848532817035529",
+      "conversationId": "1899848532817035529",
+      "fullText": "Connect your LlamaIndex agents to any Model Context Protocol server!\n\nWe're closely following progress on the Model Context Protocol, an open-source effort to make it easy to discover and use tools. Using our MCP integration, you can use the tools exposed by any MCP-compatible… https://t.co/4V5LguDL8X",
+      "createdAt": "Wed Mar 12 15:42:42 +0000 2025",
+      "favoriteCount": 23,
+      "replyCount": 0,
+      "retweetCount": 5,
+      "quoteCount": 0,
+      "isReply": false,
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/Gl2eK_lakAA3zIc.jpg"
+        }
+      ],
+      "user": {
+        "id": "1604278358296055808",
+        "name": "LlamaIndex 🦙",
+        "screenName": "llama_index",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1623505166996742144/n-PNQGgd_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "1742",
+      "externalUrls": [],
+      "threadTexts": [
+        {
+          "id": "1898905634101203387",
+          "text": "We’re curating a collection of templates 📖 that show you how to build task-specific agents to automate knowledge work - and it’s available to anyone to signup and use!\n\nWith just a few lines of code, you can orchestrate agent workflows that do one or more of the following:\n1.… https://t.co/oEO8F10KOI"
+        }
+      ],
+      "fullThreadText": "Connect your LlamaIndex agents to any Model Context Protocol server!\n\nWe're closely following progress on the Model Context Protocol, an open-source effort to make it easy to discover and use tools. Using our MCP integration, you can use the tools exposed by any MCP-compatible… https://t.co/4V5LguDL8X\n\nWe’re curating a collection of templates 📖 that show you how to build task-specific agents to automate knowledge work - and it’s available to anyone to signup and use!\n\nWith just a few lines of code, you can orchestrate agent workflows that do one or more of the following:\n1.… https://t.co/oEO8F10KOI",
+      "allMediaUrls": [
+        "https://pbs.twimg.com/media/Gl2eK_lakAA3zIc.jpg"
+      ]
+    },
+    {
+      "id": "1899842887925322204",
+      "conversationId": "1899842887925322204",
+      "fullText": "Introducing two new AI models from @GoogleDeepMind, based on Gemini 2.0, that lay the foundation for a new generation of helpful robots: Gemini Robotics, a vision-language-action model adds physical actions as a new modality, and Gemini Robotics-ER, a vision-language model that…",
+      "createdAt": "Wed Mar 12 15:20:16 +0000 2025",
+      "favoriteCount": 324,
+      "replyCount": 69,
+      "retweetCount": 39,
+      "quoteCount": 5,
+      "isReply": false,
+      "media": [],
+      "user": {
+        "id": "20536157",
+        "name": "Google",
+        "screenName": "Google",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1754606338460487681/bWupXdxo_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "60704",
+      "externalUrls": []
+    },
+    {
+      "id": "1899841924183248982",
+      "conversationId": "1899841924183248982",
+      "fullText": "RT @minchoi: Video editing isn’t just for the pros anymore.\n\nWith Pikadditions and Pikaframes, anyone can add &amp; swap objects in minutes.\n\nN…",
+      "createdAt": "Wed Mar 12 15:16:26 +0000 2025",
+      "favoriteCount": 0,
+      "replyCount": 0,
+      "retweetCount": 42,
+      "quoteCount": 0,
+      "isReply": false,
+      "media": [],
+      "user": {
+        "id": "23113993",
+        "name": "Min Choi",
+        "screenName": "minchoi",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1638359113221517312/CBZaJFyA_normal.jpg",
+        "verified": false
+      },
+      "externalUrls": []
+    },
+    {
+      "id": "1899841876078796936",
+      "conversationId": "1899841876078796936",
+      "fullText": "RT @minchoi: This is MeshPad.\n\nAI that can turn sketches into interactive 3D meshes in seconds. 🤯 https://t.co/xvqzhokYa8",
+      "createdAt": "Wed Mar 12 15:16:15 +0000 2025",
+      "favoriteCount": 0,
+      "replyCount": 0,
+      "retweetCount": 103,
+      "quoteCount": 0,
+      "isReply": false,
+      "media": [
+        {
+          "type": "video",
+          "url": "https://pbs.twimg.com/ext_tw_video_thumb/1899542593458896896/pu/img/8CkIMT-mGZiY-gso.jpg",
+          "videoUrl": "https://video.twimg.com/ext_tw_video/1899542593458896896/pu/vid/avc1/1280x720/QBMwHyLb-qAyMth8.mp4?tag=12"
+        }
+      ],
+      "user": {
+        "id": "23113993",
+        "name": "Min Choi",
+        "screenName": "minchoi",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1638359113221517312/CBZaJFyA_normal.jpg",
+        "verified": false
+      },
+      "externalUrls": []
+    },
+    {
+      "id": "1899841864582238238",
+      "conversationId": "1899841864582238238",
+      "fullText": "RT @minchoi: OpenAI just dropped their Agent SDK and it's a game-changer for AI developers 🤯\n\nBuilding AI agents just went from weeks to mi…",
+      "createdAt": "Wed Mar 12 15:16:12 +0000 2025",
+      "favoriteCount": 0,
+      "replyCount": 0,
+      "retweetCount": 195,
+      "quoteCount": 0,
+      "isReply": false,
+      "media": [],
+      "user": {
+        "id": "23113993",
+        "name": "Min Choi",
+        "screenName": "minchoi",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1638359113221517312/CBZaJFyA_normal.jpg",
+        "verified": false
+      },
+      "externalUrls": []
+    },
+    {
+      "id": "1899839624068907335",
+      "conversationId": "1899839624068907335",
+      "fullText": "Meet Gemini Robotics: our latest AI models designed for a new generation of helpful robots. 🤖\n\nBased on Gemini 2.0, they bring capabilities such as better reasoning, interactivity, dexterity and generalization into the physical world. 🧵 https://t.co/EXRJrmxGxl https://t.co/MeEkRLomXm",
+      "createdAt": "Wed Mar 12 15:07:18 +0000 2025",
+      "favoriteCount": 553,
+      "replyCount": 78,
+      "retweetCount": 121,
+      "quoteCount": 55,
+      "isReply": false,
+      "media": [
+        {
+          "type": "video",
+          "url": "https://pbs.twimg.com/media/Gl2WJs1W4AAdKF3.jpg",
+          "videoUrl": "https://video.twimg.com/ext_tw_video/1899838177008889856/pu/vid/avc1/720x1280/pp9kD1oIMAHwXeUg.mp4?tag=12"
+        }
+      ],
+      "user": {
+        "id": "4783690002",
+        "name": "Google DeepMind",
+        "screenName": "GoogleDeepMind",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1695024885070737408/-M-HSH5P_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "117846",
+      "externalUrls": [
+        "https://goo.gle/gemini2-robotics"
+      ],
+      "threadTexts": [
+        {
+          "id": "1899839627139383762",
+          "text": "Gemini Robotics can solve multi-step tasks that require significant dexterity, such as folding origami 📄 packing a lunch box 🥗 and more.\n\nSee it in action ↓ https://t.co/WgHfQz8n9N"
+        },
+        {
+          "id": "1899839630242955536",
+          "text": "⚙️ It goes head to head with our team to wrap a timing belt around gears - a feat that’s harder than you think ↓ https://t.co/Q9D5s7Md7d"
+        },
+        {
+          "id": "1899839632772067355",
+          "text": "Robots must be able to interact seamlessly with humans. 🤝\n\nWhen it’s interrupted or situations change, Gemini Robotics can adjust its actions on the fly.\n\nThis level of steerability will empower us to better work with future robot assistants in the home, at work and beyond. https://t.co/3JuPAifFCX"
+        },
+        {
+          "id": "1899839635720663463",
+          "text": "They also accomplished tasks not seen in training, showing the ability to generalize to new scenarios. 💡\n\nWe show that on average, Gemini Robotics more than doubles performance on a comprehensive generalization benchmark - compared to other state-of-the-art… https://t.co/rqgRiM2hRs"
+        },
+        {
+          "id": "1899839638493077892",
+          "text": "Our model Gemini Robotics-ER allows roboticists to tap into the embodied reasoning of Gemini. 🌐\n\nFor example, if a robot came across a coffee mug, it could detect it, use ‘pointing’ to recognize parts it could interact with - like the handle - and recognize objects to avoid when… https://t.co/HQMXvWLoJ5"
+        },
+        {
+          "id": "1899839641693430008",
+          "text": "Our ultimate goal is to develop AI that could work for any robot - no matter its shape or size.\n\nThis includes bi-arm platforms like ALOHA 2 and Franka 🦾\nbut also for more complex embodiments such as the Apollo developed by @Apptronik. https://t.co/dPd5JtyWpo"
+        },
+        {
+          "id": "1899839644302270671",
+          "text": "We're partnering with @Apptronik to build the next generation of humanoid robots with Gemini 2.0 - and opening our Gemini Robotics-ER model to trusted testers such as Agile Robots, @AgilityRobotics, @BostonDynamics and @EnchantedTools.\n\nFind out more → https://t.co/EXRJrmxGxl https://t.co/dtEV6DX0A8"
+        }
+      ],
+      "fullThreadText": "Meet Gemini Robotics: our latest AI models designed for a new generation of helpful robots. 🤖\n\nBased on Gemini 2.0, they bring capabilities such as better reasoning, interactivity, dexterity and generalization into the physical world. 🧵 https://t.co/EXRJrmxGxl https://t.co/MeEkRLomXm\n\nGemini Robotics can solve multi-step tasks that require significant dexterity, such as folding origami 📄 packing a lunch box 🥗 and more.\n\nSee it in action ↓ https://t.co/WgHfQz8n9N\n\n⚙️ It goes head to head with our team to wrap a timing belt around gears - a feat that’s harder than you think ↓ https://t.co/Q9D5s7Md7d\n\nRobots must be able to interact seamlessly with humans. 🤝\n\nWhen it’s interrupted or situations change, Gemini Robotics can adjust its actions on the fly.\n\nThis level of steerability will empower us to better work with future robot assistants in the home, at work and beyond. https://t.co/3JuPAifFCX\n\nThey also accomplished tasks not seen in training, showing the ability to generalize to new scenarios. 💡\n\nWe show that on average, Gemini Robotics more than doubles performance on a comprehensive generalization benchmark - compared to other state-of-the-art… https://t.co/rqgRiM2hRs\n\nOur model Gemini Robotics-ER allows roboticists to tap into the embodied reasoning of Gemini. 🌐\n\nFor example, if a robot came across a coffee mug, it could detect it, use ‘pointing’ to recognize parts it could interact with - like the handle - and recognize objects to avoid when… https://t.co/HQMXvWLoJ5\n\nOur ultimate goal is to develop AI that could work for any robot - no matter its shape or size.\n\nThis includes bi-arm platforms like ALOHA 2 and Franka 🦾\nbut also for more complex embodiments such as the Apollo developed by @Apptronik. https://t.co/dPd5JtyWpo\n\nWe're partnering with @Apptronik to build the next generation of humanoid robots with Gemini 2.0 - and opening our Gemini Robotics-ER model to trusted testers such as Agile Robots, @AgilityRobotics, @BostonDynamics and @EnchantedTools.\n\nFind out more → https://t.co/EXRJrmxGxl https://t.co/dtEV6DX0A8",
+      "allMediaUrls": [
+        "https://pbs.twimg.com/media/Gl2WJs1W4AAdKF3.jpg"
+      ]
+    },
+    {
+      "id": "1899839641693430008",
+      "conversationId": "1899839624068907335",
+      "fullText": "Our ultimate goal is to develop AI that could work for any robot - no matter its shape or size.\n\nThis includes bi-arm platforms like ALOHA 2 and Franka 🦾\nbut also for more complex embodiments such as the Apollo developed by @Apptronik. https://t.co/dPd5JtyWpo",
+      "createdAt": "Wed Mar 12 15:07:22 +0000 2025",
+      "favoriteCount": 72,
+      "replyCount": 3,
+      "retweetCount": 11,
+      "quoteCount": 4,
+      "isReply": true,
+      "inReplyToStatusId": "1899839638493077892",
+      "inReplyToUserId": "4783690002",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://pbs.twimg.com/ext_tw_video_thumb/1899836712345350144/pu/img/tBLiCESIVRsTsN22.jpg",
+          "videoUrl": "https://video.twimg.com/ext_tw_video/1899836712345350144/pu/vid/avc1/720x900/d3NS002lPOo2A0ax.mp4?tag=12"
+        }
+      ],
+      "user": {
+        "id": "4783690002",
+        "name": "Google DeepMind",
+        "screenName": "GoogleDeepMind",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1695024885070737408/-M-HSH5P_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "29876",
+      "externalUrls": []
+    },
+    {
+      "id": "1899839644302270671",
+      "conversationId": "1899839624068907335",
+      "fullText": "We're partnering with @Apptronik to build the next generation of humanoid robots with Gemini 2.0 - and opening our Gemini Robotics-ER model to trusted testers such as Agile Robots, @AgilityRobotics, @BostonDynamics and @EnchantedTools.\n\nFind out more → https://t.co/EXRJrmxGxl https://t.co/dtEV6DX0A8",
+      "createdAt": "Wed Mar 12 15:07:23 +0000 2025",
+      "favoriteCount": 59,
+      "replyCount": 1,
+      "retweetCount": 12,
+      "quoteCount": 2,
+      "isReply": true,
+      "inReplyToStatusId": "1899839641693430008",
+      "inReplyToUserId": "4783690002",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://pbs.twimg.com/ext_tw_video_thumb/1899836839160131584/pu/img/ow3XbzJs3yUk6MG1.jpg",
+          "videoUrl": "https://video.twimg.com/ext_tw_video/1899836839160131584/pu/vid/avc1/1280x720/Hcxppo51vzgKliO7.mp4?tag=12"
+        }
+      ],
+      "user": {
+        "id": "4783690002",
+        "name": "Google DeepMind",
+        "screenName": "GoogleDeepMind",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1695024885070737408/-M-HSH5P_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "10980",
+      "externalUrls": [
+        "https://goo.gle/gemini2-robotics"
+      ]
+    },
+    {
+      "id": "1899834518862790730",
+      "conversationId": "1899834518862790730",
+      "fullText": "RT @bhalligan: Love to see @yaminirangan on top of this list.",
+      "createdAt": "Wed Mar 12 14:47:01 +0000 2025",
+      "favoriteCount": 0,
+      "replyCount": 0,
+      "retweetCount": 0,
+      "quoteCount": 0,
+      "isReply": false,
+      "media": [],
+      "user": {
+        "id": "14260608",
+        "name": "dharmesh",
+        "screenName": "dharmesh",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1323776407521185793/He3iubHL_normal.jpg",
+        "verified": false
+      },
+      "externalUrls": []
+    },
+    {
+      "id": "1899831180893327697",
+      "conversationId": "1899831180893327697",
+      "fullText": "现实版罗生门，批判性思维的实战案例，芒格思维模型的应用题，人类认知偏差的具体展现。\n\n男人是68年的，女人明显是 80后，两人的孩子才 8 岁……怎么都不对劲。除非，两人当初各自都有原配？…",
+      "createdAt": "Wed Mar 12 14:33:45 +0000 2025",
+      "favoriteCount": 15,
+      "replyCount": 2,
+      "retweetCount": 3,
+      "quoteCount": 1,
+      "isReply": false,
+      "media": [],
+      "user": {
+        "id": "709787332254117888",
+        "name": "howie.serious",
+        "screenName": "howie_serious",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/738174666309652480/UgeKnQOm_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "3642",
+      "externalUrls": [],
+      "threadTexts": [
+        {
+          "id": "1899337701444440310",
+          "text": "会不会提出问题，决定了一个人的学习天花板。只有学会提问——提出清晰、明确、直击本质的问题——你才能真正学会学习。\n\n虚假的提问，是懒惰的头脑为了逃避自己的思考，愚蠢地向他人抛出大量无脑问题，惹人生厌。这常见于少部分思维懒惰者。… https://t.co/K3zmQXa8Kr"
+        }
+      ],
+      "fullThreadText": "现实版罗生门，批判性思维的实战案例，芒格思维模型的应用题，人类认知偏差的具体展现。\n\n男人是68年的，女人明显是 80后，两人的孩子才 8 岁……怎么都不对劲。除非，两人当初各自都有原配？…\n\n会不会提出问题，决定了一个人的学习天花板。只有学会提问——提出清晰、明确、直击本质的问题——你才能真正学会学习。\n\n虚假的提问，是懒惰的头脑为了逃避自己的思考，愚蠢地向他人抛出大量无脑问题，惹人生厌。这常见于少部分思维懒惰者。… https://t.co/K3zmQXa8Kr",
+      "allMediaUrls": []
+    },
+    {
+      "id": "1899827255435547077",
+      "conversationId": "1899827255435547077",
+      "fullText": "最近很多团队都在复现R1，国内国外都有。\n可是没一个成功的，大家都说很难。\n开卷考试了，都做不出来，DeepSeek 的技术积累还是很深的。",
+      "createdAt": "Wed Mar 12 14:18:09 +0000 2025",
+      "favoriteCount": 126,
+      "replyCount": 20,
+      "retweetCount": 5,
+      "quoteCount": 2,
+      "isReply": false,
+      "media": [],
+      "user": {
+        "id": "6782882",
+        "name": "orange.ai",
+        "screenName": "oran_ge",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1760074488073629696/ceSsuVCY_normal.png",
+        "verified": false
+      },
+      "viewCount": "31697",
+      "externalUrls": []
+    },
+    {
+      "id": "1899820090025230782",
+      "conversationId": "1899820090025230782",
+      "fullText": "今天和六小虎的一位产品负责人聊到我们团队\n我说我们有6个人\n他问是不是太多了\n我说其实自己创业的话，有个东西叫基建，得自己做的\n以前我们在六小虎和大公司的时候，基建都是一个专门的部门帮忙做好了\n\n所以啊，初创公司的前几个月，每个人所做的事情可能都是在以前公司里没做过的很基本的事情。…",
+      "createdAt": "Wed Mar 12 13:49:41 +0000 2025",
+      "favoriteCount": 30,
+      "replyCount": 3,
+      "retweetCount": 1,
+      "quoteCount": 0,
+      "isReply": false,
+      "media": [],
+      "user": {
+        "id": "6782882",
+        "name": "orange.ai",
+        "screenName": "oran_ge",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1760074488073629696/ceSsuVCY_normal.png",
+        "verified": false
+      },
+      "viewCount": "9026",
+      "externalUrls": []
+    },
+    {
+      "id": "1899815881607422128",
+      "conversationId": "1899815881607422128",
+      "fullText": "7 days. 2 million people on the waitlist. \n\nWe’re so excited and humbled by the incredible demand, and we’re working around the clock to bring Manus to more of your as soon as possible.\n\nImage credit to one of our amazing Manus creators🩷 https://t.co/S8hdk9H5GR",
+      "createdAt": "Wed Mar 12 13:32:57 +0000 2025",
+      "favoriteCount": 817,
+      "replyCount": 226,
+      "retweetCount": 62,
+      "quoteCount": 37,
+      "isReply": false,
+      "media": [
+        {
+          "type": "animated_gif",
+          "url": "https://pbs.twimg.com/tweet_video_thumb/Gl1-5vVWIAE5N4T.jpg",
+          "videoUrl": ""
+        }
+      ],
+      "user": {
+        "id": "1897259968958730240",
+        "name": "ManusAI",
+        "screenName": "ManusAI_HQ",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1897262465039437824/cQHSXMJ0_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "49043",
+      "externalUrls": []
+    },
+    {
+      "id": "1899814309904924987",
+      "conversationId": "1899814309904924987",
+      "fullText": "短视频领域的增长黑客",
+      "createdAt": "Wed Mar 12 13:26:42 +0000 2025",
+      "favoriteCount": 4,
+      "replyCount": 1,
+      "retweetCount": 0,
+      "quoteCount": 0,
+      "isReply": false,
+      "media": [],
+      "user": {
+        "id": "6782882",
+        "name": "orange.ai",
+        "screenName": "oran_ge",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1760074488073629696/ceSsuVCY_normal.png",
+        "verified": false
+      },
+      "viewCount": "5964",
+      "externalUrls": [],
+      "threadTexts": [
+        {
+          "id": "1899827255435547077",
+          "text": "最近很多团队都在复现R1，国内国外都有。\n可是没一个成功的，大家都说很难。\n开卷考试了，都做不出来，DeepSeek 的技术积累还是很深的。"
+        }
+      ],
+      "fullThreadText": "短视频领域的增长黑客\n\n最近很多团队都在复现R1，国内国外都有。\n可是没一个成功的，大家都说很难。\n开卷考试了，都做不出来，DeepSeek 的技术积累还是很深的。",
+      "allMediaUrls": []
+    },
+    {
+      "id": "1899811127216730238",
+      "conversationId": "1899811127216730238",
+      "fullText": "Excited to host Sumeet Motwani on March 12 (today!) at 15:00 GMT!\nHe’ll dive into MALT: Improving Reasoning with Multi-Agent LLM Training, a new multi-agent post-training method that uses credit assigned synthetic data to improve the reasoning capabilities and self-correction… https://t.co/AUcSI2RSgC",
+      "createdAt": "Wed Mar 12 13:14:04 +0000 2025",
+      "favoriteCount": 20,
+      "replyCount": 1,
+      "retweetCount": 3,
+      "quoteCount": 1,
+      "isReply": false,
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/Gl162rWXAAALhta.jpg"
+        }
+      ],
+      "user": {
+        "id": "1670140763424931842",
+        "name": "CAMEL-AI.org",
+        "screenName": "CamelAIOrg",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1750937728701632512/VXvNnpL1_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "1356",
+      "externalUrls": []
+    },
+    {
+      "id": "1899811199065207092",
+      "conversationId": "1899811127216730238",
+      "fullText": "🔗 Join us here: https://t.co/yEm8S9WuEY",
+      "createdAt": "Wed Mar 12 13:14:21 +0000 2025",
+      "favoriteCount": 1,
+      "replyCount": 0,
+      "retweetCount": 0,
+      "quoteCount": 0,
+      "isReply": true,
+      "inReplyToStatusId": "1899811127216730238",
+      "inReplyToUserId": "1670140763424931842",
+      "media": [],
+      "user": {
+        "id": "1670140763424931842",
+        "name": "CAMEL-AI.org",
+        "screenName": "CamelAIOrg",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1750937728701632512/VXvNnpL1_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "403",
+      "externalUrls": [
+        "https://discord.com/events/1115015097560076329/1348135804949495888/1349396516044800000"
+      ]
+    },
+    {
+      "id": "1899804561684259181",
+      "conversationId": "1899804561684259181",
+      "fullText": "AI资讯日报，3月12日：https://t.co/BGo49Nx2sd https://t.co/mc9AsRP2CG",
+      "createdAt": "Wed Mar 12 12:47:58 +0000 2025",
+      "favoriteCount": 2,
+      "replyCount": 0,
+      "retweetCount": 0,
+      "quoteCount": 0,
+      "isReply": false,
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/Gl12LGSaoAA9a1E.jpg"
+        }
+      ],
+      "user": {
+        "id": "1657474831",
+        "name": "Gorden Sun",
+        "screenName": "Gorden_Sun",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1522159828231409664/GPpXyPT1_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "827",
+      "externalUrls": [
+        "https://gorden-sun.notion.site/3-12-AI-1b4594247325802aaa1dc92298581b09?pvs=4"
+      ],
+      "threadTexts": [
+        {
+          "id": "1899435517034561734",
+          "text": "nanobrowser：开源版OpenAI Operator\n是个Chrome插件，安装后在本地运行，支持OpenAI、Claude、Gemini三家API。运行过程可视化，是可AI交互版本的RPA。\nGithub：https://t.co/iWPY4GyhAE https://t.co/ylYNW1mXGl"
+        }
+      ],
+      "fullThreadText": "AI资讯日报，3月12日：https://t.co/BGo49Nx2sd https://t.co/mc9AsRP2CG\n\nnanobrowser：开源版OpenAI Operator\n是个Chrome插件，安装后在本地运行，支持OpenAI、Claude、Gemini三家API。运行过程可视化，是可AI交互版本的RPA。\nGithub：https://t.co/iWPY4GyhAE https://t.co/ylYNW1mXGl",
+      "allMediaUrls": [
+        "https://pbs.twimg.com/media/Gl12LGSaoAA9a1E.jpg"
+      ]
+    },
+    {
+      "id": "1899800301915472063",
+      "conversationId": "1899800301915472063",
+      "fullText": "VACE：All-in-One视频生成和编辑模型\n阿里通义Wan团队的新模型，即将开源。支持按条件生成视频，也支持多种方式编辑视频，包括控制运动轨迹、替换主体、主体参考、画面扩展等。\n项目地址：https://t.co/jwOgTeXawE https://t.co/RSYIMIqh3L",
+      "createdAt": "Wed Mar 12 12:31:03 +0000 2025",
+      "favoriteCount": 6,
+      "replyCount": 0,
+      "retweetCount": 2,
+      "quoteCount": 0,
+      "isReply": false,
+      "media": [
+        {
+          "type": "video",
+          "url": "https://pbs.twimg.com/ext_tw_video_thumb/1899800192314163200/pu/img/gvRI_mumo3WX73T-.jpg",
+          "videoUrl": "https://video.twimg.com/ext_tw_video/1899800192314163200/pu/vid/avc1/1280x720/1FnU66G0QQUHA04-.mp4?tag=12"
+        },
+        {
+          "type": "video",
+          "url": "https://pbs.twimg.com/ext_tw_video_thumb/1899800192309927936/pu/img/ErGZDrSJBTfV1Us7.jpg",
+          "videoUrl": "https://video.twimg.com/ext_tw_video/1899800192309927936/pu/vid/avc1/1280x720/5VAVmZH6DblaGuvo.mp4?tag=12"
+        }
+      ],
+      "user": {
+        "id": "1657474831",
+        "name": "Gorden Sun",
+        "screenName": "Gorden_Sun",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1522159828231409664/GPpXyPT1_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "885",
+      "externalUrls": [
+        "https://ali-vilab.github.io/VACE-Page/"
+      ]
+    },
+    {
+      "id": "1899754181533286405",
+      "conversationId": "1899754181533286405",
+      "fullText": "谷歌突然开源 Gemma 3 模型\n\nLMArena 排行榜居然居然超过了 Llama 405B 和 03mini\n\n- 1B、4B、12B 和 27B 四个尺寸\n- 超过 35 种语言的开箱即用支持\n- 支持多模态视觉推理能力\n- 128K 的超长上下文长度\n- 支持函数调用和结构化输出\n- 提供官方量化版本 https://t.co/NdAkjnvipl",
+      "createdAt": "Wed Mar 12 09:27:47 +0000 2025",
+      "favoriteCount": 145,
+      "replyCount": 11,
+      "retweetCount": 34,
+      "quoteCount": 3,
+      "isReply": false,
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/Gl1IVfEa4AAIm1U.jpg"
+        }
+      ],
+      "user": {
+        "id": "1669276256",
+        "name": "歸藏(guizang.ai)",
+        "screenName": "op7418",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1636981205504786434/xDl77JIw_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "46871",
+      "externalUrls": [],
+      "threadTexts": [
+        {
+          "id": "1899757193307500891",
+          "text": "模型竞技场的推：https://t.co/NW8cEoXHUL"
+        },
+        {
+          "id": "1899796223118410079",
+          "text": "AI Studio 现在可以体验 Gemma 3 https://t.co/xueTkwRbUl"
+        },
+        {
+          "id": "1899758484998258852",
+          "text": "@xincmm 这么快"
+        }
+      ],
+      "fullThreadText": "谷歌突然开源 Gemma 3 模型\n\nLMArena 排行榜居然居然超过了 Llama 405B 和 03mini\n\n- 1B、4B、12B 和 27B 四个尺寸\n- 超过 35 种语言的开箱即用支持\n- 支持多模态视觉推理能力\n- 128K 的超长上下文长度\n- 支持函数调用和结构化输出\n- 提供官方量化版本 https://t.co/NdAkjnvipl\n\n模型竞技场的推：https://t.co/NW8cEoXHUL\n\nAI Studio 现在可以体验 Gemma 3 https://t.co/xueTkwRbUl\n\n@xincmm 这么快",
+      "allMediaUrls": [
+        "https://pbs.twimg.com/media/Gl1IVfEa4AAIm1U.jpg"
+      ]
+    },
+    {
+      "id": "1899757193307500891",
+      "conversationId": "1899754181533286405",
+      "fullText": "模型竞技场的推：https://t.co/NW8cEoXHUL",
+      "createdAt": "Wed Mar 12 09:39:45 +0000 2025",
+      "favoriteCount": 3,
+      "replyCount": 1,
+      "retweetCount": 0,
+      "quoteCount": 0,
+      "isReply": true,
+      "inReplyToStatusId": "1899754181533286405",
+      "inReplyToUserId": "1669276256",
+      "media": [],
+      "user": {
+        "id": "1669276256",
+        "name": "歸藏(guizang.ai)",
+        "screenName": "op7418",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1636981205504786434/xDl77JIw_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "7945",
+      "externalUrls": [
+        "https://x.com/lmarena_ai/status/1899729292617277501"
+      ]
+    },
+    {
+      "id": "1899796223118410079",
+      "conversationId": "1899754181533286405",
+      "fullText": "AI Studio 现在可以体验 Gemma 3 https://t.co/xueTkwRbUl",
+      "createdAt": "Wed Mar 12 12:14:50 +0000 2025",
+      "favoriteCount": 4,
+      "replyCount": 0,
+      "retweetCount": 0,
+      "quoteCount": 0,
+      "isReply": true,
+      "inReplyToStatusId": "1899757193307500891",
+      "inReplyToUserId": "1669276256",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/Gl1uewiXcAA5E89.jpg"
+        }
+      ],
+      "user": {
+        "id": "1669276256",
+        "name": "歸藏(guizang.ai)",
+        "screenName": "op7418",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1636981205504786434/xDl77JIw_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "2883",
+      "externalUrls": []
+    },
+    {
+      "id": "1899790001124090356",
+      "conversationId": "1899790001124090356",
+      "fullText": "谷歌开源Gemma 3系列模型\n多模态，支持图片和文本输入，文本输出。分1、4、12、27B四个大小，在LLM竞技场上得分超过DeepSeek V3。\n官方介绍：https://t.co/5ley1q34Zq\n模型：https://t.co/d0YlEC1Wb7 https://t.co/qGUZrB4YBr",
+      "createdAt": "Wed Mar 12 11:50:07 +0000 2025",
+      "favoriteCount": 4,
+      "replyCount": 0,
+      "retweetCount": 1,
+      "quoteCount": 1,
+      "isReply": false,
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/Gl1o7huaMAAjydO.jpg"
+        }
+      ],
+      "user": {
+        "id": "1657474831",
+        "name": "Gorden Sun",
+        "screenName": "Gorden_Sun",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1522159828231409664/GPpXyPT1_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "1671",
+      "externalUrls": [
+        "https://developers.googleblog.com/en/introducing-gemma3/",
+        "https://huggingface.co/collections/google/gemma-3-release-67c6c6f89c4f76621268bb6d"
+      ],
+      "threadTexts": [
+        {
+          "id": "1899435517034561734",
+          "text": "nanobrowser：开源版OpenAI Operator\n是个Chrome插件，安装后在本地运行，支持OpenAI、Claude、Gemini三家API。运行过程可视化，是可AI交互版本的RPA。\nGithub：https://t.co/iWPY4GyhAE https://t.co/ylYNW1mXGl"
+        }
+      ],
+      "fullThreadText": "谷歌开源Gemma 3系列模型\n多模态，支持图片和文本输入，文本输出。分1、4、12、27B四个大小，在LLM竞技场上得分超过DeepSeek V3。\n官方介绍：https://t.co/5ley1q34Zq\n模型：https://t.co/d0YlEC1Wb7 https://t.co/qGUZrB4YBr\n\nnanobrowser：开源版OpenAI Operator\n是个Chrome插件，安装后在本地运行，支持OpenAI、Claude、Gemini三家API。运行过程可视化，是可AI交互版本的RPA。\nGithub：https://t.co/iWPY4GyhAE https://t.co/ylYNW1mXGl",
+      "allMediaUrls": [
+        "https://pbs.twimg.com/media/Gl1o7huaMAAjydO.jpg"
+      ]
+    },
+    {
+      "id": "1899785055662195169",
+      "conversationId": "1899785055662195169",
+      "fullText": "Google DeepMind just dropped Gemma 3 and it’s a big deal.\n\nThis is the most powerful AI you can run on a single GPU or TPU.\n\nThat means fast, efficient AI that works on everything from laptops to high-end workstations, no need for expensive cloud setups.\n\nHere’s why everyone is… https://t.co/2tTsjiCdfM",
+      "createdAt": "Wed Mar 12 11:30:28 +0000 2025",
+      "favoriteCount": 146,
+      "replyCount": 17,
+      "retweetCount": 16,
+      "quoteCount": 2,
+      "isReply": false,
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/Gl1j835XwAA49qO.jpg"
+        }
+      ],
+      "user": {
+        "id": "23113993",
+        "name": "Min Choi",
+        "screenName": "minchoi",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1638359113221517312/CBZaJFyA_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "23189",
+      "externalUrls": [],
+      "threadTexts": [
+        {
+          "id": "1899785057486671878",
+          "text": "Read the announcement here:\nhttps://t.co/2jkvTjauGc"
+        },
+        {
+          "id": "1899785150168207678",
+          "text": "If you enjoyed this thread,\n\nFollow me @minchoi and please Bookmark, Like, Comment &amp; Repost the first Post below to share with your friends:\nhttps://t.co/61zcotcmQ6"
+        },
+        {
+          "id": "1899806911744102888",
+          "text": "@AIwithArsalan Huge leap.  If this level of performance can be on a single GPU, it's going to get really interesting."
+        },
+        {
+          "id": "1899806784405061689",
+          "text": "@InnovationRapid Will see how Gemma 3 will perform but its ELO rating at its size is wild"
+        }
+      ],
+      "fullThreadText": "Google DeepMind just dropped Gemma 3 and it’s a big deal.\n\nThis is the most powerful AI you can run on a single GPU or TPU.\n\nThat means fast, efficient AI that works on everything from laptops to high-end workstations, no need for expensive cloud setups.\n\nHere’s why everyone is… https://t.co/2tTsjiCdfM\n\nRead the announcement here:\nhttps://t.co/2jkvTjauGc\n\nIf you enjoyed this thread,\n\nFollow me @minchoi and please Bookmark, Like, Comment &amp; Repost the first Post below to share with your friends:\nhttps://t.co/61zcotcmQ6\n\n@AIwithArsalan Huge leap.  If this level of performance can be on a single GPU, it's going to get really interesting.\n\n@InnovationRapid Will see how Gemma 3 will perform but its ELO rating at its size is wild",
+      "allMediaUrls": [
+        "https://pbs.twimg.com/media/Gl1j835XwAA49qO.jpg"
+      ]
+    },
+    {
+      "id": "1899785057486671878",
+      "conversationId": "1899785055662195169",
+      "fullText": "Read the announcement here:\nhttps://t.co/2jkvTjauGc",
+      "createdAt": "Wed Mar 12 11:30:28 +0000 2025",
+      "favoriteCount": 8,
+      "replyCount": 1,
+      "retweetCount": 0,
+      "quoteCount": 0,
+      "isReply": true,
+      "inReplyToStatusId": "1899785055662195169",
+      "inReplyToUserId": "23113993",
+      "media": [],
+      "user": {
+        "id": "23113993",
+        "name": "Min Choi",
+        "screenName": "minchoi",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1638359113221517312/CBZaJFyA_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "7435",
+      "externalUrls": [
+        "https://x.com/osanseviero/status/1899726995170210254"
+      ]
+    },
+    {
+      "id": "1899785150168207678",
+      "conversationId": "1899785055662195169",
+      "fullText": "If you enjoyed this thread,\n\nFollow me @minchoi and please Bookmark, Like, Comment &amp; Repost the first Post below to share with your friends:\nhttps://t.co/61zcotcmQ6",
+      "createdAt": "Wed Mar 12 11:30:50 +0000 2025",
+      "favoriteCount": 5,
+      "replyCount": 1,
+      "retweetCount": 1,
+      "quoteCount": 0,
+      "isReply": true,
+      "inReplyToStatusId": "1899785057486671878",
+      "inReplyToUserId": "23113993",
+      "media": [],
+      "user": {
+        "id": "23113993",
+        "name": "Min Choi",
+        "screenName": "minchoi",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1638359113221517312/CBZaJFyA_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "5873",
+      "externalUrls": [
+        "https://x.com/minchoi/status/1899785055662195169"
+      ]
+    },
+    {
+      "id": "1899782375971684418",
+      "conversationId": "1899782375971684418",
+      "fullText": "现在的年轻人是不是已经没人学移动端开发了…",
+      "createdAt": "Wed Mar 12 11:19:49 +0000 2025",
+      "favoriteCount": 22,
+      "replyCount": 12,
+      "retweetCount": 0,
+      "quoteCount": 0,
+      "isReply": false,
+      "media": [],
+      "user": {
+        "id": "6782882",
+        "name": "orange.ai",
+        "screenName": "oran_ge",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1760074488073629696/ceSsuVCY_normal.png",
+        "verified": false
+      },
+      "viewCount": "12663",
+      "externalUrls": [],
+      "threadTexts": [
+        {
+          "id": "1899786684738256907",
+          "text": "@lxfater 啊 这"
+        }
+      ],
+      "fullThreadText": "现在的年轻人是不是已经没人学移动端开发了…\n\n@lxfater 啊 这",
+      "allMediaUrls": []
+    },
+    {
+      "id": "1899781449257005198",
+      "conversationId": "1899781449257005198",
+      "fullText": "RT @osanseviero: I’m so happy to announce Gemma 3 is out! 🚀\n\n🌏Understands over 140 languages\n👀Multimodal with image and video input\n🤯LMAren…",
+      "createdAt": "Wed Mar 12 11:16:08 +0000 2025",
+      "favoriteCount": 0,
+      "replyCount": 0,
+      "retweetCount": 366,
+      "quoteCount": 0,
+      "isReply": false,
+      "media": [],
+      "user": {
+        "id": "1482581556",
+        "name": "Demis Hassabis",
+        "screenName": "demishassabis",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/691700243809718272/z7XZUARB_normal.jpg",
+        "verified": false
+      },
+      "externalUrls": []
+    },
+    {
+      "id": "1899781377026875660",
+      "conversationId": "1899781377026875660",
+      "fullText": "RT @_philschmid: Gemma 3 is here and its the best open non-reasoning model on LMSYS! 🚀 @GoogleDeepMind Gemma 3 is an open, multimodal (text…",
+      "createdAt": "Wed Mar 12 11:15:51 +0000 2025",
+      "favoriteCount": 0,
+      "replyCount": 0,
+      "retweetCount": 65,
+      "quoteCount": 0,
+      "isReply": false,
+      "media": [],
+      "user": {
+        "id": "1482581556",
+        "name": "Demis Hassabis",
+        "screenName": "demishassabis",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/691700243809718272/z7XZUARB_normal.jpg",
+        "verified": false
+      },
+      "externalUrls": []
+    },
+    {
+      "id": "1899763024631906342",
+      "conversationId": "1899763024631906342",
+      "fullText": "1万字的诚恳说明，可以解释没能和抑郁症前妻保持良好关系的复杂缘由。\n\n然而在「你给我滚」脱口而出之后，100万字都救不回来。",
+      "createdAt": "Wed Mar 12 10:02:55 +0000 2025",
+      "favoriteCount": 283,
+      "replyCount": 59,
+      "retweetCount": 12,
+      "quoteCount": 5,
+      "isReply": false,
+      "media": [],
+      "user": {
+        "id": "64662332",
+        "name": "阑夕",
+        "screenName": "foxshuo",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1550395556685819910/qnbrCfBf_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "42251",
+      "externalUrls": [],
+      "threadTexts": [
+        {
+          "id": "1899767913256779817",
+          "text": "我再说一点啊，我从来不自认为是道德感很高的人，甚至很反感大多数道德绑架，但就连我这种情操低级的人也感到不适的场面，你们可千万别再找补了，除了让我觉得人下有人之外，毫无意义啊。"
+        }
+      ],
+      "fullThreadText": "1万字的诚恳说明，可以解释没能和抑郁症前妻保持良好关系的复杂缘由。\n\n然而在「你给我滚」脱口而出之后，100万字都救不回来。\n\n我再说一点啊，我从来不自认为是道德感很高的人，甚至很反感大多数道德绑架，但就连我这种情操低级的人也感到不适的场面，你们可千万别再找补了，除了让我觉得人下有人之外，毫无意义啊。",
+      "allMediaUrls": []
+    },
+    {
+      "id": "1899767913256779817",
+      "conversationId": "1899763024631906342",
+      "fullText": "我再说一点啊，我从来不自认为是道德感很高的人，甚至很反感大多数道德绑架，但就连我这种情操低级的人也感到不适的场面，你们可千万别再找补了，除了让我觉得人下有人之外，毫无意义啊。",
+      "createdAt": "Wed Mar 12 10:22:21 +0000 2025",
+      "favoriteCount": 118,
+      "replyCount": 22,
+      "retweetCount": 5,
+      "quoteCount": 0,
+      "isReply": true,
+      "inReplyToStatusId": "1899763024631906342",
+      "inReplyToUserId": "64662332",
+      "media": [],
+      "user": {
+        "id": "64662332",
+        "name": "阑夕",
+        "screenName": "foxshuo",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1550395556685819910/qnbrCfBf_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "25753",
+      "externalUrls": []
+    },
+    {
+      "id": "1899732322897064247",
+      "conversationId": "1899732322897064247",
+      "fullText": "用 Pika 的 PIkawaps 视频编辑做的换装视频\n\nhttps://t.co/mC0hqTurLq",
+      "createdAt": "Wed Mar 12 08:00:55 +0000 2025",
+      "favoriteCount": 289,
+      "replyCount": 15,
+      "retweetCount": 48,
+      "quoteCount": 3,
+      "isReply": false,
+      "media": [
+        {
+          "type": "video",
+          "url": "https://pbs.twimg.com/ext_tw_video_thumb/1899625345986543616/pu/img/K4QafUUNpTTg3PJZ.jpg",
+          "videoUrl": "https://video.twimg.com/ext_tw_video/1899625345986543616/pu/vid/avc1/1080x1920/78aQmQ1Az7wRtSf3.mp4?tag=14"
+        }
+      ],
+      "user": {
+        "id": "1669276256",
+        "name": "歸藏(guizang.ai)",
+        "screenName": "op7418",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1636981205504786434/xDl77JIw_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "63232",
+      "externalUrls": []
+    },
+    {
+      "id": "1899730642180669462",
+      "conversationId": "1899730642180669462",
+      "fullText": "Fal 的 Veo2 图生视频正式开放了，还很贵\n\n有需求可以体验一下 https://t.co/eUY4yYtUkT",
+      "createdAt": "Wed Mar 12 07:54:15 +0000 2025",
+      "favoriteCount": 15,
+      "replyCount": 1,
+      "retweetCount": 4,
+      "quoteCount": 0,
+      "isReply": false,
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/Gl0y1JBbcAA1vrI.jpg"
+        }
+      ],
+      "user": {
+        "id": "1669276256",
+        "name": "歸藏(guizang.ai)",
+        "screenName": "op7418",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1636981205504786434/xDl77JIw_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "7797",
+      "externalUrls": []
+    },
+    {
+      "id": "1899729806989635653",
+      "conversationId": "1899729806989635653",
+      "fullText": "RT @googleaidevs: Gemma 3 is a collection of lightweight, state-of-the-art open models built from the same research and technology that pow…",
+      "createdAt": "Wed Mar 12 07:50:55 +0000 2025",
+      "favoriteCount": 0,
+      "replyCount": 0,
+      "retweetCount": 289,
+      "quoteCount": 0,
+      "isReply": false,
+      "media": [],
+      "user": {
+        "id": "4783690002",
+        "name": "Google DeepMind",
+        "screenName": "GoogleDeepMind",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1695024885070737408/-M-HSH5P_normal.jpg",
+        "verified": false
+      },
+      "externalUrls": []
+    },
+    {
+      "id": "1899727280769036557",
+      "conversationId": "1899727280769036557",
+      "fullText": "RT @DeryaTR_: This new storytelling AI model by OpenAI is so unbelievably good and moving that it evoked very strong poignant feelings whil…",
+      "createdAt": "Wed Mar 12 07:40:53 +0000 2025",
+      "favoriteCount": 0,
+      "replyCount": 0,
+      "retweetCount": 29,
+      "quoteCount": 0,
+      "isReply": false,
+      "media": [],
+      "user": {
+        "id": "7213362",
+        "name": "javi",
+        "screenName": "Javi",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1640136986739740673/1fxp8MlR_normal.jpg",
+        "verified": false
+      },
+      "externalUrls": []
+    },
+    {
+      "id": "1899718330392641689",
+      "conversationId": "1899718330392641689",
+      "fullText": "本周 AI 和机器人领域取得了显著进展。\n\nBrett Adcock总结了来自微软、Manus、波士顿动力、Anthropic、Perplexity、Cortical Labs、Sanctuary AI、阿里巴巴、ASLP Labs 等公司的所有动态。\n\n以下原文👇：",
+      "createdAt": "Wed Mar 12 07:05:19 +0000 2025",
+      "favoriteCount": 88,
+      "replyCount": 2,
+      "retweetCount": 24,
+      "quoteCount": 3,
+      "isReply": false,
+      "media": [],
+      "user": {
+        "id": "1551258526584115204",
+        "name": "AI Will",
+        "screenName": "FinanceYF5",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "47122",
+      "externalUrls": []
+    },
+    {
+      "id": "1899718367642350058",
+      "conversationId": "1899718330392641689",
+      "fullText": "总部位于帕洛阿尔托的 Proception 人形机器人初创公司从隐身中现身。\n\n他们展示了其人形机器人手部的早期版本——旨在通过真实人类与不同物体和环境互动的数据来构建灵活的机器人。\nhttps://t.co/5E7lL2iAdt",
+      "createdAt": "Wed Mar 12 07:05:28 +0000 2025",
+      "favoriteCount": 2,
+      "replyCount": 1,
+      "retweetCount": 0,
+      "quoteCount": 0,
+      "isReply": true,
+      "inReplyToStatusId": "1899718364605612465",
+      "inReplyToUserId": "1551258526584115204",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://pbs.twimg.com/ext_tw_video_thumb/1896436790946594816/pu/img/0GJxsxvjcxSRcXvy.jpg",
+          "videoUrl": "https://video.twimg.com/ext_tw_video/1896436790946594816/pu/vid/avc1/1280x720/MXHg5LwPuhTENZtQ.mp4?tag=12"
+        }
+      ],
+      "user": {
+        "id": "1551258526584115204",
+        "name": "AI Will",
+        "screenName": "FinanceYF5",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "3478",
+      "externalUrls": []
+    },
+    {
+      "id": "1899718609095557377",
+      "conversationId": "1899718330392641689",
+      "fullText": "以上就是全部，原作者 @adcock_brett\n\n如果您喜欢这个主题：\n\n1.关注我（@FinanceYF5）\n2. 点赞+转发下面第一条帖子\n\nhttps://t.co/m8DodakfXR",
+      "createdAt": "Wed Mar 12 07:06:26 +0000 2025",
+      "favoriteCount": 3,
+      "replyCount": 0,
+      "retweetCount": 0,
+      "quoteCount": 0,
+      "isReply": true,
+      "inReplyToStatusId": "1899718367642350058",
+      "inReplyToUserId": "1551258526584115204",
+      "media": [],
+      "user": {
+        "id": "1551258526584115204",
+        "name": "AI Will",
+        "screenName": "FinanceYF5",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "4381",
+      "externalUrls": [
+        "https://x.com/FinanceYF5/status/1899718330392641689"
+      ]
+    },
+    {
+      "id": "1899713230542344290",
+      "conversationId": "1899713230542344290",
+      "fullText": "TODAY'S AI NEWS: OpenAI just dropped DIY tools to build custom autonomous AI agents\n\nPlus, more news from Meta, Reka, Cartesia, Harvey, Luma Labs, and Manus.\n\nHere's everything you need to know:",
+      "createdAt": "Wed Mar 12 06:45:03 +0000 2025",
+      "favoriteCount": 829,
+      "replyCount": 27,
+      "retweetCount": 96,
+      "quoteCount": 3,
+      "isReply": false,
+      "media": [],
+      "user": {
+        "id": "1314686042",
+        "name": "Rowan Cheung",
+        "screenName": "rowancheung",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1711152452735774720/Cotttl-n_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "140096",
+      "externalUrls": []
+    },
+    {
+      "id": "1899713411887329369",
+      "conversationId": "1899713230542344290",
+      "fullText": "As always, I'll be sending out a more in-depth rundown on all the AI news, and why it actually matters in ~5 hours in my newsletter.\n\nJoin 1,000,000+ readers for free and never miss a thing in AI ever again:\nhttps://t.co/Gm5KwesnA7",
+      "createdAt": "Wed Mar 12 06:45:47 +0000 2025",
+      "favoriteCount": 21,
+      "replyCount": 1,
+      "retweetCount": 0,
+      "quoteCount": 0,
+      "isReply": true,
+      "inReplyToStatusId": "1899713389439377678",
+      "inReplyToUserId": "1314686042",
+      "media": [],
+      "user": {
+        "id": "1314686042",
+        "name": "Rowan Cheung",
+        "screenName": "rowancheung",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1711152452735774720/Cotttl-n_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "18068",
+      "externalUrls": [
+        "https://www.therundown.ai/subscribe"
+      ]
+    },
+    {
+      "id": "1899713434054275076",
+      "conversationId": "1899713230542344290",
+      "fullText": "That's it for today's news in the world of AI.\n\nI share what's happening in AI every day, follow me @rowancheung for more.\n\nIf you found this helpful, support me with a like/retweet on the first tweet of this thread:https://t.co/3Nip2hxfd1",
+      "createdAt": "Wed Mar 12 06:45:52 +0000 2025",
+      "favoriteCount": 17,
+      "replyCount": 0,
+      "retweetCount": 1,
+      "quoteCount": 0,
+      "isReply": true,
+      "inReplyToStatusId": "1899713411887329369",
+      "inReplyToUserId": "1314686042",
+      "media": [],
+      "user": {
+        "id": "1314686042",
+        "name": "Rowan Cheung",
+        "screenName": "rowancheung",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1711152452735774720/Cotttl-n_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "24052",
+      "externalUrls": [
+        "https://x.com/rowancheung/status/1899713230542344290"
+      ]
+    },
+    {
+      "id": "1899712364553113984",
+      "conversationId": "1899712364553113984",
+      "fullText": "RAG 自从第一个大型上下文窗口 LLM 出现后就一直在衰退。\n\n一些显著的“死亡”事件包括：\n\n• 2023年5月：Anthropic 的 Claude，100k token 的上下文窗口\n\n• 2024年2月：Google 的 Gemini 1.5，1M token 的上下文窗口\n\n• 2025年3月：Model Context Protocol 让你直接与数据对话 https://t.co/u9aQBj02wl",
+      "createdAt": "Wed Mar 12 06:41:37 +0000 2025",
+      "favoriteCount": 5,
+      "replyCount": 3,
+      "retweetCount": 0,
+      "quoteCount": 0,
+      "isReply": false,
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/Gl0iRtqbsAAot6_.jpg"
+        }
+      ],
+      "user": {
+        "id": "1551258526584115204",
+        "name": "AI Will",
+        "screenName": "FinanceYF5",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "4067",
+      "externalUrls": [],
+      "threadTexts": [
+        {
+          "id": "1899712367266848945",
+          "text": "https://t.co/OqjDgeHzxl"
+        }
+      ],
+      "fullThreadText": "RAG 自从第一个大型上下文窗口 LLM 出现后就一直在衰退。\n\n一些显著的“死亡”事件包括：\n\n• 2023年5月：Anthropic 的 Claude，100k token 的上下文窗口\n\n• 2024年2月：Google 的 Gemini 1.5，1M token 的上下文窗口\n\n• 2025年3月：Model Context Protocol 让你直接与数据对话 https://t.co/u9aQBj02wl\n\nhttps://t.co/OqjDgeHzxl",
+      "allMediaUrls": [
+        "https://pbs.twimg.com/media/Gl0iRtqbsAAot6_.jpg"
+      ]
+    },
+    {
+      "id": "1899712367266848945",
+      "conversationId": "1899712364553113984",
+      "fullText": "https://t.co/OqjDgeHzxl",
+      "createdAt": "Wed Mar 12 06:41:37 +0000 2025",
+      "favoriteCount": 1,
+      "replyCount": 0,
+      "retweetCount": 0,
+      "quoteCount": 0,
+      "isReply": true,
+      "inReplyToStatusId": "1899712364553113984",
+      "inReplyToUserId": "1551258526584115204",
+      "media": [],
+      "user": {
+        "id": "1551258526584115204",
+        "name": "AI Will",
+        "screenName": "FinanceYF5",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "3568",
+      "externalUrls": [
+        "https://x.com/helloiamleonie/status/1899389996408189259"
+      ]
+    },
+    {
+      "id": "1899709490813080018",
+      "conversationId": "1899709490813080018",
+      "fullText": "Wan 团队的 All-in-One 视频编辑框架 VACE 太强了\n\n可以混合任何内容到视频中：\n\nMove-Anything: 在图像中移动选定对象到新位置\nSwap-Anything: 替换图像中的一个对象为另一个对象\nReference-Anything: 参考图像的风格应用到目标图像\nExpand-Anything: 扩展图像边界，智能填充新区域\nAnimate-Anything:… https://t.co/U9sB36GOuM",
+      "createdAt": "Wed Mar 12 06:30:12 +0000 2025",
+      "favoriteCount": 111,
+      "replyCount": 3,
+      "retweetCount": 27,
+      "quoteCount": 2,
+      "isReply": false,
+      "media": [
+        {
+          "type": "video",
+          "url": "https://pbs.twimg.com/ext_tw_video_thumb/1899709007394439168/pu/img/wrAwXZh9V6hsTBt6.jpg",
+          "videoUrl": "https://video.twimg.com/ext_tw_video/1899709007394439168/pu/vid/avc1/1280x720/sWNeMgRrTKhYyS_d.mp4?tag=12"
+        },
+        {
+          "type": "video",
+          "url": "https://pbs.twimg.com/ext_tw_video_thumb/1899709007398674432/pu/img/rnhKPOkTN_fnYqKk.jpg",
+          "videoUrl": "https://video.twimg.com/ext_tw_video/1899709007398674432/pu/vid/avc1/1280x720/629FzTmtKRjLDIYC.mp4?tag=12"
+        },
+        {
+          "type": "video",
+          "url": "https://pbs.twimg.com/ext_tw_video_thumb/1899709007402827776/pu/img/T97u7pqfIsaNDPxo.jpg",
+          "videoUrl": "https://video.twimg.com/ext_tw_video/1899709007402827776/pu/vid/avc1/1280x720/kVbytb-f-f7k03xU.mp4?tag=12"
+        },
+        {
+          "type": "video",
+          "url": "https://pbs.twimg.com/ext_tw_video_thumb/1899709006819770368/pu/img/xYf2PBpDNFj0f7ef.jpg",
+          "videoUrl": "https://video.twimg.com/ext_tw_video/1899709006819770368/pu/vid/avc1/1472x624/v36hPqfZvX7660ur.mp4?tag=12"
+        }
+      ],
+      "user": {
+        "id": "1669276256",
+        "name": "歸藏(guizang.ai)",
+        "screenName": "op7418",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1636981205504786434/xDl77JIw_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "13564",
+      "externalUrls": [],
+      "threadTexts": [
+        {
+          "id": "1899709558064328804",
+          "text": "项目页面：https://t.co/qiCD25Nxzn"
+        }
+      ],
+      "fullThreadText": "Wan 团队的 All-in-One 视频编辑框架 VACE 太强了\n\n可以混合任何内容到视频中：\n\nMove-Anything: 在图像中移动选定对象到新位置\nSwap-Anything: 替换图像中的一个对象为另一个对象\nReference-Anything: 参考图像的风格应用到目标图像\nExpand-Anything: 扩展图像边界，智能填充新区域\nAnimate-Anything:… https://t.co/U9sB36GOuM\n\n项目页面：https://t.co/qiCD25Nxzn",
+      "allMediaUrls": [
+        "https://pbs.twimg.com/ext_tw_video_thumb/1899709007394439168/pu/img/wrAwXZh9V6hsTBt6.jpg",
+        "https://pbs.twimg.com/ext_tw_video_thumb/1899709007398674432/pu/img/rnhKPOkTN_fnYqKk.jpg",
+        "https://pbs.twimg.com/ext_tw_video_thumb/1899709007402827776/pu/img/T97u7pqfIsaNDPxo.jpg",
+        "https://pbs.twimg.com/ext_tw_video_thumb/1899709006819770368/pu/img/xYf2PBpDNFj0f7ef.jpg"
+      ]
+    },
+    {
+      "id": "1899709558064328804",
+      "conversationId": "1899709490813080018",
+      "fullText": "项目页面：https://t.co/qiCD25Nxzn",
+      "createdAt": "Wed Mar 12 06:30:28 +0000 2025",
+      "favoriteCount": 9,
+      "replyCount": 0,
+      "retweetCount": 0,
+      "quoteCount": 0,
+      "isReply": true,
+      "inReplyToStatusId": "1899709490813080018",
+      "inReplyToUserId": "1669276256",
+      "media": [],
+      "user": {
+        "id": "1669276256",
+        "name": "歸藏(guizang.ai)",
+        "screenName": "op7418",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1636981205504786434/xDl77JIw_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "2956",
+      "externalUrls": [
+        "https://ali-vilab.github.io/VACE-Page/"
+      ]
+    },
+    {
+      "id": "1899709324265759011",
+      "conversationId": "1899709324265759011",
+      "fullText": "这个 Apple Vision Pro 应用程序允许你创建自己的无限书架。 \n\n这会是穿戴设备上电子书的未来吗？\n\n来源：oji_chang https://t.co/8HrHZPWKQW",
+      "createdAt": "Wed Mar 12 06:29:32 +0000 2025",
+      "favoriteCount": 70,
+      "replyCount": 7,
+      "retweetCount": 15,
+      "quoteCount": 0,
+      "isReply": false,
+      "media": [
+        {
+          "type": "video",
+          "url": "https://pbs.twimg.com/ext_tw_video_thumb/1899709227888787456/pu/img/--8dkYDM9ozByMj9.jpg",
+          "videoUrl": "https://video.twimg.com/ext_tw_video/1899709227888787456/pu/vid/avc1/1280x720/5JH58XBZc4--3vQu.mp4?tag=12"
+        }
+      ],
+      "user": {
+        "id": "1551258526584115204",
+        "name": "AI Will",
+        "screenName": "FinanceYF5",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "16409",
+      "externalUrls": []
+    },
+    {
+      "id": "1899708742364754351",
+      "conversationId": "1899708742364754351",
+      "fullText": "Talk To X已推出 ！\n\n你可以直接“聊天”与整个 X 数据库，获取实时见解和答案：\n\n-谁是火箭领域的最佳细分影响者？\n-当前 AI 领域的热门帖子有哪些？\n-我的粉丝中谁能帮我介绍 Lex Fridman？\n-谁是 X 上振动编码的关键声音？ https://t.co/pAMJN2COsI",
+      "createdAt": "Wed Mar 12 06:27:13 +0000 2025",
+      "favoriteCount": 21,
+      "replyCount": 2,
+      "retweetCount": 6,
+      "quoteCount": 0,
+      "isReply": false,
+      "media": [
+        {
+          "type": "video",
+          "url": "https://pbs.twimg.com/ext_tw_video_thumb/1899707444852617216/pu/img/Lzh-OJQE60pUvqsm.jpg",
+          "videoUrl": "https://video.twimg.com/ext_tw_video/1899707444852617216/pu/vid/avc1/720x720/-ISUl5wOn22p3u4o.mp4?tag=12"
+        }
+      ],
+      "user": {
+        "id": "1551258526584115204",
+        "name": "AI Will",
+        "screenName": "FinanceYF5",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "4814",
+      "externalUrls": [],
+      "threadTexts": [
+        {
+          "id": "1899708745187557385",
+          "text": "https://t.co/PEw1wtlt4q"
+        }
+      ],
+      "fullThreadText": "Talk To X已推出 ！\n\n你可以直接“聊天”与整个 X 数据库，获取实时见解和答案：\n\n-谁是火箭领域的最佳细分影响者？\n-当前 AI 领域的热门帖子有哪些？\n-我的粉丝中谁能帮我介绍 Lex Fridman？\n-谁是 X 上振动编码的关键声音？ https://t.co/pAMJN2COsI\n\nhttps://t.co/PEw1wtlt4q",
+      "allMediaUrls": [
+        "https://pbs.twimg.com/ext_tw_video_thumb/1899707444852617216/pu/img/Lzh-OJQE60pUvqsm.jpg"
+      ]
+    },
+    {
+      "id": "1899708745187557385",
+      "conversationId": "1899708742364754351",
+      "fullText": "https://t.co/PEw1wtlt4q",
+      "createdAt": "Wed Mar 12 06:27:14 +0000 2025",
+      "favoriteCount": 1,
+      "replyCount": 0,
+      "retweetCount": 0,
+      "quoteCount": 0,
+      "isReply": true,
+      "inReplyToStatusId": "1899708742364754351",
+      "inReplyToUserId": "1551258526584115204",
+      "media": [],
+      "user": {
+        "id": "1551258526584115204",
+        "name": "AI Will",
+        "screenName": "FinanceYF5",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg",
+        "verified": false
+      },
+      "viewCount": "3445",
+      "externalUrls": [
+        "https://x.com/Thomasslabbers/status/1899454675885211888"
+      ]
+    }
+  ]
+}

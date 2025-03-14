@@ -40,14 +40,30 @@ class OpenAIService {
   // 第一层分析：判断推文是否构成日报内容
   async analyzeChunk(tweets) {
     try {
-      // 格式化推文
+      // 格式化推文 - 修改字段名以匹配TwitterService提供的数据结构
       const formattedTweets = tweets
         .map((tweet, index) => {
-          return `[${index + 1}] @${tweet.authorUsername} (${
-            tweet.authorName
-          }): ${tweet.text}`;
+          // 使用正确的字段名
+          const username = tweet.user?.screenName || "未知用户";
+          const name = tweet.user?.name || "未知名称";
+          const text = tweet.fullText || tweet.text || "无内容";
+
+          return `[${index + 1}] @${username} (${name}): ${text}`;
         })
         .join("\n\n");
+
+      // 添加额外调试信息
+      logger.debug(`准备分析${tweets.length}条推文`);
+      if (tweets.length > 0) {
+        logger.debug(
+          `第一条推文数据结构: ${JSON.stringify(Object.keys(tweets[0]))}`
+        );
+        if (tweets[0].user) {
+          logger.debug(
+            `第一条推文用户数据: ${JSON.stringify(Object.keys(tweets[0].user))}`
+          );
+        }
+      }
 
       const prompt = `
       分析以下Twitter推文，判断哪些包含有新闻价值的信息适合放入日报：
@@ -85,7 +101,7 @@ class OpenAIService {
       const response = await this.createChatCompletion(messages, {
         response_format: { type: "json_object" },
         temperature: 0.3,
-        //reasoning_effort: "low", // only for o3-mini
+        reasoning_effort: "low", // only for o3-mini
       });
 
       const result = JSON.parse(response.choices[0].message.content.trim());
@@ -155,7 +171,14 @@ class OpenAIService {
         "stats": "统计信息"
       }
 
-      我将给你展示一个例子。
+      json 里面的自然语言描述，使用中文。stats 部分，以这样的格式返回：“总推文：xx 条，最终日报：xx 条”
+      
+      你是资深的AI资讯内容编辑，需要确保内容专业、深入且易读。
+      `;
+
+      /** 4o 的 prompt 例子
+       * 
+       *       我将给你展示一个例子。
       March 5 日报
       1️⃣ 斯坦福发布 STORM：可生成维基百科质量的学术报告
       斯坦福大学推出 STORM，一款专为学术研究设计的 AI 生成工具，能够自动撰写高质量的研究报告，目标是提升学术写作效率。STORM 依托斯坦福 Genie 实验室开发，结合最新的大模型技术，支持在多个学科领域生成接近维基百科质量的内容。研究者可以输入主题，STORM 将自动整合信息并撰写完整文档，为科研人员和学生提供强大的辅助工具。
@@ -182,12 +205,10 @@ class OpenAIService {
       "content": "Cursor Agent引发了关于代码生成潜在问题的讨论，同时提出了针对这些问题的解决方案。该技术旨在优化生成式AI在软件开发中的应用，帮助开发者更高效地完成任务。这表明AI正在不断深入适配复杂的编程需求。"
       
       "title": "AI行业趋势：'Vibe Revenue'与未来预测",
-      "content": "一篇关于“vibe revenue”的文章分析了AI公司未来的盈利模式及发展趋势。随着生成式AI与行业需求的深度融合，企业正在探索新的商业模式以应对竞争压力。"
+      "content": "一篇关于"vibe revenue"的文章分析了AI公司未来的盈利模式及发展趋势。随着生成式AI与行业需求的深度融合，企业正在探索新的商业模式以应对竞争压力。"
 
       这两条都言之无物，既不是最新的动态，同时也泛泛而谈，言之无物。你要避免生成这种内容。
-      
-      你是资深的AI资讯内容编辑，需要确保内容专业、深入且易读。
-      `;
+       */
 
       const messages = [
         {
@@ -201,7 +222,7 @@ class OpenAIService {
       const response = await this.createChatCompletion(messages, {
         response_format: { type: "json_object" },
         temperature: 0.4,
-        // reasoning_effort: "medium", // only for o3-mini
+        reasoning_effort: "low", // only for o3-mini
       });
 
       const result = JSON.parse(response.choices[0].message.content.trim());

@@ -1,0 +1,76 @@
+{
+  "pinned_tweet": null,
+  "tweets": [
+    {
+      "tweet_id": "1899372292314185870",
+      "user_id": "1551258526584115204",
+      "media_type": "photo",
+      "text": "MCP 正在加速超越竞争对手！🚀 \n\n只需几个月，它就突破了关键增长点，预计将在 7 月前超越 OpenAPI！\n\n🔥 看看这条曲线，MCP 的增长速度远超预期 https://t.co/dcYi0x9NPg",
+      "medias": [
+        "https://pbs.twimg.com/media/GlvrfO9acAASMvX.jpg"
+      ],
+      "is_self_send": true,
+      "is_retweet": false,
+      "is_quote": false,
+      "is_reply": false,
+      "is_like": false,
+      "related_tweet_id": "",
+      "related_user_id": "",
+      "favorite_count": 4,
+      "quote_count": 0,
+      "reply_count": 1,
+      "retweet_count": 0,
+      "created_at": "Tue Mar 11 08:10:17 +0000 2025",
+      "user": {
+        "id_str": "1551258526584115204",
+        "name": "AI Will",
+        "screen_name": "FinanceYF5",
+        "location": "",
+        "description": "10年经验行业分析师，GenAI学习中，Learn in public。\n@GPTDAOGLOBAL 分析师\n@PixVerse_ 增长顾问",
+        "followers_count": 167688,
+        "friends_count": 1320,
+        "created_at": "Sun Jul 24 17:30:38 +0000 2022",
+        "favourites_count": 4896,
+        "verified": true,
+        "statuses_count": 29728,
+        "media_count": 16824,
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg"
+      }
+    },
+    {
+      "tweet_id": "1899372295145378257",
+      "user_id": "1551258526584115204",
+      "media_type": "",
+      "text": "https://t.co/CBXdH0Ut7F",
+      "medias": null,
+      "is_self_send": false,
+      "is_retweet": false,
+      "is_quote": true,
+      "is_reply": true,
+      "is_like": false,
+      "related_tweet_id": "1899186592939692371",
+      "related_user_id": "1670869422733393966",
+      "favorite_count": 0,
+      "quote_count": 0,
+      "reply_count": 0,
+      "retweet_count": 0,
+      "created_at": "Tue Mar 11 08:10:18 +0000 2025",
+      "user": {
+        "id_str": "1551258526584115204",
+        "name": "AI Will",
+        "screen_name": "FinanceYF5",
+        "location": "",
+        "description": "10年经验行业分析师，GenAI学习中，Learn in public。\n@GPTDAOGLOBAL 分析师\n@PixVerse_ 增长顾问",
+        "followers_count": 167688,
+        "friends_count": 1320,
+        "created_at": "Sun Jul 24 17:30:38 +0000 2022",
+        "favourites_count": 4896,
+        "verified": true,
+        "statuses_count": 29728,
+        "media_count": 16824,
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg"
+      }
+    }
+  ],
+  "next_cursor_str": ""
+}

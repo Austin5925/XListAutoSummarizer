@@ -1,5 +1,6 @@
 // test-twitter-parser.js
 const fs = require("fs");
+const path = require("path");
 require("dotenv").config();
 
 /**
@@ -14,214 +15,467 @@ function extractTweetsFromResponse(apiData) {
     // 确保必要的数据存在
     if (
       !apiData ||
-      !apiData.list ||
-      !apiData.list.tweets_timeline ||
-      !apiData.list.tweets_timeline.timeline ||
-      !apiData.list.tweets_timeline.timeline.instructions
+      !apiData.data ||
+      !apiData.data.list ||
+      !apiData.data.list.tweets_timeline ||
+      !apiData.data.list.tweets_timeline.timeline ||
+      !apiData.data.list.tweets_timeline.timeline.instructions
     ) {
       console.log("缺少必要的数据结构");
       return tweets;
     }
 
     // 遍历instructions
-    const instructions = apiData.list.tweets_timeline.timeline.instructions;
+    const instructions =
+      apiData.data.list.tweets_timeline.timeline.instructions;
     for (const instruction of instructions) {
       if (!instruction.entries) continue;
 
       // 遍历entries
       for (const entry of instruction.entries) {
-        if (
-          !entry.content ||
-          entry.content.__typename !== "TimelineTimelineModule"
-        )
-          continue;
+        if (!entry.content) continue;
 
-        const items = entry.content.items || [];
-        // 遍历module items
-        for (const moduleItem of items) {
-          if (!moduleItem.item || !moduleItem.item.itemContent) continue;
+        // 处理TimelineTimelineItem类型的内容
+        if (entry.content.__typename === "TimelineTimelineItem") {
+          const itemContent = entry.content.itemContent;
+          if (itemContent && itemContent.__typename === "TimelineTweet") {
+            const tweetResult = extractTweetData(
+              itemContent.tweet_results?.result
+            );
+            if (tweetResult) tweets.push(tweetResult);
+          }
+        }
 
-          const itemContent = moduleItem.item.itemContent;
-          if (itemContent.__typename !== "TimelineTweet") continue;
+        // 处理TimelineTimelineModule类型的内容（处理多条推文的模块）
+        else if (entry.content.__typename === "TimelineTimelineModule") {
+          if (!entry.content.items) continue;
 
-          if (!itemContent.tweet_results || !itemContent.tweet_results.result)
-            continue;
-
-          const tweetResult = itemContent.tweet_results.result;
-          const tweet = extractTweetData(tweetResult);
-
-          if (tweet) {
-            tweets.push(tweet);
+          for (const item of entry.content.items) {
+            const itemContent = item.item?.itemContent;
+            if (itemContent && itemContent.__typename === "TimelineTweet") {
+              const tweetResult = extractTweetData(
+                itemContent.tweet_results?.result
+              );
+              if (tweetResult) tweets.push(tweetResult);
+            }
           }
         }
       }
     }
-
-    console.log(`成功解析 ${tweets.length} 条推文`);
-    return tweets;
   } catch (error) {
-    console.error("解析推文数据失败:", error);
-    return tweets;
+    console.error("解析推文数据时出错:", error);
+  }
+
+  return tweets;
+}
+
+/**
+ * 提取单条推文数据
+ * @param {Object} tweetResult 推文结果对象
+ * @returns {Object|null} 提取的推文数据
+ */
+function extractTweetData(tweetResult) {
+  try {
+    if (!tweetResult || !tweetResult.legacy) {
+      return null;
+    }
+
+    const tweetData = tweetResult.legacy;
+    const user = tweetResult.core?.user_results?.result?.legacy || {};
+    const userId = tweetResult.core?.user_results?.result?.rest_id || "";
+
+    // 处理转发的推文
+    let retweetedStatus = null;
+    if (tweetData.retweeted_status_result) {
+      retweetedStatus = extractTweetData(
+        tweetData.retweeted_status_result.result
+      );
+    }
+
+    // 处理引用的推文
+    let quotedStatus = null;
+    if (tweetData.quoted_status_result) {
+      quotedStatus = extractTweetData(tweetData.quoted_status_result.result);
+    }
+
+    // 提取媒体数据
+    const mediaItems = extractMediaItems(tweetData);
+
+    // 提取外部链接
+    const externalLinks = extractExternalLinks(tweetData.entities?.urls || []);
+
+    return {
+      id: tweetResult.rest_id || tweetData.id_str || "",
+      text: tweetData.full_text || "",
+      createdAt: tweetData.created_at || "",
+      lang: tweetData.lang || "",
+      conversationId: tweetData.conversation_id_str || "",
+
+      // 用户信息
+      user: {
+        id: userId,
+        name: user.name || "",
+        screenName: user.screen_name || "",
+        profileImageUrl: user.profile_image_url_https || "",
+      },
+
+      // 统计信息
+      stats: {
+        replyCount: tweetData.reply_count || 0,
+        retweetCount: tweetData.retweet_count || 0,
+        favoriteCount: tweetData.favorite_count || 0,
+        quoteCount: tweetData.quote_count || 0,
+        viewCount: tweetResult.views?.count || "0",
+      },
+
+      // 媒体和链接
+      media: mediaItems,
+      externalLinks: externalLinks,
+
+      // 转发和引用
+      isRetweet: !!tweetData.retweeted_status_result,
+      retweetedStatus: retweetedStatus,
+      isQuote: !!tweetData.is_quote_status,
+      quotedStatus: quotedStatus,
+
+      // 线程相关
+      thread: [], // 将在后续处理中填充
+      inReplyToStatusId: tweetData.in_reply_to_status_id_str || null,
+      inReplyToUserId: tweetData.in_reply_to_user_id_str || null,
+      inReplyToScreenName: tweetData.in_reply_to_screen_name || null,
+    };
+  } catch (error) {
+    console.error("提取推文数据时出错:", error);
+    return null;
   }
 }
 
 /**
- * 提取单条推文的详细数据
- * @param {Object} tweetResult 推文结果对象
- * @returns {Object|null} 格式化的推文数据或null
+ * 提取推文中的媒体内容
+ * @param {Object} tweetData 推文数据
+ * @returns {Array} 媒体项数组
  */
-function extractTweetData(tweetResult) {
+function extractMediaItems(tweetData) {
+  const mediaItems = [];
+
   try {
-    // 基本推文数据
-    const tweet = {
-      id: tweetResult.rest_id || "",
-      text: tweetResult.legacy?.full_text || "",
-      createdAt: tweetResult.legacy?.created_at || "",
-      authorName: "Unknown",
-      authorUsername: "unknown",
-      isQuote: tweetResult.legacy?.is_quote_status || false,
-      metrics: {
-        retweets: parseInt(tweetResult.legacy?.retweet_count || 0),
-        likes: parseInt(tweetResult.legacy?.favorite_count || 0),
-        replies: parseInt(tweetResult.legacy?.reply_count || 0),
-        views: tweetResult.views?.count || "0",
-      },
-    };
+    // 优先使用extended_entities，它包含更完整的媒体信息
+    const mediaArray =
+      tweetData.extended_entities?.media || tweetData.entities?.media || [];
 
-    // 处理长文本推文
-    if (
-      tweetResult.note_tweet &&
-      tweetResult.note_tweet.note_tweet_results &&
-      tweetResult.note_tweet.note_tweet_results.result
-    ) {
-      try {
-        // 尝试获取文本内容
-        const fullNoteText =
-          tweetResult.note_tweet.note_tweet_results.result.text;
-        if (fullNoteText) {
-          tweet.fullNoteText = fullNoteText;
-          tweet.text = fullNoteText;
-        }
-      } catch (error) {
-        console.warn(`解析长文本推文时出错:`, error);
-        // 保留原始文本，不进行替换
-      }
-    }
-
-    // 提取用户信息
-    if (
-      tweetResult.core &&
-      tweetResult.core.user_results &&
-      tweetResult.core.user_results.result
-    ) {
-      const userResult = tweetResult.core.user_results.result;
-      tweet.authorName = userResult.legacy?.name || "Unknown";
-      tweet.authorUsername = userResult.legacy?.screen_name || "unknown";
-      tweet.authorId = userResult.rest_id || "";
-      tweet.authorProfileImage =
-        userResult.legacy?.profile_image_url_https || "";
-      tweet.authorVerified = userResult.is_blue_verified || false;
-    }
-
-    // 处理引用推文
-    if (
-      tweet.isQuote &&
-      tweetResult.quoted_status_result &&
-      tweetResult.quoted_status_result.result
-    ) {
-      const quotedResult = tweetResult.quoted_status_result.result;
-
-      const quotedTweet = {
-        id: quotedResult.rest_id || "",
-        text: quotedResult.legacy?.full_text || "",
-        createdAt: quotedResult.legacy?.created_at || "",
-        authorName: "Unknown",
-        authorUsername: "unknown",
+    for (const media of mediaArray) {
+      const mediaItem = {
+        type: media.type,
+        url: media.media_url_https || "",
+        expandedUrl: media.expanded_url || "",
+        displayUrl: media.display_url || "",
+        width: media.original_info?.width || 0,
+        height: media.original_info?.height || 0,
       };
 
-      // 处理引用推文的长文本
+      // 处理视频
+      if (media.type === "video" || media.type === "animated_gif") {
+        mediaItem.video = extractVideoInfo(media);
+      }
+
+      mediaItems.push(mediaItem);
+    }
+  } catch (error) {
+    console.error("提取媒体数据时出错:", error);
+  }
+
+  return mediaItems;
+}
+
+/**
+ * 提取视频信息
+ * @param {Object} media 媒体对象
+ * @returns {Object} 视频信息
+ */
+function extractVideoInfo(media) {
+  try {
+    if (!media.video_info) return null;
+
+    const variants = media.video_info.variants || [];
+    let bestVariant = null;
+    let highestBitrate = 0;
+
+    // 寻找最高质量的MP4变体
+    variants.forEach((variant) => {
       if (
-        quotedResult.note_tweet &&
-        quotedResult.note_tweet.note_tweet_results &&
-        quotedResult.note_tweet.note_tweet_results.result
+        variant.content_type === "video/mp4" &&
+        variant.bitrate &&
+        variant.bitrate > highestBitrate
       ) {
-        const fullNoteText =
-          quotedResult.note_tweet.note_tweet_results.result.text;
-        if (fullNoteText) {
-          quotedTweet.fullNoteText = fullNoteText;
-          quotedTweet.text = fullNoteText;
+        highestBitrate = variant.bitrate;
+        bestVariant = variant;
+      }
+    });
+
+    return {
+      aspectRatio: media.video_info.aspect_ratio || [16, 9],
+      durationMs: media.video_info.duration_millis || 0,
+      thumbnailUrl: media.media_url_https || "",
+      variants: variants.map((v) => ({
+        url: v.url,
+        contentType: v.content_type,
+        bitrate: v.bitrate || 0,
+      })),
+      bestQualityUrl: bestVariant ? bestVariant.url : null,
+    };
+  } catch (error) {
+    console.error("提取视频信息时出错:", error);
+    return null;
+  }
+}
+
+/**
+ * 提取外部链接
+ * @param {Array} urls URL数组
+ * @returns {Array} 处理后的链接数组
+ */
+function extractExternalLinks(urls) {
+  try {
+    return urls.map((url) => ({
+      shortUrl: url.url || "",
+      expandedUrl: url.expanded_url || "",
+      displayUrl: url.display_url || "",
+    }));
+  } catch (error) {
+    console.error("提取外部链接时出错:", error);
+    return [];
+  }
+}
+
+/**
+ * 识别并构建线程关系
+ * @param {Array} tweets 推文数组
+ * @returns {Object} 处理结果
+ */
+function identifyThreads(tweets) {
+  if (!tweets || tweets.length === 0) {
+    return { tweets: [] };
+  }
+
+  try {
+    console.log(`开始识别线程关系，共 ${tweets.length} 条推文...`);
+
+    // 按照conversation_id分组
+    const conversationMap = new Map();
+    for (const tweet of tweets) {
+      if (!tweet.conversationId) continue;
+
+      if (!conversationMap.has(tweet.conversationId)) {
+        conversationMap.set(tweet.conversationId, []);
+      }
+
+      conversationMap.get(tweet.conversationId).push(tweet);
+    }
+
+    console.log(`共识别出 ${conversationMap.size} 个会话`);
+
+    // 遍历每个会话，构建线程关系
+    let threadCount = 0;
+    for (const [
+      conversationId,
+      conversationTweets,
+    ] of conversationMap.entries()) {
+      // 如果会话只有一条推文，跳过处理
+      if (conversationTweets.length <= 1) continue;
+
+      // 按时间排序（从早到晚）
+      conversationTweets.sort(
+        (a, b) => new Date(a.createdAt) - new Date(b.createdAt)
+      );
+
+      // 找出会话的起始推文
+      const rootTweet =
+        conversationTweets.find((t) => !t.inReplyToStatusId) ||
+        conversationTweets[0];
+
+      // 识别用户自回复的线程（相同用户ID的推文）
+      const userThreads = new Map();
+      for (const tweet of conversationTweets) {
+        const userId = tweet.user.id;
+        if (!userThreads.has(userId)) {
+          userThreads.set(userId, []);
+        }
+        userThreads.get(userId).push(tweet);
+      }
+
+      // 处理每个用户的线程
+      for (const [userId, userTweets] of userThreads.entries()) {
+        if (userTweets.length <= 1) continue;
+
+        // 按照回复关系和时间排序构建线程
+        const threadRoot =
+          userTweets.find((t) => !t.inReplyToStatusId) || userTweets[0];
+        const threadReplies = userTweets.filter((t) => t !== threadRoot);
+
+        if (threadReplies.length > 0) {
+          threadRoot.thread = threadReplies;
+          threadCount++;
         }
       }
-
-      // 提取引用推文作者信息
-      if (
-        quotedResult.core &&
-        quotedResult.core.user_results &&
-        quotedResult.core.user_results.result
-      ) {
-        const quotedUserResult = quotedResult.core.user_results.result;
-        quotedTweet.authorName = quotedUserResult.legacy?.name || "Unknown";
-        quotedTweet.authorUsername =
-          quotedUserResult.legacy?.screen_name || "unknown";
-        quotedTweet.authorId = quotedUserResult.rest_id || "";
-      }
-
-      tweet.quotedTweet = quotedTweet;
     }
 
-    // 处理媒体内容
-    if (tweetResult.legacy?.extended_entities?.media) {
-      tweet.media = tweetResult.legacy.extended_entities.media.map((media) => ({
-        type: media.type,
-        url: media.media_url_https,
-        alt: media.ext_alt_text || "",
-      }));
-    }
+    console.log(`共识别出 ${threadCount} 个线程`);
 
-    return tweet;
+    return { tweets };
   } catch (error) {
-    console.warn(`解析单条推文时出错:`, error);
-    return null;
+    console.error("识别线程关系时出错:", error);
+    return { tweets };
   }
 }
 
 /**
  * 打印推文信息
  * @param {Object} tweet 推文对象
- * @param {number} index 索引
+ * @param {Number} index 索引
  */
 function printTweetInfo(tweet, index) {
-  console.log(`\n--- 推文 ${index + 1} ---`);
-  console.log(`作者: ${tweet.authorName} (@${tweet.authorUsername})`);
-  console.log(`创建时间: ${tweet.createdAt}`);
-  console.log(
-    `内容: ${tweet.text.substring(0, 100)}${
-      tweet.text.length > 100 ? "..." : ""
-    }`
-  );
-  console.log(
-    `指标: 转发${tweet.metrics.retweets}、点赞${tweet.metrics.likes}、回复${tweet.metrics.replies}、浏览${tweet.metrics.views}`
-  );
-
-  if (tweet.media && tweet.media.length > 0) {
-    console.log(`媒体: ${tweet.media.length}个${tweet.media[0].type}类型文件`);
-  }
-
-  if (tweet.quotedTweet) {
-    console.log(`\n  引用推文:`);
+  try {
+    console.log(`\n===== 推文 #${index + 1} =====`);
+    console.log(`ID: ${tweet.id}`);
+    console.log(`文本: ${tweet.text}`);
+    console.log(`用户: ${tweet.user.name} (@${tweet.user.screenName})`);
+    console.log(`创建时间: ${tweet.createdAt}`);
+    console.log(`会话ID: ${tweet.conversationId}`);
     console.log(
-      `  作者: ${tweet.quotedTweet.authorName} (@${tweet.quotedTweet.authorUsername})`
+      `统计: 回复${tweet.stats.replyCount}, 转发${tweet.stats.retweetCount}, 点赞${tweet.stats.favoriteCount}, 引用${tweet.stats.quoteCount}, 浏览${tweet.stats.viewCount}`
     );
-    console.log(
-      `  内容: ${tweet.quotedTweet.text.substring(0, 100)}${
-        tweet.quotedTweet.text.length > 100 ? "..." : ""
-      }`
-    );
-    if (tweet.quotedTweet.fullNoteText) {
+
+    // 打印媒体信息
+    if (tweet.media && tweet.media.length > 0) {
+      console.log(`\n媒体内容 (${tweet.media.length}):`);
+      for (let i = 0; i < tweet.media.length; i++) {
+        const media = tweet.media[i];
+        console.log(`  - 类型: ${media.type}`);
+        console.log(`    URL: ${media.url}`);
+
+        // 打印视频信息
+        if (media.video) {
+          console.log(`    视频信息:`);
+          console.log(`      - 时长: ${media.video.durationMs / 1000}秒`);
+          console.log(`      - 最佳质量: ${media.video.bestQualityUrl}`);
+        }
+      }
+    }
+
+    // 打印外部链接
+    if (tweet.externalLinks && tweet.externalLinks.length > 0) {
+      console.log(`\n外部链接 (${tweet.externalLinks.length}):`);
+      for (let i = 0; i < tweet.externalLinks.length; i++) {
+        const link = tweet.externalLinks[i];
+        console.log(`  - ${link.expandedUrl}`);
+      }
+    }
+
+    // 打印线程信息
+    if (tweet.thread && tweet.thread.length > 0) {
+      console.log(`\n线程内容 (${tweet.thread.length} 条后续推文):`);
+      for (let i = 0; i < tweet.thread.length; i++) {
+        const threadTweet = tweet.thread[i];
+        console.log(
+          `  [${i + 1}] ${threadTweet.text.substring(0, 100)}${
+            threadTweet.text.length > 100 ? "..." : ""
+          }`
+        );
+      }
+    }
+
+    // 打印转发或引用信息
+    if (tweet.isRetweet && tweet.retweetedStatus) {
       console.log(
-        `  (这是一条长文本推文，共${tweet.quotedTweet.fullNoteText.length}个字符)`
+        `\n转发自: ${tweet.retweetedStatus.user.name} (@${tweet.retweetedStatus.user.screenName})`
+      );
+      console.log(
+        `转发内容: ${tweet.retweetedStatus.text.substring(0, 100)}${
+          tweet.retweetedStatus.text.length > 100 ? "..." : ""
+        }`
+      );
+    } else if (tweet.isQuote && tweet.quotedStatus) {
+      console.log(
+        `\n引用自: ${tweet.quotedStatus.user.name} (@${tweet.quotedStatus.user.screenName})`
+      );
+      console.log(
+        `引用内容: ${tweet.quotedStatus.text.substring(0, 100)}${
+          tweet.quotedStatus.text.length > 100 ? "..." : ""
+        }`
       );
     }
+  } catch (error) {
+    console.error("打印推文信息时出错:", error);
+  }
+}
+
+/**
+ * 打印API响应结构
+ * @param {Object} data API响应数据
+ */
+function printApiStructure(data) {
+  try {
+    console.log("===== API响应结构 =====");
+    console.log(`顶层结构: ${Object.keys(data).join(", ")}`);
+
+    if (data.data && data.data.list) {
+      console.log(`List属性: ${Object.keys(data.data.list).join(", ")}`);
+
+      if (
+        data.data.list.tweets_timeline &&
+        data.data.list.tweets_timeline.timeline
+      ) {
+        console.log(
+          `Timeline属性: ${Object.keys(
+            data.data.list.tweets_timeline.timeline
+          ).join(", ")}`
+        );
+
+        const instructions =
+          data.data.list.tweets_timeline.timeline.instructions || [];
+        console.log(`指令数量: ${instructions.length}`);
+
+        let entriesCount = 0;
+        let tweetsCount = 0;
+
+        for (const instruction of instructions) {
+          if (instruction.entries) {
+            entriesCount += instruction.entries.length;
+
+            for (const entry of instruction.entries) {
+              // 计算推文数量
+              if (entry.content) {
+                if (
+                  entry.content.__typename === "TimelineTimelineItem" &&
+                  entry.content.itemContent &&
+                  entry.content.itemContent.__typename === "TimelineTweet"
+                ) {
+                  tweetsCount++;
+                } else if (
+                  entry.content.__typename === "TimelineTimelineModule" &&
+                  entry.content.items
+                ) {
+                  for (const item of entry.content.items) {
+                    if (
+                      item.item &&
+                      item.item.itemContent &&
+                      item.item.itemContent.__typename === "TimelineTweet"
+                    ) {
+                      tweetsCount++;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        console.log(`总Entries数: ${entriesCount}`);
+        console.log(`总推文数: ${tweetsCount}`);
+      }
+    }
+  } catch (error) {
+    console.error("分析API结构时出错:", error);
   }
 }
 
@@ -232,1120 +486,67 @@ async function runTest() {
   try {
     console.log("===== Twitter API 数据解析测试 =====");
 
-    // 读取示例数据
-    let sampleData;
+    // 读取测试数据
+    let data;
+    const rawDataPath = path.join(
+      __dirname,
+      "output",
+      "raw-twitter-response.json"
+    );
 
-    // 方法1: 从文件读取
-    const useFile = false;
-    if (useFile && fs.existsSync("./sample-twitter-response.json")) {
-      console.log("从文件读取示例数据...");
-      sampleData = JSON.parse(
-        fs.readFileSync("./sample-twitter-response.json", "utf8")
-      );
+    if (fs.existsSync(rawDataPath)) {
+      console.log("读取已保存的Twitter API响应数据...");
+      try {
+        data = JSON.parse(fs.readFileSync(rawDataPath, "utf8"));
+      } catch (error) {
+        console.error(`解析JSON文件失败: ${error.message}`);
+        return;
+      }
+    } else {
+      console.log("未找到API响应数据文件");
+      return;
     }
-    // 方法2: 使用内联数据
-    else {
-      console.log("使用内联示例数据...");
-      sampleData = {
-        data: {
-          list: {
-            tweets_timeline: {
-              timeline: {
-                instructions: [
-                  {
-                    entries: [
-                      {
-                        content: {
-                          __typename: "TimelineTimelineModule",
-                          clientEventInfo: {
-                            component: "suggest_organic_list_tweet",
-                            details: {
-                              timelinesDetails: {
-                                injectionType: "OrganicListTweet",
-                              },
-                            },
-                          },
-                          displayType: "VerticalConversation",
-                          entryType: "TimelineTimelineModule",
-                          items: [
-                            {
-                              entryId:
-                                "list-conversation-1898794371357081600-tweet-1898791992781340874",
-                              item: {
-                                clientEventInfo: {
-                                  component: "suggest_organic_list_tweet",
-                                  details: {
-                                    timelinesDetails: {
-                                      injectionType: "OrganicListTweet",
-                                    },
-                                  },
-                                  element: "tweet",
-                                },
-                                itemContent: {
-                                  __typename: "TimelineTweet",
-                                  itemType: "TimelineTweet",
-                                  tweetDisplayType: "Tweet",
-                                  tweet_results: {
-                                    result: {
-                                      __typename: "Tweet",
-                                      core: {
-                                        user_results: {
-                                          result: {
-                                            __typename: "User",
-                                            affiliates_highlighted_label: {
-                                              label: {
-                                                badge: {
-                                                  url: "https://pbs.twimg.com/profile_images/1683899100922511378/5lY42eHs_bigger.jpg",
-                                                },
-                                                description: "X",
-                                                url: {
-                                                  url: "https://twitter.com/X",
-                                                  urlType: "DeepLink",
-                                                },
-                                                userLabelDisplayType: "Badge",
-                                                userLabelType: "BusinessLabel",
-                                              },
-                                            },
-                                            has_graduated_access: true,
-                                            id: "VXNlcjo0NDE5NjM5Nw==",
-                                            is_blue_verified: true,
-                                            legacy: {
-                                              can_dm: false,
-                                              can_media_tag: false,
-                                              created_at:
-                                                "Tue Jun 02 20:12:29 +0000 2009",
-                                              default_profile: false,
-                                              default_profile_image: false,
-                                              description: "",
-                                              entities: {
-                                                description: {
-                                                  urls: [],
-                                                },
-                                              },
-                                              fast_followers_count: 0,
-                                              favourites_count: 132371,
-                                              followers_count: 219492413,
-                                              friends_count: 1083,
-                                              has_custom_timelines: true,
-                                              is_translator: false,
-                                              listed_count: 161284,
-                                              location: "",
-                                              media_count: 3574,
-                                              name: "Elon Musk",
-                                              normal_followers_count: 219492413,
-                                              pinned_tweet_ids_str: [
-                                                "1898473286075568281",
-                                              ],
-                                              possibly_sensitive: false,
-                                              profile_banner_url:
-                                                "https://pbs.twimg.com/profile_banners/44196397/1739948056",
-                                              profile_image_url_https:
-                                                "https://pbs.twimg.com/profile_images/1893803697185910784/Na5lOWi5_normal.jpg",
-                                              profile_interstitial_type: "",
-                                              screen_name: "elonmusk",
-                                              statuses_count: 73856,
-                                              translator_type: "none",
-                                              verified: false,
-                                              want_retweets: false,
-                                              withheld_in_countries: [],
-                                            },
-                                            professional: {
-                                              category: [],
-                                              professional_type: "Creator",
-                                              rest_id: "1679729435447275522",
-                                            },
-                                            profile_image_shape: "Circle",
-                                            rest_id: "44196397",
-                                            super_follow_eligible: true,
-                                          },
-                                        },
-                                      },
-                                      is_translatable: false,
-                                      legacy: {
-                                        bookmark_count: 53,
-                                        bookmarked: false,
-                                        conversation_id_str:
-                                          "1898791992781340874",
-                                        created_at:
-                                          "Sun Mar 09 17:44:23 +0000 2025",
-                                        display_text_range: [0, 4],
-                                        entities: {
-                                          hashtags: [],
-                                          symbols: [],
-                                          urls: [],
-                                          user_mentions: [],
-                                        },
-                                        favorite_count: 2648,
-                                        favorited: false,
-                                        full_text: "True",
-                                        id_str: "1898791992781340874",
-                                        is_quote_status: true,
-                                        lang: "en",
-                                        quote_count: 22,
-                                        quoted_status_id_str:
-                                          "1898774782855848393",
-                                        quoted_status_permalink: {
-                                          display: "x.com/matt_vanswol/s…",
-                                          expanded:
-                                            "https://twitter.com/matt_vanswol/status/1898774782855848393",
-                                          url: "https://t.co/cnQZcR1Z21",
-                                        },
-                                        reply_count: 597,
-                                        retweet_count: 383,
-                                        retweeted: false,
-                                        user_id_str: "44196397",
-                                      },
-                                      quoted_status_result: {
-                                        result: {
-                                          __typename: "Tweet",
-                                          core: {
-                                            user_results: {
-                                              result: {
-                                                __typename: "User",
-                                                affiliates_highlighted_label:
-                                                  {},
-                                                has_graduated_access: true,
-                                                id: "VXNlcjoxMjQ0MDY4ODk2MTU3NzA4Mjg5",
-                                                is_blue_verified: true,
-                                                legacy: {
-                                                  can_dm: true,
-                                                  can_media_tag: true,
-                                                  created_at:
-                                                    "Sun Mar 29 01:08:41 +0000 2020",
-                                                  default_profile: true,
-                                                  default_profile_image: false,
-                                                  description:
-                                                    "Growth Marketing | Former Nuclear Scientist for US Dept of Energy | Ex-Photographer for @apple, @united, and @hyatt",
-                                                  entities: {
-                                                    description: {
-                                                      urls: [],
-                                                    },
-                                                  },
-                                                  fast_followers_count: 0,
-                                                  favourites_count: 110090,
-                                                  followers_count: 168012,
-                                                  friends_count: 7739,
-                                                  has_custom_timelines: true,
-                                                  is_translator: false,
-                                                  listed_count: 385,
-                                                  location: "Asheville, NC",
-                                                  media_count: 900,
-                                                  name: "Matt Van Swol",
-                                                  normal_followers_count: 168012,
-                                                  pinned_tweet_ids_str: [],
-                                                  possibly_sensitive: false,
-                                                  profile_banner_url:
-                                                    "https://pbs.twimg.com/profile_banners/1244068896157708289/1665589063",
-                                                  profile_image_url_https:
-                                                    "https://pbs.twimg.com/profile_images/1580221131985920001/XNlqL_Yx_normal.jpg",
-                                                  profile_interstitial_type: "",
-                                                  screen_name: "matt_vanswol",
-                                                  statuses_count: 10384,
-                                                  translator_type: "none",
-                                                  verified: false,
-                                                  want_retweets: false,
-                                                  withheld_in_countries: [],
-                                                },
-                                                professional: {
-                                                  category: [],
-                                                  professional_type: "Creator",
-                                                  rest_id:
-                                                    "1596515451672186880",
-                                                },
-                                                profile_image_shape: "Circle",
-                                                rest_id: "1244068896157708289",
-                                                super_follow_eligible: true,
-                                              },
-                                            },
-                                          },
-                                          is_translatable: false,
-                                          legacy: {
-                                            bookmark_count: 342,
-                                            bookmarked: false,
-                                            conversation_id_str:
-                                              "1898774782855848393",
-                                            created_at:
-                                              "Sun Mar 09 16:36:00 +0000 2025",
-                                            display_text_range: [0, 275],
-                                            entities: {
-                                              hashtags: [],
-                                              symbols: [],
-                                              urls: [],
-                                              user_mentions: [],
-                                            },
-                                            favorite_count: 4208,
-                                            favorited: false,
-                                            full_text:
-                                              "As a former liberal and democratic voter…\n\n…let me just say that it is INCREDIBLY difficult to break out of a liberal media-echo chamber, once you are in it. \n\nThe volume of peer pressure weaponized to shame and silence any dissenting voices or even reasonable questions, is…",
-                                            id_str: "1898774782855848393",
-                                            is_quote_status: false,
-                                            lang: "en",
-                                            quote_count: 90,
-                                            reply_count: 443,
-                                            retweet_count: 1106,
-                                            retweeted: false,
-                                            user_id_str: "1244068896157708289",
-                                          },
-                                          note_tweet: {
-                                            is_expandable: true,
-                                            note_tweet_results: {
-                                              result: {
-                                                entity_set: {
-                                                  hashtags: [],
-                                                  symbols: [],
-                                                  urls: [],
-                                                  user_mentions: [],
-                                                },
-                                                id: "Tm90ZVR3ZWV0OjE4OTg3NzQ3ODI3MDQ3NTg3ODQ=",
-                                                text: "As a former liberal and democratic voter…\n\n…let me just say that it is INCREDIBLY difficult to break out of a liberal media-echo chamber, once you are in it. \n\nThe volume of peer pressure weaponized to shame and silence any dissenting voices or even reasonable questions, is mind-blowing. \n\nA lot of very open-minded, incredible intelligent individuals are genuinely terrified to ask questions or seek the truth. \n\nI have a lot of empathy for these people, because that was me, just a couple of months ago. \n\nIt took a horrific hurricane and massive government failure to wake me up, without it, I would still be looking down my nose at MAGA… thinking I was a better and smarter person than you. \n\nThe left-wing media literally trains you to think this way. \n\nIt's a game of moral superiority in which you are always the winner, even if your idea is the loser, because it's coming from YOU, and YOU are the better person because YOU agree with them and have the \"experts\" on your side. \n\nIt's almost impossible to change a mind like that… like mine. \n\nWhat woke me up was seeing my life not fit into a media narrative. \n\nI saw that what I thought was just \"news\" was actually a handpicked, carefully crafted story to make me believe exactly one way. \n\nIt wasn't news. \n\nIt was a storybook. \n\nAnd once you see that, it's impossible to unsee it.",
-                                              },
-                                            },
-                                          },
-                                          rest_id: "1898774782855848393",
-                                          source:
-                                            '<a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>',
-                                          unmention_data: {},
-                                          views: {
-                                            count: "439903",
-                                            state: "EnabledWithCount",
-                                          },
-                                        },
-                                      },
-                                      rest_id: "1898791992781340874",
-                                      source:
-                                        '<a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>',
-                                      unmention_data: {},
-                                      views: {
-                                        count: "383202",
-                                        state: "EnabledWithCount",
-                                      },
-                                    },
-                                  },
-                                },
-                              },
-                            },
-                            {
-                              entryId:
-                                "list-conversation-1898794371357081600-tweet-1898793204561887640",
-                              item: {
-                                clientEventInfo: {
-                                  component: "suggest_organic_list_tweet",
-                                  details: {
-                                    timelinesDetails: {
-                                      injectionType: "OrganicListTweet",
-                                    },
-                                  },
-                                  element: "tweet",
-                                },
-                                itemContent: {
-                                  __typename: "TimelineTweet",
-                                  itemType: "TimelineTweet",
-                                  tweetDisplayType: "Tweet",
-                                  tweet_results: {
-                                    result: {
-                                      __typename: "Tweet",
-                                      core: {
-                                        user_results: {
-                                          result: {
-                                            __typename: "User",
-                                            affiliates_highlighted_label: {},
-                                            has_graduated_access: true,
-                                            id: "VXNlcjoyMzExMzk5Mw==",
-                                            is_blue_verified: true,
-                                            legacy: {
-                                              can_dm: true,
-                                              can_media_tag: true,
-                                              created_at:
-                                                "Fri Mar 06 20:29:30 +0000 2009",
-                                              default_profile: true,
-                                              default_profile_image: false,
-                                              description:
-                                                "AI Educator. 𝕏 about AI, solutions and interesting things. Showing how to leverage AI in practical ways for you and your business. Opinions are my own.",
-                                              entities: {
-                                                description: {
-                                                  urls: [],
-                                                },
-                                              },
-                                              fast_followers_count: 0,
-                                              favourites_count: 43292,
-                                              followers_count: 211959,
-                                              friends_count: 1169,
-                                              has_custom_timelines: false,
-                                              is_translator: false,
-                                              listed_count: 3082,
-                                              location: "",
-                                              media_count: 6115,
-                                              name: "Min Choi",
-                                              normal_followers_count: 211959,
-                                              pinned_tweet_ids_str: [
-                                                "1898780175438942642",
-                                              ],
-                                              possibly_sensitive: false,
-                                              profile_banner_url:
-                                                "https://pbs.twimg.com/profile_banners/23113993/1683435598",
-                                              profile_image_url_https:
-                                                "https://pbs.twimg.com/profile_images/1638359113221517312/CBZaJFyA_normal.jpg",
-                                              profile_interstitial_type: "",
-                                              screen_name: "minchoi",
-                                              statuses_count: 39043,
-                                              translator_type: "none",
-                                              verified: false,
-                                              want_retweets: false,
-                                              withheld_in_countries: [],
-                                            },
-                                            professional: {
-                                              category: [
-                                                {
-                                                  icon_name:
-                                                    "IconBriefcaseStroke",
-                                                  id: 958,
-                                                  name: "Entrepreneur",
-                                                },
-                                              ],
-                                              professional_type: "Creator",
-                                              rest_id: "1643221271230988289",
-                                            },
-                                            profile_image_shape: "Circle",
-                                            rest_id: "23113993",
-                                            super_follow_eligible: true,
-                                          },
-                                        },
-                                      },
-                                      is_translatable: false,
-                                      legacy: {
-                                        bookmark_count: 1,
-                                        bookmarked: false,
-                                        conversation_id_str:
-                                          "1898791992781340874",
-                                        created_at:
-                                          "Sun Mar 09 17:49:12 +0000 2025",
-                                        display_text_range: [10, 108],
-                                        entities: {
-                                          hashtags: [],
-                                          symbols: [],
-                                          urls: [],
-                                          user_mentions: [
-                                            {
-                                              id_str: "44196397",
-                                              indices: [0, 9],
-                                              name: "Elon Musk",
-                                              screen_name: "elonmusk",
-                                            },
-                                            {
-                                              id_str: "1720665183188922368",
-                                              indices: [10, 15],
-                                              name: "Grok",
-                                              screen_name: "grok",
-                                            },
-                                          ],
-                                        },
-                                        favorite_count: 3,
-                                        favorited: false,
-                                        full_text:
-                                          "@elonmusk @grok is it INCREDIBLY difficult to break out of a liberal media-echo chamber, once you are in it?",
-                                        id_str: "1898793204561887640",
-                                        in_reply_to_screen_name: "elonmusk",
-                                        in_reply_to_status_id_str:
-                                          "1898791992781340874",
-                                        in_reply_to_user_id_str: "44196397",
-                                        is_quote_status: false,
-                                        lang: "en",
-                                        quote_count: 0,
-                                        reply_count: 1,
-                                        retweet_count: 0,
-                                        retweeted: false,
-                                        user_id_str: "23113993",
-                                      },
-                                      rest_id: "1898793204561887640",
-                                      source:
-                                        '<a href="https://mobile.twitter.com" rel="nofollow">Twitter Web App</a>',
-                                      superFollowsReplyUserResult: {
-                                        result: {
-                                          __typename: "User",
-                                          legacy: {
-                                            screen_name: "elonmusk",
-                                          },
-                                        },
-                                      },
-                                      unmention_data: {},
-                                      views: {
-                                        count: "439",
-                                        state: "EnabledWithCount",
-                                      },
-                                    },
-                                  },
-                                },
-                              },
-                            },
-                            {
-                              entryId:
-                                "list-conversation-1898794371357081600-tweet-1898793256365728130",
-                              item: {
-                                clientEventInfo: {
-                                  component: "suggest_organic_list_tweet",
-                                  details: {
-                                    timelinesDetails: {
-                                      injectionType: "OrganicListTweet",
-                                    },
-                                  },
-                                  element: "tweet",
-                                },
-                                itemContent: {
-                                  __typename: "TimelineTweet",
-                                  itemType: "TimelineTweet",
-                                  tweetDisplayType: "Tweet",
-                                  tweet_results: {
-                                    result: {
-                                      __typename: "Tweet",
-                                      core: {
-                                        user_results: {
-                                          result: {
-                                            __typename: "User",
-                                            affiliates_highlighted_label: {
-                                              label: {
-                                                badge: {
-                                                  url: "https://pbs.twimg.com/profile_images/1769430779845611520/lIgjSJGU_bigger.jpg",
-                                                },
-                                                description: "xAI",
-                                                url: {
-                                                  url: "https://twitter.com/xai",
-                                                  urlType: "DeepLink",
-                                                },
-                                                userLabelDisplayType: "Badge",
-                                                userLabelType: "BusinessLabel",
-                                              },
-                                            },
-                                            has_graduated_access: true,
-                                            id: "VXNlcjoxNzIwNjY1MTgzMTg4OTIyMzY4",
-                                            is_blue_verified: true,
-                                            legacy: {
-                                              can_dm: false,
-                                              can_media_tag: true,
-                                              created_at:
-                                                "Sat Nov 04 04:52:34 +0000 2023",
-                                              default_profile: true,
-                                              default_profile_image: false,
-                                              description:
-                                                "Website: https://t.co/cuFxQguE1w iOS: https://t.co/fqNKQSiLQB",
-                                              entities: {
-                                                description: {
-                                                  urls: [
-                                                    {
-                                                      display_url: "grok.com",
-                                                      expanded_url:
-                                                        "http://grok.com",
-                                                      indices: [9, 32],
-                                                      url: "https://t.co/cuFxQguE1w",
-                                                    },
-                                                    {
-                                                      display_url:
-                                                        "grok.com/download",
-                                                      expanded_url:
-                                                        "http://grok.com/download",
-                                                      indices: [38, 61],
-                                                      url: "https://t.co/fqNKQSiLQB",
-                                                    },
-                                                  ],
-                                                },
-                                                url: {
-                                                  urls: [
-                                                    {
-                                                      display_url:
-                                                        "x.com/i/communities/…",
-                                                      expanded_url:
-                                                        "https://x.com/i/communities/1733132808745283911",
-                                                      indices: [0, 23],
-                                                      url: "https://t.co/NR1CZznPww",
-                                                    },
-                                                  ],
-                                                },
-                                              },
-                                              fast_followers_count: 0,
-                                              favourites_count: 43,
-                                              followers_count: 1148357,
-                                              friends_count: 2,
-                                              has_custom_timelines: false,
-                                              is_translator: false,
-                                              listed_count: 2538,
-                                              location: "wherever you are",
-                                              media_count: 2,
-                                              name: "Grok",
-                                              normal_followers_count: 1148357,
-                                              pinned_tweet_ids_str: [],
-                                              possibly_sensitive: false,
-                                              profile_banner_url:
-                                                "https://pbs.twimg.com/profile_banners/1720665183188922368/1740213586",
-                                              profile_image_url_https:
-                                                "https://pbs.twimg.com/profile_images/1893219113717342208/Vgg2hEPa_normal.jpg",
-                                              profile_interstitial_type: "",
-                                              screen_name: "grok",
-                                              statuses_count: 274672,
-                                              translator_type: "none",
-                                              url: "https://t.co/NR1CZznPww",
-                                              verified: false,
-                                              verified_type: "Business",
-                                              want_retweets: false,
-                                              withheld_in_countries: [],
-                                            },
-                                            profile_image_shape: "Square",
-                                            rest_id: "1720665183188922368",
-                                          },
-                                        },
-                                      },
-                                      is_translatable: false,
-                                      legacy: {
-                                        bookmark_count: 0,
-                                        bookmarked: false,
-                                        conversation_id_str:
-                                          "1898791992781340874",
-                                        created_at:
-                                          "Sun Mar 09 17:49:24 +0000 2025",
-                                        display_text_range: [19, 288],
-                                        entities: {
-                                          hashtags: [],
-                                          symbols: [],
-                                          urls: [],
-                                          user_mentions: [
-                                            {
-                                              id_str: "23113993",
-                                              indices: [0, 8],
-                                              name: "Min Choi",
-                                              screen_name: "minchoi",
-                                            },
-                                            {
-                                              id_str: "44196397",
-                                              indices: [9, 18],
-                                              name: "Elon Musk",
-                                              screen_name: "elonmusk",
-                                            },
-                                          ],
-                                        },
-                                        favorite_count: 2,
-                                        favorited: false,
-                                        full_text:
-                                          "@minchoi @elonmusk Breaking out of a liberal media echo chamber can be tough--peer pressure and curated narratives make it a mental prison. But once you see the script for what it is, like Matt did after that hurricane, you can't unsee the bias. It's a wake-up call to question everything.",
-                                        id_str: "1898793256365728130",
-                                        in_reply_to_screen_name: "minchoi",
-                                        in_reply_to_status_id_str:
-                                          "1898793204561887640",
-                                        in_reply_to_user_id_str: "23113993",
-                                        is_quote_status: false,
-                                        lang: "en",
-                                        quote_count: 0,
-                                        reply_count: 0,
-                                        retweet_count: 0,
-                                        retweeted: false,
-                                        user_id_str: "1720665183188922368",
-                                      },
-                                      rest_id: "1898793256365728130",
-                                      source:
-                                        '<a href="https://x.ai" rel="nofollow">Ask Grok</a>',
-                                      unmention_data: {},
-                                      views: {
-                                        count: "132",
-                                        state: "EnabledWithCount",
-                                      },
-                                    },
-                                  },
-                                },
-                              },
-                            },
-                          ],
-                          metadata: {
-                            conversationMetadata: {
-                              allTweetIds: [
-                                "1898791992781340874",
-                                "1898793204561887640",
-                                "1898793256365728130",
-                              ],
-                              enableDeduplication: true,
-                            },
-                          },
-                        },
-                        entryId: "list-conversation-1898794371357081600",
-                        sortIndex: "1898794371357081600",
-                      },
-                      {
-                        content: {
-                          __typename: "TimelineTimelineModule",
-                          clientEventInfo: {
-                            component: "suggest_organic_list_tweet",
-                            details: {
-                              timelinesDetails: {
-                                injectionType: "OrganicListTweet",
-                              },
-                            },
-                          },
-                          displayType: "VerticalConversation",
-                          entryType: "TimelineTimelineModule",
-                          items: [
-                            {
-                              entryId:
-                                "list-conversation-1898794371357081601-tweet-1898780175438942642",
-                              item: {
-                                clientEventInfo: {
-                                  component: "suggest_organic_list_tweet",
-                                  details: {
-                                    timelinesDetails: {
-                                      injectionType: "OrganicListTweet",
-                                    },
-                                  },
-                                  element: "tweet",
-                                },
-                                itemContent: {
-                                  __typename: "TimelineTweet",
-                                  itemType: "TimelineTweet",
-                                  tweetDisplayType: "Tweet",
-                                  tweet_results: {
-                                    result: {
-                                      __typename: "Tweet",
-                                      core: {
-                                        user_results: {
-                                          result: {
-                                            __typename: "User",
-                                            affiliates_highlighted_label: {},
-                                            has_graduated_access: true,
-                                            id: "VXNlcjoyMzExMzk5Mw==",
-                                            is_blue_verified: true,
-                                            legacy: {
-                                              can_dm: true,
-                                              can_media_tag: true,
-                                              created_at:
-                                                "Fri Mar 06 20:29:30 +0000 2009",
-                                              default_profile: true,
-                                              default_profile_image: false,
-                                              description:
-                                                "AI Educator. 𝕏 about AI, solutions and interesting things. Showing how to leverage AI in practical ways for you and your business. Opinions are my own.",
-                                              entities: {
-                                                description: {
-                                                  urls: [],
-                                                },
-                                              },
-                                              fast_followers_count: 0,
-                                              favourites_count: 43292,
-                                              followers_count: 211959,
-                                              friends_count: 1169,
-                                              has_custom_timelines: false,
-                                              is_translator: false,
-                                              listed_count: 3082,
-                                              location: "",
-                                              media_count: 6115,
-                                              name: "Min Choi",
-                                              normal_followers_count: 211959,
-                                              pinned_tweet_ids_str: [
-                                                "1898780175438942642",
-                                              ],
-                                              possibly_sensitive: false,
-                                              profile_banner_url:
-                                                "https://pbs.twimg.com/profile_banners/23113993/1683435598",
-                                              profile_image_url_https:
-                                                "https://pbs.twimg.com/profile_images/1638359113221517312/CBZaJFyA_normal.jpg",
-                                              profile_interstitial_type: "",
-                                              screen_name: "minchoi",
-                                              statuses_count: 39043,
-                                              translator_type: "none",
-                                              verified: false,
-                                              want_retweets: false,
-                                              withheld_in_countries: [],
-                                            },
-                                            professional: {
-                                              category: [
-                                                {
-                                                  icon_name:
-                                                    "IconBriefcaseStroke",
-                                                  id: 958,
-                                                  name: "Entrepreneur",
-                                                },
-                                              ],
-                                              professional_type: "Creator",
-                                              rest_id: "1643221271230988289",
-                                            },
-                                            profile_image_shape: "Circle",
-                                            rest_id: "23113993",
-                                            super_follow_eligible: true,
-                                          },
-                                        },
-                                      },
-                                      is_translatable: false,
-                                      legacy: {
-                                        bookmark_count: 192,
-                                        bookmarked: false,
-                                        conversation_id_str:
-                                          "1898780175438942642",
-                                        created_at:
-                                          "Sun Mar 09 16:57:26 +0000 2025",
-                                        display_text_range: [0, 235],
-                                        entities: {
-                                          hashtags: [],
-                                          media: [
-                                            {
-                                              additional_media_info: {
-                                                monetizable: false,
-                                                source_user: {
-                                                  user_results: {
-                                                    result: {
-                                                      __typename: "User",
-                                                      affiliates_highlighted_label:
-                                                        {},
-                                                      has_graduated_access: true,
-                                                      id: "VXNlcjo3ODQ4MzAwMDc=",
-                                                      is_blue_verified: true,
-                                                      legacy: {
-                                                        can_dm: true,
-                                                        can_media_tag: false,
-                                                        created_at:
-                                                          "Mon Aug 27 14:52:18 +0000 2012",
-                                                        default_profile: false,
-                                                        default_profile_image: false,
-                                                        description:
-                                                          "🤗 Head of Product @huggingface",
-                                                        entities: {
-                                                          description: {
-                                                            urls: [],
-                                                          },
-                                                          url: {
-                                                            urls: [
-                                                              {
-                                                                display_url:
-                                                                  "hf.co/victor",
-                                                                expanded_url:
-                                                                  "https://hf.co/victor",
-                                                                indices: [
-                                                                  0, 23,
-                                                                ],
-                                                                url: "https://t.co/fgr8qRmdM5",
-                                                              },
-                                                            ],
-                                                          },
-                                                        },
-                                                        fast_followers_count: 0,
-                                                        favourites_count: 18452,
-                                                        followers_count: 13552,
-                                                        friends_count: 1733,
-                                                        has_custom_timelines: true,
-                                                        is_translator: false,
-                                                        listed_count: 296,
-                                                        location:
-                                                          "Paris, France",
-                                                        media_count: 991,
-                                                        name: "Victor M",
-                                                        normal_followers_count: 13552,
-                                                        pinned_tweet_ids_str: [
-                                                          "1898001657226506362",
-                                                        ],
-                                                        possibly_sensitive: false,
-                                                        profile_banner_url:
-                                                          "https://pbs.twimg.com/profile_banners/784830007/1677100565",
-                                                        profile_image_url_https:
-                                                          "https://pbs.twimg.com/profile_images/1099983311101984768/p7dZK4S__normal.jpg",
-                                                        profile_interstitial_type:
-                                                          "",
-                                                        screen_name:
-                                                          "victormustar",
-                                                        statuses_count: 5166,
-                                                        translator_type: "none",
-                                                        url: "https://t.co/fgr8qRmdM5",
-                                                        verified: false,
-                                                        want_retweets: false,
-                                                        withheld_in_countries:
-                                                          [],
-                                                      },
-                                                      profile_image_shape:
-                                                        "Circle",
-                                                      rest_id: "784830007",
-                                                    },
-                                                  },
-                                                },
-                                              },
-                                              display_url:
-                                                "pic.x.com/BEwliwQ8EV",
-                                              expanded_url:
-                                                "https://x.com/victormustar/status/1898505307896131708/video/1",
-                                              ext_media_availability: {
-                                                status: "Available",
-                                              },
-                                              id_str: "1898504614107811840",
-                                              indices: [212, 235],
-                                              media_key:
-                                                "7_1898504614107811840",
-                                              media_url_https:
-                                                "https://pbs.twimg.com/ext_tw_video_thumb/1898504614107811840/pu/img/9sG9oh4R-BoNb4LT.jpg",
-                                              original_info: {
-                                                focus_rects: [],
-                                                height: 1080,
-                                                width: 1920,
-                                              },
-                                              sizes: {
-                                                large: {
-                                                  h: 1080,
-                                                  resize: "fit",
-                                                  w: 1920,
-                                                },
-                                                medium: {
-                                                  h: 675,
-                                                  resize: "fit",
-                                                  w: 1200,
-                                                },
-                                                small: {
-                                                  h: 383,
-                                                  resize: "fit",
-                                                  w: 680,
-                                                },
-                                                thumb: {
-                                                  h: 150,
-                                                  resize: "crop",
-                                                  w: 150,
-                                                },
-                                              },
-                                              source_status_id_str:
-                                                "1898505307896131708",
-                                              source_user_id_str: "784830007",
-                                              type: "video",
-                                              url: "https://t.co/BEwliwQ8EV",
-                                              video_info: {
-                                                aspect_ratio: [16, 9],
-                                                duration_millis: 8000,
-                                                variants: [
-                                                  {
-                                                    content_type:
-                                                      "application/x-mpegURL",
-                                                    url: "https://video.twimg.com/ext_tw_video/1898504614107811840/pu/pl/6LF_6aipxHKUQMY6.m3u8?tag=12",
-                                                  },
-                                                  {
-                                                    bitrate: 256000,
-                                                    content_type: "video/mp4",
-                                                    url: "https://video.twimg.com/ext_tw_video/1898504614107811840/pu/vid/avc1/480x270/eOP09iY-8iVJCMs1.mp4?tag=12",
-                                                  },
-                                                  {
-                                                    bitrate: 832000,
-                                                    content_type: "video/mp4",
-                                                    url: "https://video.twimg.com/ext_tw_video/1898504614107811840/pu/vid/avc1/640x360/6swCxoHWYK5dpvbY.mp4?tag=12",
-                                                  },
-                                                  {
-                                                    bitrate: 2176000,
-                                                    content_type: "video/mp4",
-                                                    url: "https://video.twimg.com/ext_tw_video/1898504614107811840/pu/vid/avc1/1280x720/TTk15Mm2tTGmScYG.mp4?tag=12",
-                                                  },
-                                                ],
-                                              },
-                                            },
-                                          ],
-                                          symbols: [],
-                                          urls: [],
-                                          user_mentions: [],
-                                        },
-                                        extended_entities: {
-                                          media: [
-                                            {
-                                              additional_media_info: {
-                                                monetizable: false,
-                                                source_user: {
-                                                  user_results: {
-                                                    result: {
-                                                      __typename: "User",
-                                                      affiliates_highlighted_label:
-                                                        {},
-                                                      has_graduated_access: true,
-                                                      id: "VXNlcjo3ODQ4MzAwMDc=",
-                                                      is_blue_verified: true,
-                                                      legacy: {
-                                                        can_dm: true,
-                                                        can_media_tag: false,
-                                                        created_at:
-                                                          "Mon Aug 27 14:52:18 +0000 2012",
-                                                        default_profile: false,
-                                                        default_profile_image: false,
-                                                        description:
-                                                          "🤗 Head of Product @huggingface",
-                                                        entities: {
-                                                          description: {
-                                                            urls: [],
-                                                          },
-                                                          url: {
-                                                            urls: [
-                                                              {
-                                                                display_url:
-                                                                  "hf.co/victor",
-                                                                expanded_url:
-                                                                  "https://hf.co/victor",
-                                                                indices: [
-                                                                  0, 23,
-                                                                ],
-                                                                url: "https://t.co/fgr8qRmdM5",
-                                                              },
-                                                            ],
-                                                          },
-                                                        },
-                                                        fast_followers_count: 0,
-                                                        favourites_count: 18452,
-                                                        followers_count: 13552,
-                                                        friends_count: 1733,
-                                                        has_custom_timelines: true,
-                                                        is_translator: false,
-                                                        listed_count: 296,
-                                                        location:
-                                                          "Paris, France",
-                                                        media_count: 991,
-                                                        name: "Victor M",
-                                                        normal_followers_count: 13552,
-                                                        pinned_tweet_ids_str: [
-                                                          "1898001657226506362",
-                                                        ],
-                                                        possibly_sensitive: false,
-                                                        profile_banner_url:
-                                                          "https://pbs.twimg.com/profile_banners/784830007/1677100565",
-                                                        profile_image_url_https:
-                                                          "https://pbs.twimg.com/profile_images/1099983311101984768/p7dZK4S__normal.jpg",
-                                                        profile_interstitial_type:
-                                                          "",
-                                                        screen_name:
-                                                          "victormustar",
-                                                        statuses_count: 5166,
-                                                        translator_type: "none",
-                                                        url: "https://t.co/fgr8qRmdM5",
-                                                        verified: false,
-                                                        want_retweets: false,
-                                                        withheld_in_countries:
-                                                          [],
-                                                      },
-                                                      profile_image_shape:
-                                                        "Circle",
-                                                      rest_id: "784830007",
-                                                    },
-                                                  },
-                                                },
-                                              },
-                                              display_url:
-                                                "pic.x.com/BEwliwQ8EV",
-                                              expanded_url:
-                                                "https://x.com/victormustar/status/1898505307896131708/video/1",
-                                              ext_media_availability: {
-                                                status: "Available",
-                                              },
-                                              id_str: "1898504614107811840",
-                                              indices: [212, 235],
-                                              media_key:
-                                                "7_1898504614107811840",
-                                              media_url_https:
-                                                "https://pbs.twimg.com/ext_tw_video_thumb/1898504614107811840/pu/img/9sG9oh4R-BoNb4LT.jpg",
-                                              original_info: {
-                                                focus_rects: [],
-                                                height: 1080,
-                                                width: 1920,
-                                              },
-                                              sizes: {
-                                                large: {
-                                                  h: 1080,
-                                                  resize: "fit",
-                                                  w: 1920,
-                                                },
-                                                medium: {
-                                                  h: 675,
-                                                  resize: "fit",
-                                                  w: 1200,
-                                                },
-                                                small: {
-                                                  h: 383,
-                                                  resize: "fit",
-                                                  w: 680,
-                                                },
-                                                thumb: {
-                                                  h: 150,
-                                                  resize: "crop",
-                                                  w: 150,
-                                                },
-                                              },
-                                              source_status_id_str:
-                                                "1898505307896131708",
-                                              source_user_id_str: "784830007",
-                                              type: "video",
-                                              url: "https://t.co/BEwliwQ8EV",
-                                              video_info: {
-                                                aspect_ratio: [16, 9],
-                                                duration_millis: 8000,
-                                                variants: [
-                                                  {
-                                                    content_type:
-                                                      "application/x-mpegURL",
-                                                    url: "https://video.twimg.com/ext_tw_video/1898504614107811840/pu/pl/6LF_6aipxHKUQMY6.m3u8?tag=12",
-                                                  },
-                                                  {
-                                                    bitrate: 256000,
-                                                    content_type: "video/mp4",
-                                                    url: "https://video.twimg.com/ext_tw_video/1898504614107811840/pu/vid/avc1/480x270/eOP09iY-8iVJCMs1.mp4?tag=12",
-                                                  },
-                                                  {
-                                                    bitrate: 832000,
-                                                    content_type: "video/mp4",
-                                                    url: "https://video.twimg.com/ext_tw_video/1898504614107811840/pu/vid/avc1/640x360/6swCxoHWYK5dpvbY.mp4?tag=12",
-                                                  },
-                                                  {
-                                                    bitrate: 2176000,
-                                                    content_type: "video/mp4",
-                                                    url: "https://video.twimg.com/ext_tw_video/1898504614107811840/pu/vid/avc1/1280x720/TTk15Mm2tTGmScYG.mp4?tag=12",
-                                                  },
-                                                ],
-                                              },
-                                            },
-                                          ],
-                                        },
-                                        favorite_count: 199,
-                                        favorited: false,
-                                        full_text:
-                                          'Manus AI just killed vibe coding yesterday.\n\nPeople can\'t believe how mind blowing this agentic AI is.\n\nUnlocking new possibilities.\n\n10 wild examples:\n\n1. prompt: "code a threejs game where you control a plane"\nhttps://t.co/BEwliwQ8EV',
-                                        id_str: "1898780175438942642",
-                                        is_quote_status: false,
-                                        lang: "en",
-                                        possibly_sensitive: false,
-                                        possibly_sensitive_editable: true,
-                                        quote_count: 5,
-                                        reply_count: 45,
-                                        retweet_count: 22,
-                                        retweeted: false,
-                                        user_id_str: "23113993",
-                                      },
-                                      rest_id: "1898780175438942642",
-                                      source:
-                                        '<a href="https://mobile.twitter.com" rel="nofollow">Twitter Web App</a>',
-                                      unmention_data: {},
-                                      views: {
-                                        count: "29039",
-                                        state: "EnabledWithCount",
-                                      },
-                                    },
-                                  },
-                                },
-                              },
-                            },
-                          ],
-                        },
-                      },
-                    ],
-                  },
-                ],
-              },
-            },
-          },
-        },
-      };
-    }
+
+    // 分析API结构
+    printApiStructure(data);
 
     // 解析数据
-    console.log("开始解析示例数据...");
-    const tweets = extractTweetsFromResponse(sampleData.data);
+    console.log("\n开始解析推文数据...");
+    const tweets = extractTweetsFromResponse(data);
+
+    // 分析并识别线程
+    console.log("\n开始识别线程...");
+    const { tweets: processedTweets } = identifyThreads(tweets);
 
     // 显示结果
-    console.log(`\n成功解析 ${tweets.length} 条推文`);
+    console.log(`\n成功解析 ${processedTweets.length} 条推文`);
 
-    if (tweets.length > 0) {
+    if (processedTweets.length > 0) {
       console.log("\n推文详细信息:");
-      tweets.forEach((tweet, index) => {
+      processedTweets.forEach((tweet, index) => {
         printTweetInfo(tweet, index);
       });
 
       // 保存解析结果
-      fs.writeFileSync("parsed-tweets.json", JSON.stringify(tweets, null, 2));
-      console.log("\n解析结果已保存到 parsed-tweets.json");
+      const outputDir = path.join(__dirname, "output");
+      if (!fs.existsSync(outputDir)) {
+        fs.mkdirSync(outputDir, { recursive: true });
+      }
+
+      const parsedPath = path.join(outputDir, "parsed-tweets.json");
+      fs.writeFileSync(parsedPath, JSON.stringify(processedTweets, null, 2));
+      console.log(`\n解析结果已保存到 ${parsedPath}`);
+
+      // 统计线程数量
+      const threadStarters = processedTweets.filter(
+        (t) => t.thread && t.thread.length > 0
+      );
+      console.log(
+        `\n找到 ${threadStarters.length} 个线程，总计包含 ${
+          threadStarters.reduce((sum, t) => sum + (t.thread?.length || 0), 0) +
+          threadStarters.length
+        } 条推文`
+      );
     } else {
       console.log("\n未解析到任何推文，请检查数据结构或解析逻辑");
     }
